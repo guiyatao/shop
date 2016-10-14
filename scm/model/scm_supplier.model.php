@@ -1,0 +1,93 @@
+<?php
+/**
+ * 活动
+ *
+ *
+ *
+ *
+ * @copyright  Copyright (c) 2007-2015 共铸商城  Inc. (http://www.gongzhuying.com)
+ * @license    http://www.gongzhuying.com
+ * @link       http://www.gongzhuying.com
+ * @since      File available since Release v1.1
+ */
+defined('InShopNC') or exit('Access Invalid!');
+
+class scm_supplierModel extends Model
+{
+
+    public function __construct()
+    {
+        parent::__construct('scm_supplier');
+    }
+    /**
+     * 供应商查询
+     *
+     * @param array $condition 查询条件
+     * @param obj $page 分页对象
+     * @return array 二维数组
+     */
+    public function getList($condition, $page = '')
+    {
+        $param = array();
+        $param['table'] = 'scm_supplier';
+        $param['where'] = $this->getCondition($condition);
+        $param['field'] = 'scm_supplier.supp_id,scm_supplier.supp_ch_name';
+        $param['order'] = $condition['order'] ? $condition['order'] : 'supp_id';
+        return $this->select1($param, $page);
+    }
+
+
+    /**
+     * 添加供应商
+     *
+     * @param array $input
+     * @return bool
+     */
+    public function add($input)
+    {
+        return $this->insert1('scm_supplier', $input);
+    }
+
+    /**
+     * 更新供应商
+     *
+     * @param array $input
+     * @param int $id
+     * @return bool
+     */
+    public function updates($input, $id)
+    {
+        return $this->update1('scm_supplier', $input, " supp_id='$id' ");
+    }
+
+    /**
+     * 删除供应商
+     *
+     * @param string $id
+     * @return bool
+     */
+    public function del($id)
+    {
+        return $this->delete1('scm_supplier', 'supp_id in(' . $id . ')');
+    }
+
+
+    /**
+     * 构造查询条件
+     *
+     * @param array $condition 条件数组
+     * @return string
+     */
+    private function getCondition($condition)
+    {
+        $conditionStr = '';
+        if ($condition['supp_id'] != '') {
+            $conditionStr .= " and scm_supplier.supp_id='{$condition['supp_id']}' ";
+        }
+        if ($condition['supp_ch_name'] != '') {
+            $conditionStr .= " and scm_supplier.supp_ch_name='{$condition['supp_ch_name']}' ";
+        }
+        return $conditionStr;
+    }
+
+}

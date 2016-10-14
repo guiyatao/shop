@@ -1,0 +1,105 @@
+[2016-09-09 08:52:15]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006987&goods_num=30&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006987' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-09 08:52:27]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_id = '6922507006385' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-09 08:52:27]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_id = '6922507006987' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-09 10:51:26]/shop/api/payment/alipay/return_url.php?body=910526733369517002&buyer_email=13366640288&buyer_id=2088802291626770&exterface=create_direct_pay_by_user&extra_common_param=real_order&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfVYBwt6XtSLCpJYY2l2uYlkwd3GVpDBsJYA8VXNlUQklcJHF&notify_time=2016-09-09+10%3A51%3A32&notify_type=trade_status_sync&out_trade_no=910526733369517002&payment_type=1&seller_email=dlgongzhuying%40163.com&seller_id=2088421609025645&subject=%E5%AE%9E%E7%89%A9%E8%AE%A2%E5%8D%95_910526733369517002&total_fee=0.02&trade_no=2016090921001004770269898572&trade_status=TRADE_SUCCESS&sign=e8cc0233bfe1afe2e2b25ee817811dd1&sign_type=MD5
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('88','LHHS0000101','旺旺 浪味仙创意花式薯卷 蔬菜口味 70g/袋','0.01','1','6905734301031')
+[2016-09-09 10:51:26]/shop/api/payment/alipay/return_url.php?body=910526733369517002&buyer_email=13366640288&buyer_id=2088802291626770&exterface=create_direct_pay_by_user&extra_common_param=real_order&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfVYBwt6XtSLCpJYY2l2uYlkwd3GVpDBsJYA8VXNlUQklcJHF&notify_time=2016-09-09+10%3A51%3A32&notify_type=trade_status_sync&out_trade_no=910526733369517002&payment_type=1&seller_email=dlgongzhuying%40163.com&seller_id=2088421609025645&subject=%E5%AE%9E%E7%89%A9%E8%AE%A2%E5%8D%95_910526733369517002&total_fee=0.02&trade_no=2016090921001004770269898572&trade_status=TRADE_SUCCESS&sign=e8cc0233bfe1afe2e2b25ee817811dd1&sign_type=MD5
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('88','LHHS0000101','乐事真脆薯条番茄味90克','0.01','1','6922507006399')
+[2016-09-09 10:51:27]/shop/index.php?act=buy&op=pay_ok&pay_sn=910526733369517002&pay_amount=0.02
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('88','LHHS0000101','旺旺 浪味仙创意花式薯卷 蔬菜口味 70g/袋','0.01','1','6905734301031')
+[2016-09-09 10:51:27]/shop/index.php?act=buy&op=pay_ok&pay_sn=910526733369517002&pay_amount=0.02
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('88','LHHS0000101','乐事真脆薯条番茄味90克','0.01','1','6922507006399')
+[2016-09-09 11:21:17]/shop/index.php?act=buy&op=pay&pay_sn=220526735276918002
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('90','LHHS0000101','旺旺 浪味仙创意花式薯卷 蔬菜口味 70g/袋','0.01','1','6905734301031')
+[2016-09-09 11:21:17]/shop/index.php?act=buy&op=pay&pay_sn=220526735276918002
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('90','LHHS0000101','好丽友 呀！土豆薯条 番茄酱味 70g/袋','0.01','1','6922507006987')
+[2016-09-09 14:20:46]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (569714,) 
+[2016-09-09 14:20:46]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (569714,) 
+[2016-09-09 14:53:15]/shop/api/payment/alipay/return_url.php?body=650526747864143002&buyer_email=5787180%40qq.com&buyer_id=2088212161155325&exterface=create_direct_pay_by_user&extra_common_param=real_order&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfVFwN1vsWy2ZS3BuHTtJ6fVF3aiRG5pjAyuvH4f9RmvI4qHu&notify_time=2016-09-09+14%3A53%3A23&notify_type=trade_status_sync&out_trade_no=650526747864143002&payment_type=1&seller_email=dlgongzhuying%40163.com&seller_id=2088421609025645&subject=%E5%AE%9E%E7%89%A9%E8%AE%A2%E5%8D%95_650526747864143002&total_fee=0.02&trade_no=2016090921001004320206528803&trade_status=TRADE_SUCCESS&sign=2cbf2e4d8dac248c005a8eebebcd860c&sign_type=MD5
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('94','LHHS0000101','旺旺 浪味仙创意花式薯卷 蔬菜口味 70g/袋','0.01','1','6905734301031')
+[2016-09-09 14:53:15]/shop/api/payment/alipay/return_url.php?body=650526747864143002&buyer_email=5787180%40qq.com&buyer_id=2088212161155325&exterface=create_direct_pay_by_user&extra_common_param=real_order&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfVFwN1vsWy2ZS3BuHTtJ6fVF3aiRG5pjAyuvH4f9RmvI4qHu&notify_time=2016-09-09+14%3A53%3A23&notify_type=trade_status_sync&out_trade_no=650526747864143002&payment_type=1&seller_email=dlgongzhuying%40163.com&seller_id=2088421609025645&subject=%E5%AE%9E%E7%89%A9%E8%AE%A2%E5%8D%95_650526747864143002&total_fee=0.02&trade_no=2016090921001004320206528803&trade_status=TRADE_SUCCESS&sign=2cbf2e4d8dac248c005a8eebebcd860c&sign_type=MD5
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('94','LHHS0000101','好丽友 呀！土豆薯条 番茄酱味 70g/袋','0.01','1','6922507006987')
+[2016-09-09 14:53:16]/shop/index.php?act=buy&op=pay_ok&pay_sn=650526747864143002&pay_amount=0.02
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('94','LHHS0000101','旺旺 浪味仙创意花式薯卷 蔬菜口味 70g/袋','0.01','1','6905734301031')
+[2016-09-09 14:53:16]/shop/index.php?act=buy&op=pay_ok&pay_sn=650526747864143002&pay_amount=0.02
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('94','LHHS0000101','好丽友 呀！土豆薯条 番茄酱味 70g/袋','0.01','1','6922507006987')
+[2016-09-09 15:33:45]/shop/api/payment/alipay/return_url.php?body=480526749852254002&buyer_email=13366640288&buyer_id=2088802291626770&exterface=create_direct_pay_by_user&extra_common_param=real_order&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfVFwNWJMcV3YXqmcy%252F%252BS0kfyTn0iJ16MFfR10781aFu3mpGV&notify_time=2016-09-09+15%3A33%3A53&notify_type=trade_status_sync&out_trade_no=480526749852254002&payment_type=1&seller_email=dlgongzhuying%40163.com&seller_id=2088421609025645&subject=%E5%AE%9E%E7%89%A9%E8%AE%A2%E5%8D%95_480526749852254002&total_fee=0.02&trade_no=2016090921001004770300175740&trade_status=TRADE_SUCCESS&sign=308143d897a4951ae9c1c6f7df3b2eb7&sign_type=MD5
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('103','LHHS0000101','旺旺 浪味仙创意花式薯卷 蔬菜口味 70g/袋','0.01','1','6905734301031')
+[2016-09-09 15:33:45]/shop/api/payment/alipay/return_url.php?body=480526749852254002&buyer_email=13366640288&buyer_id=2088802291626770&exterface=create_direct_pay_by_user&extra_common_param=real_order&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfVFwNWJMcV3YXqmcy%252F%252BS0kfyTn0iJ16MFfR10781aFu3mpGV&notify_time=2016-09-09+15%3A33%3A53&notify_type=trade_status_sync&out_trade_no=480526749852254002&payment_type=1&seller_email=dlgongzhuying%40163.com&seller_id=2088421609025645&subject=%E5%AE%9E%E7%89%A9%E8%AE%A2%E5%8D%95_480526749852254002&total_fee=0.02&trade_no=2016090921001004770300175740&trade_status=TRADE_SUCCESS&sign=308143d897a4951ae9c1c6f7df3b2eb7&sign_type=MD5
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('103','LHHS0000101','好丽友 呀！土豆薯条 番茄酱味 70g/袋','0.01','1','6922507006987')
+[2016-09-09 15:39:31]/shop/api/payment/alipay/return_url.php?body=650526750736234002&buyer_email=13366640288&buyer_id=2088802291626770&exterface=create_direct_pay_by_user&extra_common_param=real_order&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfVFwNWF7948KxBJYpfxq7C28AOtsp2LBAmQgTv73vC5nZmFC&notify_time=2016-09-09+15%3A39%3A39&notify_type=trade_status_sync&out_trade_no=650526750736234002&payment_type=1&seller_email=dlgongzhuying%40163.com&seller_id=2088421609025645&subject=%E5%AE%9E%E7%89%A9%E8%AE%A2%E5%8D%95_650526750736234002&total_fee=0.02&trade_no=2016090921001004770300211757&trade_status=TRADE_SUCCESS&sign=a6fe2907b9097a5fb290f5a448d4d8e2&sign_type=MD5
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('104','LHHS0000101','旺旺 浪味仙创意花式薯卷 蔬菜口味 70g/袋','0.01','1','6905734301031')
+[2016-09-09 15:39:31]/shop/api/payment/alipay/return_url.php?body=650526750736234002&buyer_email=13366640288&buyer_id=2088802291626770&exterface=create_direct_pay_by_user&extra_common_param=real_order&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfVFwNWF7948KxBJYpfxq7C28AOtsp2LBAmQgTv73vC5nZmFC&notify_time=2016-09-09+15%3A39%3A39&notify_type=trade_status_sync&out_trade_no=650526750736234002&payment_type=1&seller_email=dlgongzhuying%40163.com&seller_id=2088421609025645&subject=%E5%AE%9E%E7%89%A9%E8%AE%A2%E5%8D%95_650526750736234002&total_fee=0.02&trade_no=2016090921001004770300211757&trade_status=TRADE_SUCCESS&sign=a6fe2907b9097a5fb290f5a448d4d8e2&sign_type=MD5
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('104','LHHS0000101','好丽友 呀！土豆薯条 番茄酱味 70g/袋','0.01','1','6922507006987')
+[2016-09-09 15:53:17]/shop/index.php?act=buy&op=pay&pay_sn=580526751597120002
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('105','LHHS0000101','旺旺 浪味仙创意花式薯卷 蔬菜口味 70g/袋','0.01','1','6905734301031')
+[2016-09-09 15:53:17]/shop/index.php?act=buy&op=pay&pay_sn=580526751597120002
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('105','LHHS0000101','好丽友 呀！土豆薯条 番茄酱味 70g/袋','0.01','1','6922507006987')
+[2016-09-09 17:08:03]http://192.168.3.250/scm/modules/system/index.php?act=online_order_manager&op=get_xml&advanced=1&order_state=20
+ERR : Db Error: Unknown column 'order_state' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_online_order_goods` scm_online_order_goods WHERE ( order_state = '20' ) AND ( order_id = '62' ) LIMIT 1  
+[2016-09-09 17:08:03]http://192.168.3.250/scm/modules/system/index.php?act=online_order_manager&op=get_xml&advanced=1&order_state=20
+ERR : Db Error: Unknown column 'order_state' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_online_order_goods` scm_online_order_goods WHERE ( order_state = '20' ) AND ( order_id = '82' ) LIMIT 1  
+[2016-09-09 17:08:03]http://192.168.3.250/scm/modules/system/index.php?act=online_order_manager&op=get_xml&advanced=1&order_state=20
+ERR : Db Error: Unknown column 'order_state' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_online_order_goods` scm_online_order_goods WHERE ( order_state = '20' ) AND ( order_id = '89' ) LIMIT 1  
+[2016-09-09 17:08:03]http://192.168.3.250/scm/modules/system/index.php?act=online_order_manager&op=get_xml&advanced=1&order_state=20
+ERR : Db Error: Unknown column 'order_state' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_online_order_goods` scm_online_order_goods WHERE ( order_state = '20' ) AND ( order_id = '91' ) LIMIT 1  
+[2016-09-09 17:08:03]http://192.168.3.250/scm/modules/system/index.php?act=online_order_manager&op=get_xml&advanced=1&order_state=20
+ERR : Db Error: Unknown column 'order_state' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_online_order_goods` scm_online_order_goods WHERE ( order_state = '20' ) AND ( order_id = '92' ) LIMIT 1  
+[2016-09-09 17:08:03]http://192.168.3.250/scm/modules/system/index.php?act=online_order_manager&op=get_xml&advanced=1&order_state=20
+ERR : Db Error: Unknown column 'order_state' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_online_order_goods` scm_online_order_goods WHERE ( order_state = '20' ) AND ( order_id = '95' ) LIMIT 1  
+[2016-09-09 17:08:03]http://192.168.3.250/scm/modules/system/index.php?act=online_order_manager&op=get_xml&advanced=1&order_state=20
+ERR : Db Error: Unknown column 'order_state' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_online_order_goods` scm_online_order_goods WHERE ( order_state = '20' ) AND ( order_id = '96' ) LIMIT 1  
+[2016-09-09 17:08:03]http://192.168.3.250/scm/modules/system/index.php?act=online_order_manager&op=get_xml&advanced=1&order_state=20
+ERR : Db Error: Unknown column 'order_state' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_online_order_goods` scm_online_order_goods WHERE ( order_state = '20' ) AND ( order_id = '99' ) LIMIT 1  
+[2016-09-09 17:08:03]http://192.168.3.250/scm/modules/system/index.php?act=online_order_manager&op=get_xml&advanced=1&order_state=20
+ERR : Db Error: Unknown column 'order_state' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_online_order_goods` scm_online_order_goods WHERE ( order_state = '20' ) AND ( order_id = '106' ) LIMIT 1  
+[2016-09-09 17:08:03]http://192.168.3.250/scm/modules/system/index.php?act=online_order_manager&op=get_xml&advanced=1&order_state=20
+ERR : Db Error: Unknown column 'order_state' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_online_order_goods` scm_online_order_goods WHERE ( order_state = '20' ) AND ( order_id = '107' ) LIMIT 1  
+[2016-09-09 17:08:48]/shop/index.php?act=buy&op=pay&pay_sn=750526756074798002
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('107','LHHS0000101','乐事真脆薯条番茄味90克','0.01','1','6922507006399')
+[2016-09-09 17:10:03]/shop/index.php?act=buy&op=pay&pay_sn=750526756074798002
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('107','LHHS0000101','乐事真脆薯条番茄味90克','0.01','1','6922507006399')
+[2016-09-09 17:13:02]/shop/index.php?act=buy&op=pay&pay_sn=750526756074798002
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('107','LHHS0000101','乐事真脆薯条番茄味90克','0.01','1','6922507006399')
+[2016-09-09 17:15:28]/shop/index.php?act=buy&op=pay&pay_sn=750526756074798002
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('107','LHHS0000101','乐事真脆薯条番茄味90克','0.01','1','6922507006399')

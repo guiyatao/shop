@@ -1,0 +1,47 @@
+<?php defined('InShopNC') or exit('Access Invalid!'); return array (
+  'ap_id' => '37',
+  'ap_name' => '商品列表页左侧广告位',
+  'ap_class' => '0',
+  'ap_display' => '1',
+  'is_use' => '1',
+  'ap_width' => '206',
+  'ap_height' => '300',
+  'adv_num' => '3',
+  'click_num' => '0',
+  'default_content' => '05285633694704628.png',
+  'adv_list' => 
+  array (
+    0 => 
+    array (
+      'adv_id' => '17',
+      'ap_id' => '37',
+      'adv_title' => '广告2',
+      'adv_content' => 'a:2:{s:7:"adv_pic";s:21:"05285633568861134.png";s:11:"adv_pic_url";s:0:"";}',
+      'adv_start_date' => '1475164800',
+      'adv_end_date' => '1483113600',
+      'slide_sort' => '0',
+      'member_id' => '0',
+      'member_name' => '',
+      'click_num' => '0',
+      'is_allow' => '1',
+      'buy_style' => '',
+      'goldpay' => '0',
+    ),
+    1 => 
+    array (
+      'adv_id' => '16',
+      'ap_id' => '37',
+      'adv_title' => '广告1',
+      'adv_content' => 'a:2:{s:7:"adv_pic";s:21:"05285633431806798.png";s:11:"adv_pic_url";s:0:"";}',
+      'adv_start_date' => '1475164800',
+      'adv_end_date' => '1483113600',
+      'slide_sort' => '0',
+      'member_id' => '0',
+      'member_name' => '',
+      'click_num' => '0',
+      'is_allow' => '1',
+      'buy_style' => '',
+      'goldpay' => '0',
+    ),
+  ),
+);

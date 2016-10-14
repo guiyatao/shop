@@ -1,0 +1,211 @@
+[2016-09-07 12:46:14]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-07 12:46:14]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-07 12:51:18]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-07 12:51:18]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-07 15:25:42]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (67|1,68|1,) 
+[2016-09-07 15:25:42]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (67|1,68|1,) 
+[2016-09-07 15:35:45]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507008888&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507008888' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-07 16:12:24]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (69|1,70|1,) 
+[2016-09-07 16:12:24]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (69|1,70|1,) 
+[2016-09-07 16:48:38]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:48:38]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:48:38]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:48:38]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:49:42]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:49:42]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:49:42]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:49:42]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:49:59]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:49:59]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:49:59]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:49:59]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:50:24]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:50:24]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:50:24]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:50:24]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:53:16]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:53:16]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:53:16]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:53:16]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:54:09]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:54:09]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:54:09]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:54:09]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:54:39]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:54:39]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:54:39]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:54:39]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:55:20]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:55:20]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:55:20]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:55:20]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:56:09]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:56:09]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:56:09]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:56:09]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:56:26]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:56:26]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:56:26]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:56:26]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:56:41]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:56:41]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:56:41]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:56:41]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:56:54]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:56:54]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:56:54]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:56:54]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:57:07]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:57:07]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:57:07]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:57:07]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:57:27]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:57:27]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:57:27]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:57:27]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:57:48]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:57:48]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-07 16:57:48]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-07 16:57:48]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5

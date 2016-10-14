@@ -1,0 +1,21 @@
+[2016-07-07 16:04:53]/scm/modules/supplier/index.php?act=account
+ERR : Db Error: Table 'shopnc.shopnc_scm_user' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_scm_user` as `scm_user`  WHERE  user_id=1 
+[2016-07-07 16:05:11]/scm/modules/supplier/index.php?act=account
+ERR : Db Error: Table 'shopnc.shopnc_scm_user' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_scm_user` as `scm_user`  WHERE  user_id=1 
+[2016-07-07 17:14:09]/scm/modules/supplier/index.php?act=account
+ERR : Db Error: Table 'shopnc.shopnc_scm_user' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_scm_user` as `scm_user`  WHERE  user_id=1 
+[2016-07-07 19:47:48]/scm/modules/supplier/index.php?act=account
+ERR : Db Error: Table 'gzkj.gzkj_scm_user' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_user` as `scm_user`  WHERE  user_id=1 
+[2016-07-07 19:47:52]/scm/modules/supplier/index.php?act=account
+ERR : Db Error: Table 'gzkj.gzkj_scm_user' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_user` as `scm_user`  WHERE  user_id=1 
+[2016-07-07 19:48:03]/scm/modules/supplier/index.php?act=account
+ERR : Db Error: Table 'gzkj.gzkj_scm_user' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_user` as `scm_user`  WHERE  user_id=1 
+[2016-07-07 19:48:04]/scm/modules/supplier/index.php?act=account
+ERR : Db Error: Table 'gzkj.gzkj_scm_user' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_user` as `scm_user`  WHERE  user_id=1 

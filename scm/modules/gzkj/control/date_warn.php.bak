@@ -1,0 +1,284 @@
+<?php
+/**
+ * 有效期预警
+ */
+use Shopnc\Tpl;
+
+defined('InShopNC') or exit('Access Invalid!');
+
+class date_warnControl extends SCMControl
+{
+    const EXPORT_SIZE = 1000;
+
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
+    public function indexOp()
+    {
+        return $this->date_warnOp();
+    }
+
+    /**
+     *
+     */
+    public function date_warnOp()
+    {
+        Tpl::showpage('date_warn.index');
+    }
+
+    /**
+     * 输出XML数据
+     * 返回分页数据给flexigrid
+     */
+    public function get_xmlOp()
+    {
+        $pre=C('tablepre');
+        $model_instock = SCMModel('gzkj_instock_info');
+        if (strlen($q = trim($_REQUEST['query'])) > 0) {
+            switch ($_REQUEST['qtype']) {
+                case 'clie_id':
+                    $clie_id = $q;
+                    break;
+            }
+        }
+
+        if($clie_id){
+            $page_num = $_POST['rp'];
+            $data = array();
+            $data['now_page'] = $model_instock->shownowpage();
+            $index = ($data['now_page'] - 1) * $page_num;
+            $sql ="SELECT
+    a.id,
+	a.clie_id,b.clie_ch_name,b.clie_contacter,b.clie_mobile,b.clie_tel,a.goods_barcode,
+	a.goods_nm,a.goods_unit,a.goods_spec,a.production_date,a.shelf_life,a.waring_flag,
+	c.supp_ch_name,c.supp_contacter,c.supp_tel,c.supp_mobile,d.valid_remind,
+CASE
+WHEN a.shelf_life LIKE '%年'  THEN DATE_ADD( a.production_date, INTERVAL (a.shelf_life * 360) DAY )
+WHEN a.shelf_life LIKE '%月'  THEN DATE_ADD( a.production_date, INTERVAL (a.shelf_life * 30) DAY )
+WHEN a.shelf_life LIKE '%天'  THEN DATE_ADD( a.production_date, INTERVAL a.shelf_life DAY )
+END AS expire_date
+FROM
+	".$pre."scm_instock_info AS a,
+	".$pre."scm_client AS b,
+	".$pre."scm_supplier AS c,
+	".$pre."scm_client_stock AS d
+WHERE
+a.waring_flag=1
+AND
+    a.goods_barcode=d.goods_barcode
+AND
+    a.clie_id='".$clie_id."'
+AND
+	a.clie_id = b.clie_id
+AND
+    a.supp_id = c.supp_id
+AND
+(
+	(
+		a.shelf_life LIKE '%月'
+		AND datediff(
+			DATE_ADD(
+				a.production_date,
+				INTERVAL (a.shelf_life * 30) DAY
+			),
+			NOW()
+		) <= d.valid_remind
+	)
+	OR (
+		a.shelf_life LIKE '%天'
+		AND datediff(
+			DATE_ADD(
+				a.production_date,
+				INTERVAL a.shelf_life DAY
+			),
+			NOW()
+		) <= d.valid_remind
+	)
+)
+GROUP BY a.id limit ".$index.",".$page_num;
+
+            $sql_total_count = "SELECT
+    a.id,
+	a.clie_id,b.clie_ch_name,b.clie_contacter,b.clie_mobile,b.clie_tel,a.goods_barcode,
+	a.goods_nm,a.goods_unit,a.goods_spec,a.production_date,a.shelf_life,a.waring_flag,
+	c.supp_ch_name,c.supp_contacter,c.supp_tel,c.supp_mobile,d.valid_remind
+FROM
+	".$pre."scm_instock_info AS a,
+	".$pre."scm_client AS b,
+	".$pre."scm_supplier AS c,
+	".$pre."scm_client_stock AS d
+WHERE
+a.waring_flag=1
+AND
+    a.goods_barcode=d.goods_barcode
+AND
+    a.clie_id='".$clie_id."'
+AND
+	a.clie_id = b.clie_id
+AND
+    a.supp_id = c.supp_id
+AND (
+	(
+		a.shelf_life LIKE '%月'
+		AND datediff(
+			DATE_ADD(
+				a.production_date,
+				INTERVAL (a.shelf_life * 30) DAY
+			),
+			NOW()
+		) <= d.valid_remind
+	)
+	OR (
+		a.shelf_life LIKE '%天'
+		AND datediff(
+			DATE_ADD(
+				a.production_date,
+				INTERVAL a.shelf_life DAY
+			),
+			NOW()
+		) <= d.valid_remind
+	)
+) GROUP BY a.id;";
+            $data['total_num'] = count($model_instock->execute_sql($sql_total_count));
+            $instock_list = $model_instock->execute_sql($sql);
+
+        }else{
+            $page_num = $_POST['rp'];
+            $data = array();
+            $data['now_page'] = $model_instock->shownowpage();
+            $index = ($data['now_page'] - 1) * $page_num;
+
+            $sql ="
+SELECT
+    a.id,
+	a.clie_id,b.clie_ch_name,b.clie_contacter,b.clie_mobile,b.clie_tel,a.goods_barcode,
+	a.goods_nm,a.goods_unit,a.goods_spec,a.production_date,a.shelf_life,a.waring_flag,
+	c.supp_ch_name,c.supp_contacter,c.supp_tel,c.supp_mobile,d.valid_remind,
+	CASE
+WHEN a.shelf_life LIKE '%年'  THEN DATE_ADD( a.production_date, INTERVAL (a.shelf_life * 360) DAY )
+WHEN a.shelf_life LIKE '%月'  THEN DATE_ADD( a.production_date, INTERVAL (a.shelf_life * 30) DAY )
+WHEN a.shelf_life LIKE '%天'  THEN DATE_ADD( a.production_date, INTERVAL a.shelf_life DAY )
+END AS expire_date
+FROM
+	".$pre."scm_instock_info AS a,
+	".$pre."scm_client AS b,
+	".$pre."scm_supplier AS c,
+	".$pre."scm_client_stock AS d
+WHERE
+a.waring_flag=1
+AND
+    a.goods_barcode=d.goods_barcode
+AND
+	a.clie_id = b.clie_id
+AND a.supp_id = c.supp_id
+AND (
+	(
+		a.shelf_life LIKE '%月'
+		AND datediff(
+			DATE_ADD(
+				a.production_date,
+				INTERVAL (a.shelf_life * 30) DAY
+			),
+			NOW()
+		) <= d.valid_remind
+	)
+	OR (
+		a.shelf_life LIKE '%天'
+		AND datediff(
+			DATE_ADD(
+				a.production_date,
+				INTERVAL a.shelf_life DAY
+			),
+			NOW()
+		) <= d.valid_remind
+	)
+) GROUP BY a.id limit  ".$index.",".$page_num;
+
+
+            $sql_total_count = "
+SELECT
+    a.id,
+	a.clie_id,b.clie_ch_name,b.clie_contacter,b.clie_mobile,b.clie_tel,a.goods_barcode,
+	a.goods_nm,a.goods_unit,a.goods_spec,a.production_date,a.shelf_life,a.waring_flag,
+	c.supp_ch_name,c.supp_contacter,c.supp_tel,c.supp_mobile,d.valid_remind
+FROM
+	".$pre."scm_instock_info AS a,
+	".$pre."scm_client AS b,
+	".$pre."scm_supplier AS c,
+	".$pre."scm_client_stock AS d
+WHERE
+a.waring_flag=1
+AND
+a.goods_barcode=d.goods_barcode
+AND
+	a.clie_id = b.clie_id
+AND a.supp_id = c.supp_id
+AND (
+	(
+		a.shelf_life LIKE '%月'
+		AND datediff(
+			DATE_ADD(
+				a.production_date,
+				INTERVAL (a.shelf_life * 30) DAY
+			),
+			NOW()
+		) <= a.valid_remind
+	)
+	OR (
+		a.shelf_life LIKE '%天'
+		AND datediff(
+			DATE_ADD(
+				a.production_date,
+				INTERVAL a.shelf_life DAY
+			),
+			NOW()
+		) <= a.valid_remind
+	)
+)GROUP BY a.id ";
+            $data['total_num'] = count($model_instock->execute_sql($sql_total_count));
+            $instock_list = $model_instock->execute_sql($sql);
+        }
+        foreach ($instock_list as $stock_id => $stock_info) {
+            $list = array();
+            $index++;
+            $list['number'] =$index;
+            $list['clie_id'] = $stock_info['clie_id'];
+            $list['clie_ch_name'] = $stock_info['clie_ch_name'];
+            $list['clie_contacter'] = $stock_info['clie_contacter'];
+            $list['clie_mobile'] = $stock_info['clie_mobile'];
+            $list['clie_tel'] = $stock_info['clie_tel'];
+            $list['goods_barcode'] = $stock_info['goods_barcode'];
+            $list['goods_nm'] = $stock_info['goods_nm'];
+            $list['goods_unit'] = $stock_info['goods_unit'];
+            $list['goods_spec'] = $stock_info['goods_spec'];
+            $list['production_date'] = $stock_info['production_date'];
+            $list['shelf_life'] = $stock_info['expire_date'];
+            $list['valid_remind'] = $stock_info['valid_remind'];
+            $list['supp_ch_name'] = $stock_info['supp_ch_name'];
+            $list['supp_contacter'] = $stock_info['supp_contacter'];
+            $list['supp_tel'] = $stock_info['supp_tel'];
+            $list['supp_mobile'] = $stock_info['supp_mobile'];
+            $data['list'][$stock_info['id']] = $list;
+        }
+        echo Tpl::flexigridXML($data);
+    }
+    /**
+     * 提取字符串中所有的数字
+     * @param string $str
+     * @return string
+     */
+    private function findNum($str=''){
+        $str=trim($str);
+        if(empty($str)){return '';}
+        $result='';
+        for($i=0;$i<strlen($str);$i++){
+            if(is_numeric($str[$i])){
+                $result.=$str[$i];
+            }
+        }
+        return $result;
+    }
+
+}

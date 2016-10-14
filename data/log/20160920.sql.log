@@ -1,0 +1,39 @@
+[2016-09-20 16:51:53]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_instock_info` (order_id,goods_barcode,goods_nm,unpacking_num,set_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,in_stock_date) VALUES ('163','6922507006375','可口可乐汽水330ml*24罐/箱碳酸饮料团聚可乐大包装',NULL,'42','箱','500ml*24','XYBL0000102','CHLY0000101','2016-07-01 00:00:00','30','24月','2016-09-20 16:51:53')
+[2016-09-20 18:08:29]/scm/modules/client/index.php?act=client_purchase&op=cartList
+ERR : Db Error: Unknown column 'goods_barcode' in 'where clause'
+SELECT supp_id FROM `gzkj`.`gzkj_scm_cart` scm_cart WHERE ( goods_barcode IN ('6922507006378') ) ORDER BY supp_id desc LIMIT 1000  
+[2016-09-20 18:09:23]/scm/modules/client/index.php?act=client_purchase&op=cartList
+ERR : Db Error: Unknown column 'goods_barcode' in 'where clause'
+SELECT supp_id FROM `gzkj`.`gzkj_scm_cart` scm_cart WHERE ( goods_barcode IN ('6922507006378') ) ORDER BY supp_id desc LIMIT 1000  
+[2016-09-20 18:10:45]/scm/modules/client/index.php?act=client_purchase&op=cartList
+ERR : Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT supp_id, goods_barcode, goods_nm, goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, min_set_num, produce_company, produce_area FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_id IN ('6922507006378') ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1000  
+[2016-09-20 18:10:49]/scm/modules/client/index.php?act=client_purchase&op=cartList
+ERR : Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT supp_id, goods_barcode, goods_nm, goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, min_set_num, produce_company, produce_area FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_id IN ('6922507006378') ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1000  
+[2016-09-20 18:10:56]/scm/modules/client/index.php?act=client_purchase&op=cartList
+ERR : Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT supp_id, goods_barcode, goods_nm, goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, min_set_num, produce_company, produce_area FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_id IN ('6922507006378') ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1000  
+[2016-09-20 18:17:58]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_cart` scm_cart WHERE ( goods_id = NULL ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-20 18:17:58]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Unknown column 'goods_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_cart` (clie_id,supp_id,goods_id,goods_name,goods_price,goods_num) VALUES ('LHHS0000101','CHLY0000101',NULL,NULL,NULL,'10')
+[2016-09-20 18:18:17]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_cart` scm_cart WHERE ( goods_id = NULL ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-20 18:18:17]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Unknown column 'goods_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_cart` (clie_id,supp_id,goods_id,goods_name,goods_price,goods_num) VALUES ('LHHS0000101','CHLY0000101',NULL,NULL,NULL,'10')
+[2016-09-20 18:21:13]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Unknown column 'goods_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_cart` (clie_id,supp_id,goods_id,goods_name,goods_price,goods_num) VALUES ('LHHS0000101','CHLY0000101',NULL,NULL,NULL,'10')
+[2016-09-20 18:22:19]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Unknown column 'goods_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_cart` (clie_id,supp_id,goods_id,goods_name,goods_price,goods_num) VALUES ('LHHS0000101','CHLY0000101',NULL,'伊利 纯牛奶 240ml*16包/提','45.0000','10')

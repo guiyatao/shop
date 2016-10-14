@@ -1,0 +1,3 @@
+[2016-08-08 11:40:50]/scm/modules/supplier/index.php?act=account
+ERR : Db Error: Unknown column 'user_ch_name' in 'field list'
+UPDATE `gzkj`.`gzkj_scm_user` scm_user SET user_ch_name='test' WHERE  user_id='1' 

@@ -1,0 +1,246 @@
+[2016-10-10 09:34:28]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=163
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:34:31]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006399
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:34:33]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006399
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:34:34]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006379
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:34:35]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6953245711849
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:34:35]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006987
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:35:12]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=163
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:36:42]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006378
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:36:50]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006987
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:36:54]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6953245711849
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:23]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=163
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:27]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006399
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:31]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006379
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:33]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6953245711849
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:34]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006987
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:34]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006378
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:38]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006378
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:39]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006987
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:40]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6953245711849
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:40]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006379
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:42]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6953245711849
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:42]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006379
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:43]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006399
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:44]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006379
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:46]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006987
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:47]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=171
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:37:55]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006376
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:38:03]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006376
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:38:05]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006377
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE goods_barcode LIMIT 1000  
+[2016-10-10 09:50:32]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922523008912
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '6922523008912' ) LIMIT 1000  
+[2016-10-10 09:50:33]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6593933322339
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '6593933322339' ) LIMIT 1000  
+[2016-10-10 09:50:35]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6593933322339
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '6593933322339' ) LIMIT 1000  
+[2016-10-10 09:50:37]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006375
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '6922507006375' ) LIMIT 1000  
+[2016-10-10 09:50:37]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006376
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '6922507006376' ) LIMIT 1000  
+[2016-10-10 09:50:39]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006376
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '6922507006376' ) LIMIT 1000  
+[2016-10-10 09:50:40]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006377
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '6922507006377' ) LIMIT 1000  
+[2016-10-10 09:50:59]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=163
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '163' ) LIMIT 1000  
+[2016-10-10 09:58:47]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=163
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '163' ) LIMIT 1000  
+[2016-10-10 10:04:15]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=163
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '163' ) LIMIT 1000  
+[2016-10-10 10:04:18]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=163
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '163' ) LIMIT 1000  
+[2016-10-10 10:04:21]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006399
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_barcode = '6922507006399' ) LIMIT 1000  
+[2016-10-10 10:17:07]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=163
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:17:12]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006379
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:17:15]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=6922507006399
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:17:39]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=171
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:17:41]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=166
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:17:42]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=171
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:17:44]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=163
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:17:45]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=171
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:17:46]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=166
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:18:03]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=171
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:18:04]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=163
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:18:06]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=166
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:18:08]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=171
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 10:18:09]/scm/modules/supplier/index.php?act=statistics_goods&op=goodsinfo&gid=163
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  LIMIT 30  
+[2016-10-10 14:45:56]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.goods_barcode' in 'field list'
+SELECT  scm_order_goods.goods_barcode,min(scm_order_goods.goods_nm) as goods_name,SUM(actual_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_order_goods.goods_barcode ORDER BY orderamount desc,scm_client_order.id LIMIT 30  
+[2016-10-10 14:55:26]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) LIMIT 30  
+[2016-10-10 14:56:09]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) LIMIT 1000  
+[2016-10-10 14:56:09]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) LIMIT 1000  
+[2016-10-10 14:56:10]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) LIMIT 1000  
+[2016-10-10 14:56:10]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) LIMIT 1000  
+[2016-10-10 14:56:11]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) LIMIT 1000  
+[2016-10-10 14:56:11]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) LIMIT 1000  
+[2016-10-10 14:56:11]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) LIMIT 1000  
+[2016-10-10 14:57:37]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district LIMIT 1000  
+[2016-10-10 14:57:38]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district LIMIT 1000  
+[2016-10-10 14:57:38]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district LIMIT 1000  
+[2016-10-10 15:00:11]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district ORDER BY scm_order_goods.id desc LIMIT 1000  
+[2016-10-10 15:00:12]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district ORDER BY scm_order_goods.id desc LIMIT 1000  
+[2016-10-10 15:00:12]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district ORDER BY scm_order_goods.id desc LIMIT 1000  
+[2016-10-10 15:00:12]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district ORDER BY scm_order_goods.id desc LIMIT 1000  
+[2016-10-10 15:00:13]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district ORDER BY scm_order_goods.id desc LIMIT 1000  
+[2016-10-10 15:00:13]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district ORDER BY scm_order_goods.id desc LIMIT 1000  
+[2016-10-10 15:01:42]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district ORDER BY scm_order_goods.id desc LIMIT 1000  
+[2016-10-10 15:03:28]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district ORDER BY scm_order_goods.id desc LIMIT 1000  
+[2016-10-10 15:06:21]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district ORDER BY scm_order_goods.id desc LIMIT 1000  
+[2016-10-10 15:07:32]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district ORDER BY scm_order_goods.id desc LIMIT 1000  
+[2016-10-10 15:09:35]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district LIMIT 1000  
+[2016-10-10 15:09:35]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district LIMIT 1000  
+[2016-10-10 15:09:36]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district LIMIT 1000  
+[2016-10-10 15:09:36]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district LIMIT 1000  
+[2016-10-10 15:09:36]/scm/modules/supplier/index.php?act=statistics_sale
+ERR : Db Error: Unknown column 'scm_order_goods.clie_id' in 'on clause'
+SELECT  COUNT( DISTINCT scm_client_order.clie_id) as num,scm_client.area_district,SUM(scm_client_order.total_amount) as orderamount  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id=scm_order_goods.clie_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) GROUP BY scm_client.area_district LIMIT 1000  

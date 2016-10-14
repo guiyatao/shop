@@ -1,0 +1,42 @@
+[2016-08-29 08:31:00]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006376&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006376' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-29 08:31:07]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507008888&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507008888' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-29 13:50:32]http://192.168.3.250/scm/modules/system/index.php?act=delivering&op=get_xml
+ERR : Db Error: Column 'clie_ch_name' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '1' ) AND ( clie_ch_name LIKE '%乐哈哈%' ) LIMIT 1  
+[2016-08-29 13:50:32]http://192.168.3.250/scm/modules/system/index.php?act=delivering&op=get_xml
+ERR : Db Error: Column 'clie_ch_name' in where clause is ambiguous
+SELECT scm_client_order.id,order_no,scm_client_order.clie_id,scm_client.clie_ch_name,supp_id,order_pay,total_amount,order_date,out_date,order_status,out_flag,in_flag ,refund_flag FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '1' ) AND ( clie_ch_name LIKE '%乐哈哈%' ) LIMIT 0,15  
+[2016-08-29 13:50:37]http://192.168.3.250/scm/modules/system/index.php?act=delivering&op=get_xml
+ERR : Db Error: Column 'clie_ch_name' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '1' ) AND ( clie_ch_name LIKE '%乐%' ) LIMIT 1  
+[2016-08-29 13:50:37]http://192.168.3.250/scm/modules/system/index.php?act=delivering&op=get_xml
+ERR : Db Error: Column 'clie_ch_name' in where clause is ambiguous
+SELECT scm_client_order.id,order_no,scm_client_order.clie_id,scm_client.clie_ch_name,supp_id,order_pay,total_amount,order_date,out_date,order_status,out_flag,in_flag ,refund_flag FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '1' ) AND ( clie_ch_name LIKE '%乐%' ) LIMIT 0,15  
+[2016-08-29 13:50:47]http://192.168.3.250/scm/modules/system/index.php?act=delivering&op=get_xml
+ERR : Db Error: Column 'clie_ch_name' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '1' ) AND ( clie_ch_name LIKE '%乐哈哈超市%' ) LIMIT 1  
+[2016-08-29 13:50:47]http://192.168.3.250/scm/modules/system/index.php?act=delivering&op=get_xml
+ERR : Db Error: Column 'clie_ch_name' in where clause is ambiguous
+SELECT scm_client_order.id,order_no,scm_client_order.clie_id,scm_client.clie_ch_name,supp_id,order_pay,total_amount,order_date,out_date,order_status,out_flag,in_flag ,refund_flag FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '1' ) AND ( clie_ch_name LIKE '%乐哈哈超市%' ) LIMIT 0,15  
+[2016-08-29 13:50:57]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Column 'clie_ch_name' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) AND ( clie_ch_name LIKE '%乐哈哈超市%' ) LIMIT 1  
+[2016-08-29 13:50:57]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Column 'clie_ch_name' in where clause is ambiguous
+SELECT scm_client_order.id,order_no,scm_client_order.clie_id,scm_client.clie_ch_name,supp_id,order_pay,total_amount,order_date,order_status,out_flag,prepare_flag  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) AND ( clie_ch_name LIKE '%乐哈哈超市%' ) LIMIT 0,15  
+[2016-08-29 13:53:10]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Column 'clie_ch_name' in where clause is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) AND ( clie_ch_name LIKE '%乐哈哈超市%' ) LIMIT 1  
+[2016-08-29 13:53:10]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Column 'clie_ch_name' in where clause is ambiguous
+SELECT scm_client_order.id,order_no,scm_client_order.clie_id,scm_client.clie_ch_name,supp_id,order_pay,total_amount,order_date,order_status,out_flag,prepare_flag  FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) AND ( clie_ch_name LIKE '%乐哈哈超市%' ) LIMIT 0,15  
+[2016-08-29 15:04:34]/scm/modules/supplier/index.php?act=clerk&op=get_xml&query=&qtype=user_id&sortname=user_id&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Unknown column 'admin.admin_id' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_user` AS `scm_user` LEFT JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_user.supp_clie_id = scm_supplier.supp_id WHERE ( admin.admin_id <> '11' ) AND ( supp_clie_id = 'CHLY0000101' ) AND ( user_type = '3' ) LIMIT 1  
+[2016-08-29 15:04:51]/scm/modules/supplier/index.php?act=client&op=get_xml&query=&qtype=clie_id&sortname=number&sortorder=asc&op=export_csv&id=LHHS0000101
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( scm_client_order.clie_id IN ('LHHS0000101') ) AND ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  

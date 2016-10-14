@@ -1,0 +1,360 @@
+[2016-08-12 08:38:10]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:38:10]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:38:23]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:38:23]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:38:47]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:38:47]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:42:30]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:42:30]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:42:39]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:42:39]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:44:47]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:44:47]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:44:53]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:44:53]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:45:59]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:45:59]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:46:01]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:46:01]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:46:03]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:46:03]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:46:30]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:46:30]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:46:35]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 08:46:35]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 08:58:21]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 08:58:21]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 09:03:55]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 09:03:55]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 09:09:46]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 09:09:46]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 09:16:38]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 09:16:38]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 09:33:27]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 09:33:27]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 09:33:48]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 09:33:48]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 09:45:36]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 09:45:36]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 09:59:09]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 09:59:09]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 09:59:10]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 09:59:10]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 10:36:55]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 10:36:55]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 13:47:53]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 13:56:01]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 13:56:01]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 13:56:40]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 13:56:40]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 13:56:45]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 13:56:45]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 13:57:11]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 13:57:11]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 13:57:16]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 13:57:16]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 13:57:22]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 13:57:22]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 14:02:09]http://192.168.3.250/scm/modules/system/index.php?act=order&op=get_xml
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,goods_barcode,goods_nm,order_status,sum(order_pay) as total FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status IN ('1','2') ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 14:02:11]http://192.168.3.250/scm/modules/system/index.php?act=order&op=get_xml
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,goods_barcode,goods_nm,order_status,sum(order_pay) as total FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status IN ('1','2') ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 14:02:12]http://192.168.3.250/scm/modules/system/index.php?act=order&op=get_xml1
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,goods_barcode,goods_nm,order_status,sum(order_pay) as total FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '4' ) AND ( in_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 14:02:13]http://192.168.3.250/scm/modules/system/index.php?act=order&op=get_xml
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,goods_barcode,goods_nm,order_status,sum(order_pay) as total FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status IN ('1','2') ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 14:02:14]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:02:14]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:02:16]http://192.168.3.250/scm/modules/system/index.php?act=order&op=get_xml
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,goods_barcode,goods_nm,order_status,sum(order_pay) as total FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status IN ('1','2') ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 14:02:35]/scm/modules/gzkj/index.php?act=order&op=get_xml
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,goods_barcode,goods_nm,order_status,sum(order_pay) as total FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status IN ('1','2') ) GROUP BY order_no LIMIT 1000  
+[2016-08-12 14:29:12]/scm/modules/gzkj/index.php?act=order&op=get_xml
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,goods_barcode,goods_nm,order_status,sum(order_pay) as total FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status IN ('1','2') ) GROUP BY order_no LIMIT 1000  
+[2016-08-12 14:29:19]http://192.168.3.250/scm/modules/system/index.php?act=order&op=get_xml
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,goods_barcode,goods_nm,order_status,sum(order_pay) as total FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status IN ('1','2') ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 14:29:21]http://192.168.3.250/scm/modules/system/index.php?act=order&op=get_xml1
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,goods_barcode,goods_nm,order_status,sum(order_pay) as total FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '4' ) AND ( in_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 14:29:22]http://192.168.3.250/scm/modules/system/index.php?act=order&op=get_xml
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,goods_barcode,goods_nm,order_status,sum(order_pay) as total FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status IN ('1','2') ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 14:32:28]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:32:28]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:32:30]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:32:30]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:32:32]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:32:32]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:32:34]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:32:34]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:36:04]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:36:04]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:37:01]/scm/modules/gzkj/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1000  
+[2016-08-12 14:38:34]/scm/modules/gzkj/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1000  
+[2016-08-12 14:38:36]/scm/modules/gzkj/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1000  
+[2016-08-12 14:38:36]/scm/modules/gzkj/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1000  
+[2016-08-12 14:38:36]/scm/modules/gzkj/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1000  
+[2016-08-12 14:38:43]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:38:43]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:45:07]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:45:07]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:45:11]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:45:11]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:46:11]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:46:11]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:49:56]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:49:56]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:50:06]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:50:06]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:50:10]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:50:10]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 14:50:41]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 1  
+[2016-08-12 14:50:41]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( order_state IN ('20','50') ) LIMIT 0,15  
+[2016-08-12 16:00:34]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 16:00:34]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 16:13:34]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 16:13:34]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 16:47:17]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 16:47:17]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 16:47:20]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-12 16:47:20]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-12 16:52:58]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 16:56:44]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 16:56:45]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 16:56:50]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 16:56:54]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 16:56:58]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 16:57:19]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 17:02:38]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 17:05:09]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 17:30:19]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 17:31:13]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-12 17:31:20]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  

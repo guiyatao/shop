@@ -1,0 +1,21 @@
+[2016-09-01 10:14:31]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507008888&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507008888' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-01 10:14:41]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006399&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006399' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-01 10:36:24]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006378' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-01 10:36:32]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006377&goods_num=10&supp_id=SLSP0000102
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006377' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-01 10:37:25]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006384&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006384' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-01 10:37:33]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006395&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006395' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-01 14:27:20]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6593933322339&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6593933322339' ) AND ( clie_id = NULL ) LIMIT 1  

@@ -1,0 +1,54 @@
+[2016-08-19 13:02:51]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) LIMIT 1  
+[2016-08-19 13:02:51]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) ORDER BY order_no desc LIMIT 0,15  
+[2016-08-19 13:02:52]/scm/modules/client/index.php?act=cancel_order&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT DISTINCT order_no, clie_id, supp_id, order_date FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '0' ) ORDER BY order_no desc LIMIT 1000  
+[2016-08-19 13:03:12]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-19 13:03:12]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-19 13:03:17]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-19 13:03:17]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-19 13:03:20]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-19 13:03:20]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-19 13:03:38]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) LIMIT 1  
+[2016-08-19 13:03:38]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) ORDER BY order_no desc LIMIT 0,15  
+[2016-08-19 13:03:39]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) LIMIT 1  
+[2016-08-19 13:03:39]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) ORDER BY order_no desc LIMIT 0,15  
+[2016-08-19 13:03:41]/scm/modules/client/index.php?act=cancel_order&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT DISTINCT order_no, clie_id, supp_id, order_date FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '0' ) ORDER BY order_no desc LIMIT 1000  
+[2016-08-19 13:03:46]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-19 13:03:46]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-19 13:03:50]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-19 13:03:50]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  

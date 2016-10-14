@@ -1,0 +1,3 @@
+[2016-06-24 11:47:30]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_shopnc_admin' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_shopnc_admin` shopnc_admin LIMIT 30  

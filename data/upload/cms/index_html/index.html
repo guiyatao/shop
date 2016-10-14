@@ -1,0 +1,329 @@
+<link href="/cms/templates/cms_special.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/data/resource/js/jcarousel/jquery.jcarousel.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/admin/resource/js/slidesjs/jquery.slides.min.js" charset="utf-8"></script>
+<link href="/data/resource/js/jcarousel/skins/personal/skin.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+$(document).ready(function() {
+    if($('#index1_1_1_content').children().length > 0) {
+        $('#index1_1_1_content').slidesjs({
+            play: {
+                active: true,
+                    interval: 5000,
+                    auto: true,
+                    pauseOnHover: false,
+                    restartDelay: 2500
+            },
+            callback: {
+                complete: function(number) {
+                    var $item = $(".slidesjs-pagination-item");
+                    $item.removeClass("current");
+                    $item.eq(number - 1).addClass("current");
+                }
+            },
+                width: 380,
+                height: 260
+        });
+        $(".slidesjs-pagination-item").eq(0).addClass("current");
+    }
+
+    //图片延迟加载
+    $(".lazyload_container").nc_lazyload_init();
+    $("img").nc_lazyload();
+
+    //计算自定义块高度
+    var frames = $('.cms-module-frame');
+    $.each(frames, function(index, frame) {
+        var boxs = $(frame).find('[nctype="cms_module_content"]');
+        var height = 0;
+        $.each(boxs, function(index2, box) {
+            var box_height = $(box).height();
+            if(box_height > height) {
+                height = box_height;
+            }
+        });
+        boxs.height(height);
+    });
+});
+</script>
+<div class="cms-index-module-index1 module-style-style4">
+  <div class="cms-index-module-index1-1"> 
+    <!-- 封面图 -->
+    <div class="index1-1-1-content">
+        <div class="index1-1-1-content-ul-wrap">
+            <ul id="index1_1_1_content" style="height:260px;" nctype="object_module_edit">
+                <li class="picture"><div class="cms-thumb"><a href="" target="_blank"><img data-image-name="05221769454765419.jpg" src="http://192.168.1.251/data/upload/cms/index/05221769454765419.jpg" alt="" class="t-img"></a></div></li><li class="picture"><div class="cms-thumb"><a href="" target="_blank"><img data-image-name="05221769530313880.jpg" src="http://192.168.1.251/data/upload/cms/index/05221769530313880.jpg" alt="" class="t-img"></a></div></li><li class="picture"><div class="cms-thumb"><a href="" target="_blank"><img data-image-name="05221769590452556.jpg" src="http://192.168.1.251/data/upload/cms/index/05221769590452556.jpg" alt="" class="t-img"></a></div></li>            </ul>
+        </div>
+            </div>
+    <!-- 圈子|专题 -->
+    <div class="cms-index-module-index1-1-2">
+        <div id="index1_1_2_content" class="index1-1-2-content" nctype="object_module_edit"> <ul class="circle-theme-list">  </ul><ul class="circle-reply-themelist">    </ul><ul class="circle-more-membertheme">  </ul> </div>
+              </div>
+  </div>
+  <!-- 文章　-->
+  <div class="cms-index-module-index1-2">
+    <div class="cms-index-module-index1-2-1">
+      <div class="title-bar">
+        <h3 id="index1_2_1_title" nctype="object_module_edit">美食</h3>
+              </div>
+      <div class="content-box content-big">
+        <ul id="index1_2_1_1_content" nctype="object_module_edit">
+          <li>
+        
+        <span class="title">
+            
+            <a nctype="article_item" href="http://192.168.1.251/cms/index.php?act=article&op=article_detail&article_id=1" target="_blank" class_name="美食" article_abstract="毕业 食记" article_click="1" article_publish_time="2016-07-18" article_image="http://192.168.1.251/data/upload/cms/no_cover.png">
+                毕业后的食记            </a>
+            
+        </span>
+        
+        
+        <span nctype="article_view" class="cms-index-article-abstract">毕业 食记</span></li>        </ul>
+              </div>
+      <div class="content-box content-recommand">
+        <ul id="index1_2_1_2_content" nctype="object_module_edit">
+          <li class="cms-index-article-normal">
+        
+        <span class="title">
+            
+            <a nctype="article_item" href="http://192.168.1.251/cms/index.php?act=article&op=article_detail&article_id=1" target="_blank" class_name="美食" article_abstract="毕业 食记" article_click="1" article_publish_time="2016-07-18" article_image="http://192.168.1.251/data/upload/cms/no_cover.png">
+                毕业后的食记            </a>
+            
+        </span>
+        
+        
+        </li>        </ul>
+              </div>
+    </div>
+        <div class="articel-block">
+      <div class="title-bar">
+        <h3 id="index1_2_2_title" nctype="object_module_edit">毕业后的食记</h3>
+              </div>
+      <div class="content-box content-special">
+        <ul id="index1_2_2_1_content" nctype="object_module_edit">
+          <li><div class="cms-thumb" nctype="article_view"><a nctype="article_view" href="http://192.168.1.251/cms/index.php?act=article&op=article_detail&article_id=1"><img class="t-img" src="http://192.168.1.251/data/upload/cms/no_cover.png"></a></div>
+        
+        <span class="title">
+            
+            <a nctype="article_item" href="http://192.168.1.251/cms/index.php?act=article&op=article_detail&article_id=1" target="_blank" class_name="美食" article_abstract="毕业 食记" article_click="1" article_publish_time="2016-07-18" article_image="http://192.168.1.251/data/upload/cms/no_cover.png">
+                毕业后的食记            </a>
+            
+        </span>
+        
+        
+        </li>        </ul>
+              </div>
+      <div class="content-box content-normal">
+        <ul id="index1_2_2_2_content" nctype="object_module_edit">
+          <li class="cms-index-article-focus">
+        
+        <span class="title">
+            
+            <a nctype="article_item" href="http://192.168.1.251/cms/index.php?act=article&op=article_detail&article_id=1" target="_blank" class_name="美食" article_abstract="毕业 食记" article_click="1" article_publish_time="2016-07-18" article_image="http://192.168.1.251/data/upload/cms/no_cover.png">
+                毕业后的食记            </a>
+            
+        </span>
+        
+        
+        </li>        </ul>
+              </div>
+    </div>
+        <div class="articel-block">
+      <div class="title-bar">
+        <h3 id="index1_2_3_title" nctype="object_module_edit"></h3>
+              </div>
+      <div class="content-box content-special">
+        <ul id="index1_2_3_1_content" nctype="object_module_edit">
+          <li><div class="cms-thumb" nctype="article_view"><a nctype="article_view" href="http://192.168.1.251/cms/index.php?act=article&op=article_detail&article_id=1"><img class="t-img" src="http://192.168.1.251/data/upload/cms/no_cover.png"></a></div>
+        
+        <span class="title">
+            
+            <a nctype="article_item" href="http://192.168.1.251/cms/index.php?act=article&op=article_detail&article_id=1" target="_blank" class_name="美食" article_abstract="毕业 食记" article_click="1" article_publish_time="2016-07-18" article_image="http://192.168.1.251/data/upload/cms/no_cover.png">
+                毕业后的食记            </a>
+            
+        </span>
+        
+        
+        </li>        </ul>
+              </div>
+      <div class="content-box content-normal">
+        <ul id="index1_2_3_2_content" nctype="object_module_edit">
+          <li class="cms-index-article-focus">
+        
+        <span class="title">
+            
+            <a nctype="article_item" href="http://192.168.1.251/cms/index.php?act=article&op=article_detail&article_id=1" target="_blank" class_name="美食" article_abstract="毕业 食记" article_click="1" article_publish_time="2016-07-18" article_image="http://192.168.1.251/data/upload/cms/no_cover.png">
+                毕业后的食记            </a>
+            
+        </span>
+        
+        
+        </li>        </ul>
+              </div>
+    </div>
+        <div class="articel-block">
+      <div class="title-bar">
+        <h3 id="index1_2_4_title" nctype="object_module_edit">吃货乐园</h3>
+              </div>
+      <div class="content-box content-special">
+        <ul id="index1_2_4_1_content" nctype="object_module_edit">
+          <li><div class="cms-thumb" nctype="article_view"><a nctype="article_view" href="http://192.168.1.251/cms/index.php?act=article&op=article_detail&article_id=1"><img class="t-img" src="http://192.168.1.251/data/upload/cms/no_cover.png"></a></div>
+        
+        <span class="title">
+            
+            <a nctype="article_item" href="http://192.168.1.251/cms/index.php?act=article&op=article_detail&article_id=1" target="_blank" class_name="美食" article_abstract="毕业 食记" article_click="1" article_publish_time="2016-07-18" article_image="http://192.168.1.251/data/upload/cms/no_cover.png">
+                毕业后的食记            </a>
+            
+        </span>
+        
+        
+        </li>        </ul>
+              </div>
+      <div class="content-box content-normal">
+        <ul id="index1_2_4_2_content" nctype="object_module_edit">
+          <li class="cms-index-article-focus">
+        
+        <span class="title">
+            
+            <a nctype="article_item" href="http://192.168.1.251/cms/index.php?act=article&op=article_detail&article_id=1" target="_blank" class_name="美食" article_abstract="毕业 食记" article_click="1" article_publish_time="2016-07-18" article_image="http://192.168.1.251/data/upload/cms/no_cover.png">
+                毕业后的食记            </a>
+            
+        </span>
+        
+        
+        </li>        </ul>
+              </div>
+    </div>
+      </div>
+  <!-- 商品分类　-->
+  <div class="cms-index-module-index1-3">
+    <div class="title-bar">
+      <h3 id="index1_3_title" nctype="object_module_edit"></h3>
+          </div>
+    <div class="content-box mall-class">
+      <div id="index1_3_content" nctype="object_module_edit">  </div>
+            <div class="goto-mall"><a href="/shop" target="_blank">进入商城</a></div>
+   </div>
+   <div class="clear"></div>
+  </div>
+</div>
+<script type="text/javascript">
+$(window).load(function() {
+//比例局中裁切显示图片
+	$(".cms-index-module-index1-1-1 .t-img").VMiddleImg({"width":380,"height":230});
+    $(".circle-theme-item .t-img").VMiddleImg({"width":160,"height":100});
+	$(".cms-index-module-index1-2 .t-img").VMiddleImg({"width":120,"height":96});
+
+});
+</script>
+<div class="cms-index-module-index1 module-style-style3">
+  <div class="cms-index-module-index1-1"> 
+    <!-- 封面图 -->
+    <div class="index1-1-1-content">
+        <div class="index1-1-1-content-ul-wrap">
+            <ul id="index1_1_1_content" style="height:260px;" nctype="object_module_edit">
+                            </ul>
+        </div>
+            </div>
+    <!-- 圈子|专题 -->
+    <div class="cms-index-module-index1-1-2">
+        <div id="index1_1_2_content" class="index1-1-2-content" nctype="object_module_edit">  </div>
+              </div>
+  </div>
+  <!-- 文章　-->
+  <div class="cms-index-module-index1-2">
+    <div class="cms-index-module-index1-2-1">
+      <div class="title-bar">
+        <h3 id="index1_2_1_title" nctype="object_module_edit"></h3>
+              </div>
+      <div class="content-box content-big">
+        <ul id="index1_2_1_1_content" nctype="object_module_edit">
+                  </ul>
+              </div>
+      <div class="content-box content-recommand">
+        <ul id="index1_2_1_2_content" nctype="object_module_edit">
+                  </ul>
+              </div>
+    </div>
+        <div class="articel-block">
+      <div class="title-bar">
+        <h3 id="index1_2_2_title" nctype="object_module_edit"></h3>
+              </div>
+      <div class="content-box content-special">
+        <ul id="index1_2_2_1_content" nctype="object_module_edit">
+                  </ul>
+              </div>
+      <div class="content-box content-normal">
+        <ul id="index1_2_2_2_content" nctype="object_module_edit">
+                  </ul>
+              </div>
+    </div>
+        <div class="articel-block">
+      <div class="title-bar">
+        <h3 id="index1_2_3_title" nctype="object_module_edit"></h3>
+              </div>
+      <div class="content-box content-special">
+        <ul id="index1_2_3_1_content" nctype="object_module_edit">
+                  </ul>
+              </div>
+      <div class="content-box content-normal">
+        <ul id="index1_2_3_2_content" nctype="object_module_edit">
+                  </ul>
+              </div>
+    </div>
+        <div class="articel-block">
+      <div class="title-bar">
+        <h3 id="index1_2_4_title" nctype="object_module_edit"></h3>
+              </div>
+      <div class="content-box content-special">
+        <ul id="index1_2_4_1_content" nctype="object_module_edit">
+                  </ul>
+              </div>
+      <div class="content-box content-normal">
+        <ul id="index1_2_4_2_content" nctype="object_module_edit">
+                  </ul>
+              </div>
+    </div>
+      </div>
+  <!-- 商品分类　-->
+  <div class="cms-index-module-index1-3">
+    <div class="title-bar">
+      <h3 id="index1_3_title" nctype="object_module_edit"></h3>
+          </div>
+    <div class="content-box mall-class">
+      <div id="index1_3_content" nctype="object_module_edit">  </div>
+            <div class="goto-mall"><a href="/shop" target="_blank">进入商城</a></div>
+   </div>
+   <div class="clear"></div>
+  </div>
+</div>
+<script type="text/javascript">
+$(window).load(function() {
+//比例局中裁切显示图片
+	$(".cms-index-module-index1-1-1 .t-img").VMiddleImg({"width":380,"height":230});
+    $(".circle-theme-item .t-img").VMiddleImg({"width":160,"height":100});
+	$(".cms-index-module-index1-2 .t-img").VMiddleImg({"width":120,"height":96});
+
+});
+</script>
+<textarea class="lazyload_container" rows="10" cols="30" style="display:none;">
+<div class="cms-page-module-frame module-style-style1">
+<div class="cms-module-frame">
+        <div class="cms-module-frame-title">
+        <!-- 标题 -->
+<div class="cms-module-title">
+    <h2 id="cms_module_title" nctype="object_module_edit"></h2>
+    </div>
+
+    </div>
+                    <div nctype="cms_module_content" class="cms-module-frame-w2">
+            </div>
+                <div nctype="cms_module_content" class="cms-module-frame-w2">
+            </div>
+                <div nctype="cms_module_content" class="cms-module-frame-w1">
+            </div>
+            <div class="clear"></div>
+    </div>
+</div>
+
+</textarea>
+

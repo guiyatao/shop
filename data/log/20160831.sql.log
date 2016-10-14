@@ -1,0 +1,51 @@
+[2016-08-31 14:50:52]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006399&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006399' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 14:51:07]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006385&goods_num=22&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006385' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 14:58:22]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6593932323229&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6593932323229' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 14:58:33]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=11&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006378' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 15:02:11]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507008888&goods_num=22&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507008888' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 15:02:20]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006399&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006399' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 15:02:39]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006396&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006396' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 15:02:46]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006395&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006395' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 15:59:20]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where ( goods_barcode = 6922507008888 AND clie_id="LHHS0000101")' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_stock` scm_client_stock SET goods_stock=goods_stock+ where ( goods_barcode = 6922507008888 AND clie_id="LHHS0000101")
+[2016-08-31 15:59:20]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where ( goods_barcode = 6922507006399 AND clie_id="LHHS0000101")' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_stock` scm_client_stock SET goods_stock=goods_stock+ where ( goods_barcode = 6922507006399 AND clie_id="LHHS0000101")
+[2016-08-31 16:41:33]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=11&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006378' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 16:41:38]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006375&goods_num=11&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006375' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 16:53:09]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006399&goods_num=22&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006399' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 16:53:50]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6593932323229&goods_num=22&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6593932323229' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 17:05:23]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6593932323229&goods_num=2&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6593932323229' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 17:16:08]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507008888&goods_num=1&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507008888' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-31 17:16:12]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507008888&goods_num=1&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507008888' ) AND ( clie_id = NULL ) LIMIT 1  

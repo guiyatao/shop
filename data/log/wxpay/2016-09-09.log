@@ -1,0 +1,1 @@
+[2016-09-09 15:24:32][debug] unifiedorder:{"appid":"wx134e9c8f60f06f47","code_url":"weixin:\/\/wxpay\/bizpayurl?pr=sAMZJts","mch_id":"1375514602","nonce_str":"Yb7biHOVGVBJE2R5","prepay_id":"wx20160909152443b837a269bb0134596075","result_code":"SUCCESS","return_code":"SUCCESS","return_msg":"OK","sign":"60C663F1CE3D2F90389B9D11B3B04D94","trade_type":"NATIVE"}

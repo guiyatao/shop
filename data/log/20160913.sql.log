@@ -1,0 +1,9 @@
+[2016-09-13 14:13:21]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922523008912&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Column 'clie_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_scm_cart` (clie_id,supp_id,goods_id,goods_name,goods_price,goods_num) VALUES (NULL,'CHLY0000101','6922523008912','雪花啤酒（Snowbeer） 勇闯天涯330ml*24听整箱装','82.0000','10')
+[2016-09-13 14:13:30]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922523008912&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Column 'clie_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_scm_cart` (clie_id,supp_id,goods_id,goods_name,goods_price,goods_num) VALUES (NULL,'CHLY0000101','6922523008912','雪花啤酒（Snowbeer） 勇闯天涯330ml*24听整箱装','82.0000','10')
+[2016-09-13 14:13:49]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922523008912&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Column 'clie_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_scm_cart` (clie_id,supp_id,goods_id,goods_name,goods_price,goods_num) VALUES (NULL,'CHLY0000101','6922523008912','雪花啤酒（Snowbeer） 勇闯天涯330ml*24听整箱装','82.0000','10')

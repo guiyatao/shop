@@ -1,0 +1,15 @@
+[2016-09-30 11:27:54]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507772222' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-09-30 13:21:06]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006378' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-09-30 13:22:08]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6931345988040' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-09-30 13:33:47]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_instock_info` (order_id,goods_barcode,goods_nm,unpacking_num,set_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,create_date,in_stock_date) VALUES ('237','6953245711849','衣谷无糖酸奶味糖-蓝莓味(压片糖果)',NULL,'1','盒','15g','LHHS0000101','CHLY0000101','2016-09-07 00:00:00','30','12个月',NULL,'2016-09-30 13:33:46')
+[2016-09-30 13:33:47]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_instock_info` (order_id,goods_barcode,goods_nm,unpacking_num,set_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,create_date,in_stock_date) VALUES ('237','6931345988040','TESCO洋槐蜂蜜500克',NULL,'1','瓶','500g/瓶','LHHS0000101','CHLY0000101','2016-09-07 00:00:00','31','12个月',NULL,'2016-09-30 13:33:46')

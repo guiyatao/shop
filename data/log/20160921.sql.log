@@ -1,0 +1,24 @@
+[2016-09-21 11:13:40]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_client_stock` (goods_barcode,goods_nm,goods_price,goods_discount,unpacking_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,goods_low_stock,goods_stock) VALUES ('6953245711849','衣谷无糖酸奶味糖-蓝莓味(压片糖果)','0.01','1.00',NULL,'盒','15g','LHHS0000101','CHLY0000101','2016-04-07 00:00:00','30','','10','1')
+[2016-09-21 11:13:40]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_instock_info` (order_id,goods_barcode,goods_nm,unpacking_num,set_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,in_stock_date) VALUES ('186','6953245711849','衣谷无糖酸奶味糖-蓝莓味(压片糖果)',NULL,'1','盒','15g','LHHS0000101','CHLY0000101','2016-04-07 00:00:00','30','','2016-09-21 11:13:40')
+[2016-09-21 11:13:40]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_client_stock` (goods_barcode,goods_nm,goods_price,goods_discount,unpacking_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,goods_low_stock,goods_stock) VALUES ('6931345988040','TESCO洋槐蜂蜜500克','0.01','1.00',NULL,'瓶','500g/瓶','LHHS0000101','CHLY0000101','2016-04-22 00:00:00','30','','10','2')
+[2016-09-21 11:13:40]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_instock_info` (order_id,goods_barcode,goods_nm,unpacking_num,set_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,in_stock_date) VALUES ('186','6931345988040','TESCO洋槐蜂蜜500克',NULL,'2','瓶','500g/瓶','LHHS0000101','CHLY0000101','2016-04-22 00:00:00','30','','2016-09-21 11:13:40')
+[2016-09-21 11:21:13]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_client_stock` (goods_barcode,goods_nm,goods_price,goods_discount,unpacking_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,goods_low_stock,goods_stock) VALUES ('6953392554351','怡泉+C柠檬汽水 500ml','0.01','1.00',NULL,'瓶','500ml/瓶','LHHS0000101','SLSP0000102','2016-09-14 00:00:00','30','12个月','10','2')
+[2016-09-21 11:21:13]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_instock_info` (order_id,goods_barcode,goods_nm,unpacking_num,set_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,in_stock_date) VALUES ('185','6953392554351','怡泉+C柠檬汽水 500ml',NULL,'2','瓶','500ml/瓶','LHHS0000101','SLSP0000102','2016-09-14 00:00:00','30','12个月','2016-09-21 11:21:13')
+[2016-09-21 13:19:28]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_instock_info` (order_id,goods_barcode,goods_nm,unpacking_num,set_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,in_stock_date) VALUES ('188','6953245711849','衣谷无糖酸奶味糖-蓝莓味(压片糖果)',NULL,'1','盒','15g','LHHS0000101','CHLY0000101','2016-05-05 00:00:00','30','12个月','2016-09-21 13:19:28')
+[2016-09-21 13:42:10]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_instock_info` (order_id,goods_barcode,goods_nm,unpacking_num,set_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,in_stock_date) VALUES ('190','6931345988040','TESCO洋槐蜂蜜500克',NULL,'1','瓶','500g/瓶','LHHS0000101','CHLY0000101','2016-09-07 00:00:00','30','12个月','2016-09-21 13:42:10')

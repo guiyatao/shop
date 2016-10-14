@@ -1,0 +1,396 @@
+[2016-06-22 17:29:18]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:41]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:42]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:43]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:43]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:44]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:44]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:44]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:44]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:45]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:47]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:48]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:48]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:48]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:48]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:48]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:49]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:34:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 17:35:37]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:38]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:38]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:38]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:38]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:39]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:39]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:39]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:39]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:40]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:40]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:40]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:40]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:41]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:41]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:41]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:35:44]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT * FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:48]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:48]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:49]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:49]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:49]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:49]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:49]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:49]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:50]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:50]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:50]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:50]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:50]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 17:42:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:12:52]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:53]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:53]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:53]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:53]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:54]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:54]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:54]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:55]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:57]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:57]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:57]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:58]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:58]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:58]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:58]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:12:58]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:13:00]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:13:00]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:13:01]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:13:03]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:13:05]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:13:31]/scm/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '// LIMIT 30' at line 1
+SELECT clie_name FROM `shopnc`.`shopnc_//` // LIMIT 30  
+[2016-06-22 18:14:58]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:49]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:53]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:53]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:53]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:53]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:19:53]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:20:08]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:20:57]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:20:58]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_client` client LIMIT 30  
+[2016-06-22 18:56:42]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_scm_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_scm_client` scm_client LIMIT 30  
+[2016-06-22 18:56:42]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_scm_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_scm_client` scm_client LIMIT 30  
+[2016-06-22 18:56:42]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_scm_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_scm_client` scm_client LIMIT 30  
+[2016-06-22 18:56:42]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_scm_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_scm_client` scm_client LIMIT 30  
+[2016-06-22 18:56:44]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_scm_client' doesn't exist
+SELECT clie_name FROM `shopnc`.`shopnc_scm_client` scm_client LIMIT 30  
+[2016-06-22 18:57:39]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:42]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:44]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:45]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:49]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:49]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:50]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:50]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:50]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:50]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:50]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:50]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:51]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:52]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  
+[2016-06-22 18:57:53]/scm/index.php
+ERR : Db Error: Table 'shopnc.shopnc_' doesn't exist
+SELECT admin_id FROM `shopnc`.`shopnc_`  LIMIT 30  

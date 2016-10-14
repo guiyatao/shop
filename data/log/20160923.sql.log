@@ -1,0 +1,66 @@
+[2016-09-23 09:12:40]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6953245711849' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:25:35]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6931345988040' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:25:35]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922523008912' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:25:35]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507772222' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:25:35]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006987' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:25:35]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006382' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:25:35]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006381' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:25:35]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006380' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:25:35]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006379' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:25:35]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006378' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:25:35]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006377' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:25:35]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006375' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 09:26:13]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6593933322339' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 10:56:46]/shop/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in () 
+[2016-09-23 15:29:36]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6953392554351' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 15:33:30]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6953392554351' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 15:38:50]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6953245711849' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-23 16:03:24]/scm/modules/client/index.php?act=client_pending_pay&op=get_xml
+ERR : Db Error: Unknown column 'comment' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_log` (comment) VALUES ('start to get_xmlOp')
+[2016-09-23 16:04:45]/scm/modules/client/index.php?act=client_pending_pay&op=get_xml
+ERR : Db Error: Unknown column 'comment' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_log` (comment) VALUES ('start to get_xmlOp')
+[2016-09-23 16:05:18]/scm/modules/client/index.php?act=client_pending_pay&op=get_xml
+ERR : Db Error: Unknown column 'comment' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_log` (comment) VALUES ('start to get_xmlOp')
+[2016-09-23 16:06:30]/scm/modules/client/index.php?act=client_pending_pay&op=get_xml
+ERR : Db Error: Unknown column 'created' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_log` (content,created) VALUES ('start to get_xmlOp','16-09-23 16:06:30')
+[2016-09-23 17:30:00]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 

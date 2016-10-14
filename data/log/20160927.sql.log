@@ -1,0 +1,84 @@
+[2016-09-27 08:33:55]/scm/modules/supplier/index.php?act=client&op=get_xml&query=&qtype=scm_client.clie_id&sortname=number&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  
+[2016-09-27 09:11:19]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006378' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 09:12:02]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006378' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 09:16:11]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507772222' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 09:24:34]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006378' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 11:40:04]/scm/modules/gzkj/index.php?act=supp_stock&op=get_xml&query=&qtype=scm_supp_stock.supp_id&sortname=undefined&sortorder=undefined&op=export_step1&id=41
+ERR : Db Error: Column 'id' in where clause is ambiguous
+SELECT scm_supp_stock.id,scm_supp_stock.supp_id,scm_supplier.supp_ch_name,scm_supp_stock.goods_nm,scm_supp_stock.goods_barcode,scm_supp_stock.goods_price,scm_supp_stock.goods_discount,scm_supp_stock.goods_unit,scm_supp_stock.min_set_num,scm_supp_stock.goods_spec,scm_supp_stock.production_date,scm_supp_stock.valid_remind,scm_supp_stock.shelf_life,scm_supp_stock.status FROM `gzkj`.`gzkj_scm_supp_stock` AS `scm_supp_stock` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_stock.supp_id=scm_supplier.supp_id WHERE ( id IN ('41') ) ORDER BY scm_supp_stock.id desc LIMIT 1000  
+[2016-09-27 11:40:25]/scm/modules/gzkj/index.php?act=supp_stock&op=get_xml&query=&qtype=scm_supp_stock.supp_id&sortname=undefined&sortorder=undefined&op=export_step1&id=41,40,39,38
+ERR : Db Error: Column 'id' in where clause is ambiguous
+SELECT scm_supp_stock.id,scm_supp_stock.supp_id,scm_supplier.supp_ch_name,scm_supp_stock.goods_nm,scm_supp_stock.goods_barcode,scm_supp_stock.goods_price,scm_supp_stock.goods_discount,scm_supp_stock.goods_unit,scm_supp_stock.min_set_num,scm_supp_stock.goods_spec,scm_supp_stock.production_date,scm_supp_stock.valid_remind,scm_supp_stock.shelf_life,scm_supp_stock.status FROM `gzkj`.`gzkj_scm_supp_stock` AS `scm_supp_stock` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_stock.supp_id=scm_supplier.supp_id WHERE ( id IN ('41','40','39','38') ) ORDER BY scm_supp_stock.id desc LIMIT 1000  
+[2016-09-27 13:32:40]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006377' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 13:34:27]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006377' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 13:39:25]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006380' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 13:39:25]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006379' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 13:44:14]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006378' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 14:01:47]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006378' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 14:01:47]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006385' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 14:01:47]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006399' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 14:01:47]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507772222' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 14:01:47]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6953245711849' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 14:01:47]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6931345988040' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 14:03:02]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507772222' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 15:47:53]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006375' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 16:30:28]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006378' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 16:33:25]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006378' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 17:03:23]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006377' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 17:22:43]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006378' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-27 17:24:24]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006987' ) AND ( clie_id = 'XYBL0000102' ) LIMIT 1  
+[2016-09-27 17:24:44]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006987' ) AND ( clie_id = 'XYBL0000102' ) LIMIT 1  
+[2016-09-27 17:27:01]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006987' ) AND ( clie_id = 'XYBL0000102' ) LIMIT 1  
+[2016-09-27 17:27:46]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006987' ) AND ( clie_id = 'XYBL0000102' ) LIMIT 1  

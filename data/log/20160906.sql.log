@@ -1,0 +1,444 @@
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('1',NULL,'')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'棉衣')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'毛呢大衣')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'风衣')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'打底衫')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'情侣装')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'毛呢短裤')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'牛仔裤')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'加绒打底裤')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'小脚裤')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'半身裙')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'毛呢连衣裙')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'长袖连衣裙')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'羽绒服')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'卫衣')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'长袖T恤')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'长袖衬衫')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'品质秋冬外套')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'风衣')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'休闲西装')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'棉衣')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'休闲长裤')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'内衣内裤')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'保暖内衣')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'保暖打底裤')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'秋冬睡衣')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'珊瑚绒睡衣')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'塑身内衣')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'文胸套装')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'文胸')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'内裤')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'袜子')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'连裤袜')
+[2016-09-06 15:52:24]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'棉袜')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('11',NULL,'')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'棉衣')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'毛呢大衣')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'风衣')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'打底衫')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'情侣装')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'毛呢短裤')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'牛仔裤')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'加绒打底裤')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'小脚裤')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'半身裙')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'毛呢连衣裙')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'长袖连衣裙')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'羽绒服')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'卫衣')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'长袖T恤')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'长袖衬衫')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'品质秋冬外套')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'风衣')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'休闲西装')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'棉衣')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'休闲长裤')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'内衣内裤')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'保暖内衣')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'保暖打底裤')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'秋冬睡衣')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'珊瑚绒睡衣')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'塑身内衣')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'文胸套装')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'文胸')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'内裤')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'袜子')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'连裤袜')
+[2016-09-06 15:53:56]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'棉袜')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('11',NULL,'')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'棉衣')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'毛呢大衣')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'风衣')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'打底衫')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'情侣装')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'毛呢短裤')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'牛仔裤')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'加绒打底裤')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'小脚裤')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'半身裙')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'毛呢连衣裙')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'长袖连衣裙')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'羽绒服')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'卫衣')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'长袖T恤')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'长袖衬衫')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'品质秋冬外套')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'风衣')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'休闲西装')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'棉衣')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'休闲长裤')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'内衣内裤')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'保暖内衣')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'保暖打底裤')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'秋冬睡衣')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'珊瑚绒睡衣')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'塑身内衣')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'文胸套装')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'文胸')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'内裤')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'袜子')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'连裤袜')
+[2016-09-06 15:58:23]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'棉袜')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('11',NULL,'')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'女装')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''棉衣')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'棉衣')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''毛呢大衣')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'毛呢大衣')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''风衣')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'风衣')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''打底衫')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'打底衫')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''情侣装')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'情侣装')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''毛呢短裤')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'毛呢短裤')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''牛仔裤')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'牛仔裤')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''加绒打底裤')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'加绒打底裤')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''小脚裤')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'小脚裤')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''半身裙')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'半身裙')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''毛呢连衣裙')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'毛呢连衣裙')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''长袖连衣裙')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'长袖连衣裙')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'男装')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''羽绒服')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'羽绒服')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''卫衣')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'卫衣')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''长袖T恤')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'长袖T恤')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''长袖衬衫')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'长袖衬衫')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''品质秋冬外套')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'品质秋冬外套')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''风衣')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'风衣')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''休闲西装')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'休闲西装')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''棉衣')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'棉衣')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''休闲长裤')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'休闲长裤')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''内衣内裤')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'内衣内裤')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'内衣/睡衣')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''保暖内衣')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'保暖内衣')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''保暖打底裤')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'保暖打底裤')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''秋冬睡衣')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'秋冬睡衣')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''珊瑚绒睡衣')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'珊瑚绒睡衣')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''塑身内衣')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'塑身内衣')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''文胸套装')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'文胸套装')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''文胸')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'文胸')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''内裤')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'内裤')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''袜子')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'袜子')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''连裤袜')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'连裤袜')
+[2016-09-06 16:19:39]/scm/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''棉袜')' at line 1
+INSERT  INTO `gzkj`.`gzkj_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',,'棉袜')

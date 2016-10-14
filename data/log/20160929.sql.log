@@ -1,0 +1,1295 @@
+[2016-09-29 14:05:48]/scm/modules/supplier/index.php?act=client&op=get_xml&query=&qtype=scm_client.clie_id&sortname=number&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  
+[2016-09-29 15:26:39]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:39]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:40]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:40]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:41]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:41]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:42]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:42]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:42]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:42]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:43]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:43]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:43]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:43]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:44]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:44]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:45]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:45]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:45]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:45]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:45]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:45]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:46]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:46]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:46]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:46]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:47]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:47]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:48]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:48]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:26:48]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:26:48]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:27:11]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit 0,
+[2016-09-29 15:27:11]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:36:05]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:36:11]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:41:00]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,
+[2016-09-29 15:41:44]http://localhost/scm/modules/system/index.php?act=stock_warn&op=get_xml
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 32
+SELECT
+	d.id,
+	d.clie_id,
+	b.clie_ch_name,
+	b.clie_contacter,
+	b.clie_mobile,
+	b.clie_tel,
+	d.goods_barcode,
+	d.goods_nm,
+	d.goods_unit,
+	d.goods_spec,
+	d.goods_stock,
+	d.goods_low_stock,
+	c.supp_ch_name,
+	c.supp_contacter,
+	c.supp_tel,
+	c.supp_mobile,
+	CASE
+WHEN  d.goods_stock / d.goods_low_stock > 0.7  THEN 1
+WHEN d.goods_stock / d.goods_low_stock >= 0.3&& d.goods_stock / d.goods_low_stock <= 0.7  THEN 2
+WHEN d.goods_stock / d.goods_low_stock <0.3  THEN 3
+END AS rate
+FROM
+
+	gzkj_scm_client AS b,
+	gzkj_scm_supplier AS c,
+	gzkj_scm_client_stock AS d
+WHERE
+d.goods_stock / d.goods_low_stock<=1
+AND
+ d.clie_id = b.clie_id
+AND d.supp_id = c.supp_id limit ,

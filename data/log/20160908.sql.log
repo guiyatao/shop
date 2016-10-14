@@ -1,0 +1,384 @@
+[2016-09-08 09:07:54]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:07:54]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:07:54]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:07:54]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:30:43]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:30:43]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:30:43]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:30:43]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:33:05]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:33:05]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:33:05]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:33:05]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:33:56]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:33:56]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:33:56]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:33:56]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:36:17]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:36:17]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:36:17]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:36:17]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:36:19]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:36:19]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:36:19]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:36:19]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:50:25]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:50:25]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:50:25]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  c' at line 1
+SELECT  clie_id, count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  group by  clie_id  order by  cnt desc  limit  0, 5
+[2016-09-08 09:50:25]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5' at line 1
+SELECT  count(distinct goods_barcode) as cnt  FROM `gzkj`.`gzkj_scm_client_stock` as `scm_client_stock`  WHERE  goods_barcode in () and clie_id in ('LHHS0000101','XYBL0000102')  and goods_stock > 0  limit  0, 5
+[2016-09-08 09:55:11]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in () 
+[2016-09-08 09:55:11]/shop/index.php?act=buy&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in () 
+[2016-09-08 11:32:30]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (84,86,) 
+[2016-09-08 11:32:30]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (84,86,) 
+[2016-09-08 11:34:45]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (84,86,) 
+[2016-09-08 11:34:45]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (84,86,) 
+[2016-09-08 12:10:48]/shop/index.php?act=buy&op=pay&pay_sn=260526651848251002
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('79','LHHS0000101','乐事真脆薯条番茄味90克','0.01','1','6922507006399')
+[2016-09-08 14:01:29]/shop/api/payment/alipay/return_url.php?body=270526658452391008&buyer_email=zwt53412046%40163.com&buyer_id=2088002481528651&exterface=create_direct_pay_by_user&extra_common_param=real_order&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWfVYIKnO8wzVrPycfKjLLv%252BbcBM3t4fRlpZsKlL8vSFl7PcUY&notify_time=2016-09-08+14%3A01%3A31&notify_type=trade_status_sync&out_trade_no=270526658452391008&payment_type=1&seller_email=dlgongzhuying%40163.com&seller_id=2088421609025645&subject=%E5%AE%9E%E7%89%A9%E8%AE%A2%E5%8D%95_270526658452391008&total_fee=0.01&trade_no=2016090821001004650254165576&trade_status=TRADE_SUCCESS&sign=7580b68ef81425f5b581511259b851c9&sign_type=MD5
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('81','LHHS0000101','旺旺 浪味仙创意花式薯卷 蔬菜口味 70g/袋','0.01','1','6905734301031')
+[2016-09-08 14:01:30]/shop/index.php?act=buy&op=pay_ok&pay_sn=270526658452391008&pay_amount=0.01
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('81','LHHS0000101','旺旺 浪味仙创意花式薯卷 蔬菜口味 70g/袋','0.01','1','6905734301031')
+[2016-09-08 15:18:08]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: Unknown column '569714，569713' in 'where clause'
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (569714，569713) 
+[2016-09-08 15:18:08]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: Unknown column '569714，569713' in 'where clause'
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (569714，569713) 
+[2016-09-08 15:19:56]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: Unknown column '569714，569713' in 'where clause'
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (569714，569713) 
+[2016-09-08 15:19:56]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: Unknown column '569714，569713' in 'where clause'
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (569714，569713) 
+[2016-09-08 15:23:32]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: Unknown column 'dsa' in 'where clause'
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (569714,dsa) 
+[2016-09-08 15:23:32]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: Unknown column 'dsa' in 'where clause'
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (569714,dsa) 
+[2016-09-08 15:24:22]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '^^^^)' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (^^^^) 
+[2016-09-08 15:24:22]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '^^^^)' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (^^^^) 
+[2016-09-08 15:24:28]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (--) 
+[2016-09-08 15:24:28]/mobile/index.php?act=member_order&op=aroundstore
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+SELECT  goods_barcode as barcode  FROM `gzkj`.`gzkj_goods` as `goods`  WHERE  goods_id in (--) 
+[2016-09-08 15:31:18]/shop/index.php?act=buy&op=pay&pay_sn=690526663878680008
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('83','LHHS0000101','好丽友 呀！土豆薯条 番茄酱味 70g/袋','0.01','1','6922507006987')
+[2016-09-08 15:31:18]/shop/index.php?act=buy&op=pay&pay_sn=690526663878680008
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('83','LHHS0000101','旺旺 浪味仙创意花式薯卷 蔬菜口味 70g/袋','0.01','3','6905734301031')
+[2016-09-08 15:39:18]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:39:18]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:39:29]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:39:29]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:40:18]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:40:18]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:40:48]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6905734301031&goods_num=40&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6905734301031' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 15:41:14]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006399&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006399' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 15:46:40]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:46:40]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:47:21]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:47:21]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:47:48]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:47:48]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:49:05]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:49:05]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:51:55]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:51:55]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:51:59]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:51:59]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:52:18]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:52:18]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:52:23]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:52:23]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:52:24]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:52:24]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 15:56:38]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 15:56:38]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 16:01:02]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 16:01:02]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 16:01:05]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 16:01:05]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 16:04:00]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 16:04:00]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 16:04:02]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 16:04:02]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 16:04:04]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 16:04:04]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 16:05:56]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 16:05:56]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 16:07:17]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) LIMIT 1  
+[2016-09-08 16:07:17]http://192.168.3.250/scm/modules/system/index.php?act=client_purchase&op=get_all_goods_xml
+ERR : Db Error: Unknown column 'usable' in 'where clause'
+SELECT goods_barcode, goods_nm,
+            goods_price, goods_discount, (goods_price * goods_discount) goods_discount_price,
+            goods_unit, goods_spec, produce_company, produce_area, supp_id, min_set_num FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( usable = '1' ) ORDER BY goods_barcode desc LIMIT 0,15  
+[2016-09-08 16:11:48]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006384&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006384' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 16:11:57]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006375&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006375' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 16:12:01]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006376&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006376' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 16:12:30]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006399&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006399' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 16:12:44]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006382&goods_num=20&supp_id=SLSP0000102
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006382' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 16:12:51]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006378' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 16:25:32]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507772222&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507772222' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 16:25:45]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006987&goods_num=30&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006987' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 16:36:22]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507772222&goods_num=20&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507772222' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 16:36:43]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006987&goods_num=30&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006987' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-09-08 19:11:07]http://192.168.3.250/scm/modules/system/index.php?act=client&op=unsalable_warn_xml&clie_id=LHHS0000101
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 39
+SELECT
+            d.id,
+            d.clie_id,
+            b.clie_ch_name,
+            d.goods_barcode,
+            d.goods_nm,
+            d.goods_unit,
+            d.goods_stock,
+            d.goods_uper_stock,
+            d.goods_spec,
+            d.drug_remind,
+            max(o.order_date) as last_time
+        FROM
+            gzkj_scm_client AS b,
+            gzkj_scm_client_stock AS d,
+            gzkj_scm_client_order as o,
+            gzkj_scm_order_goods as g
+        WHERE
+            d.clie_id='LHHS0000101'
+            AND
+            d.supp_id = 'CHLY0000101'
+                AND
+            d.goods_barcode NOT IN (
+                SELECT
+                    f.goods_barcode
+                FROM
+                    `gzkj`.`gzkj_scm_client_order` AS e
+                LEFT JOIN `gzkj`.`gzkj_scm_order_goods` AS f ON e.id = f.order_id
+                WHERE
+                    e.order_date > DATE_SUB(NOW(), INTERVAL d.drug_remind DAY)
+                AND f.goods_barcode IS NOT NULL
+                GROUP BY
+                    f.goods_barcode
+            )
+            AND d.clie_id = b.clie_id
+            AND o.id = g.order_id
+            AND d.goods_barcode = g.goods_barcode
+            AND o.order_date is not null
+            GROUP BY d.goods_barcode limit 0,

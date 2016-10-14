@@ -1,0 +1,27 @@
+[2016-09-28 10:20:32]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-28 10:20:36]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-28 10:25:48]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-28 10:25:51]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-28 15:12:57]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006987' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-09-28 15:27:29]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006987' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-09-28 15:42:38]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6953245711849' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'SLSP0000102' ) LIMIT 1  
+[2016-09-28 16:19:43]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-28 17:33:47]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'unpacking_num' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_instock_info` (order_id,goods_barcode,goods_nm,unpacking_num,set_num,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,in_stock_date) VALUES ('232','6953245711849','衣谷无糖酸奶味糖-蓝莓味(压片糖果)',NULL,'1','盒','15g','LHHS0000101','CHLY0000101','0000-00-00 00:00:00','30','12个月','2016-09-28 17:33:47')

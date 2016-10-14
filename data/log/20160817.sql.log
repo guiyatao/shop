@@ -1,0 +1,39 @@
+[2016-08-17 09:07:23]/scm/modules/client/index.php?act=cancel_order&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT DISTINCT order_no, clie_id, supp_id, order_date FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '0' ) ORDER BY order_no desc LIMIT 1000  
+[2016-08-17 09:07:24]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) LIMIT 1  
+[2016-08-17 09:07:24]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) ORDER BY order_no desc LIMIT 0,15  
+[2016-08-17 09:07:25]/scm/modules/client/index.php?act=cancel_order&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT DISTINCT order_no, clie_id, supp_id, order_date FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '0' ) ORDER BY order_no desc LIMIT 1000  
+[2016-08-17 09:29:18]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) LIMIT 1  
+[2016-08-17 09:29:18]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) ORDER BY order_no desc LIMIT 0,15  
+[2016-08-17 09:29:53]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) LIMIT 1  
+[2016-08-17 09:29:53]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) ORDER BY order_no desc LIMIT 0,15  
+[2016-08-17 09:31:15]/scm/modules/client/index.php?act=cancel_order&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT DISTINCT order_no, clie_id, supp_id, order_date FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '0' ) ORDER BY order_no desc LIMIT 1000  
+[2016-08-17 16:55:15]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) LIMIT 1  
+[2016-08-17 16:55:15]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) ORDER BY order_no desc LIMIT 0,15  
+[2016-08-17 16:55:18]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) LIMIT 1  
+[2016-08-17 16:55:18]http://192.168.3.250/scm/modules/system/index.php?act=client_storage&op=get_xml
+ERR : Db Error: Unknown column 'order_flag' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '0' ) AND ( order_flag = '1' ) AND ( out_flag = '1' ) AND ( in_flag <> '1' ) ORDER BY order_no desc LIMIT 0,15  

@@ -1,0 +1,15 @@
+[2016-08-26 14:42:22]/shop/index.php?act=buy&op=pay&pay_sn=500525537742010002
+ERR : Db Error: Unknown column 'clien_id' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_online_order_goods` (order_id,clien_id,goods_name,goods_price,goods_num,goods_barcode) VALUES ('60','LHHS0000101','乐事真脆薯条番茄味90克','7.90','1','6922507006399')
+[2016-08-26 16:53:03]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006378' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-26 16:53:10]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006378' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-26 16:53:31]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006376&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006376' ) AND ( clie_id = NULL ) LIMIT 1  
+[2016-08-26 16:53:44]/scm/modules/client/index.php?act=client_purchase&op=add_cart&goods_id=6922507006378&goods_num=10&supp_id=CHLY0000101
+ERR : Db Error: Table 'gzkj.gzkj_' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_`  WHERE ( goods_id = '6922507006378' ) AND ( clie_id = NULL ) LIMIT 1  

@@ -1,0 +1,6 @@
+[2016-09-12 10:58:41]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_id = '6922507006987' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-12 17:11:28]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_id = '6922507006381' ) AND ( clie_id = '' ) LIMIT 1  

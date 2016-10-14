@@ -1,0 +1,54 @@
+[2016-07-21 13:08:56]/shop/index.php?act=store_goods_add&op=save_goods
+ERR : Db Error: Column 'sup_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_common` (goods_name,goods_jingle,gc_id,gc_id_1,gc_id_2,gc_id_3,gc_name,brand_id,brand_name,type_id,goods_image,goods_price,goods_marketprice,goods_costprice,goods_discount,goods_serial,goods_storage_alarm,goods_barcode,goods_attr,goods_custom,goods_body,mobile_body,goods_commend,goods_state,goods_addtime,goods_selltime,goods_verify,store_id,store_name,spec_name,spec_value,goods_vat,areaid_1,areaid_2,transport_id,transport_title,goods_freight,goods_stcids,plateid_top,plateid_bottom,is_virtual,virtual_indate,virtual_limit,virtual_invalid_refund,sup_id,is_own_shop) VALUES ('伊利 纯牛奶 240ml*16包/提','整箱袋装小枕早餐配面包','635','593','599','635','食品饮品 &gt;饮料冲调 &gt;牛奶','359','伊利','0','1_05224203275728250.jpg','29.8','32','0','93','','5','','N;','N;','<p>
+	<img src=\"http://192.168.1.251/data/upload/shop/store/goods/1/1_05224203683686594_1280.jpg\" alt=\"image\" /> 
+</p>
+<p>
+	<img src=\"http://192.168.1.251/data/upload/shop/store/goods/1/1_05224204896959823_1280.jpg\" alt=\"image\" /> 
+</p>
+<p>
+	<span style=\"color:#E53333;font-size:24px;\">新老包装随机发货</span><br />
+<br />
+<span style=\"color:#E53333;font-size:24px;\">规 &nbsp;格：240ml*16包/提</span><br />
+<br />
+<span style=\"color:#E53333;font-size:24px;\">产 &nbsp;地：中国大陆</span><br />
+<br />
+<span style=\"color:#E53333;font-size:24px;\">保质期：45天</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"http://192.168.1.251/data/upload/shop/store/goods/1/1_05224203770752293_1280.jpg\" alt=\"image\" /> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<span style=\"font-size:18px;\">1、不能空腹喝，空腹喝牛奶吸收不好。可以在喝奶前吃点心。 &nbsp;</span><br />
+<br />
+<span style=\"font-size:18px;\">2、最好每天早餐时喝，能提供一天的营养；临睡时再喝一杯牛奶，可以帮助入睡，提高睡眠质量。</span><br />
+<br />
+<span style=\"font-size:18px;\">3、牛奶不宜冷饮，这样伤胃；不宜太烫。最适宜温度约30℃。</span><br />
+<span style=\"font-size:18px;\"></span> 
+</p>
+<p>
+	<span style=\"font-size:18px;\"><br />
+</span> 
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<img src=\"http://192.168.1.251/data/upload/shop/store/goods/1/1_05224216969948553_1280.jpg\" alt=\"image\" /> 
+</p>
+<p>
+	<br />
+</p>
+<img src=\"http://192.168.1.251/data/upload/shop/store/goods/1/1_05224216198245793_1280.jpg\" alt=\"image\" /><img src=\"http://192.168.1.251/data/upload/shop/store/goods/1/1_05224216029728365_1280.jpg\" alt=\"image\" />','','0','1','1469077736','0','1','1','gzkj','N;','N;','0','0','0','0',NULL,'0','','0','0','0','0','0','0',NULL,'1')
+[2016-07-21 13:10:50]/shop/index.php?act=store_goods_add&op=save_goods
+ERR : Db Error: Column 'sup_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_common` (goods_name,goods_jingle,gc_id,gc_id_1,gc_id_2,gc_id_3,gc_name,brand_id,brand_name,type_id,goods_image,goods_price,goods_marketprice,goods_costprice,goods_discount,goods_serial,goods_storage_alarm,goods_barcode,goods_attr,goods_custom,goods_body,mobile_body,goods_commend,goods_state,goods_addtime,goods_selltime,goods_verify,store_id,store_name,spec_name,spec_value,goods_vat,areaid_1,areaid_2,transport_id,transport_title,goods_freight,goods_stcids,plateid_top,plateid_bottom,is_virtual,virtual_indate,virtual_limit,virtual_invalid_refund,sup_id,is_own_shop) VALUES ('伊利 纯牛奶 240ml*16包/提','整箱袋装小枕早餐配面包','635','593','599','635','食品饮品 &gt;饮料冲调 &gt;牛奶','359','伊利','0','1_05224218331119433.jpg','29.8','32','0','93','','5','','N;','N;','','','0','1','1469077850','0','1','1','gzkj','N;','N;','0','0','0','0',NULL,'0','','0','0','0','0','0','0',NULL,'1')
+[2016-07-21 13:12:00]/shop/index.php?act=store_goods_add&op=save_goods
+ERR : Db Error: Column 'sup_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_common` (goods_name,goods_jingle,gc_id,gc_id_1,gc_id_2,gc_id_3,gc_name,brand_id,brand_name,type_id,goods_image,goods_price,goods_marketprice,goods_costprice,goods_discount,goods_serial,goods_storage_alarm,goods_barcode,goods_attr,goods_custom,goods_body,mobile_body,goods_commend,goods_state,goods_addtime,goods_selltime,goods_verify,store_id,store_name,spec_name,spec_value,goods_vat,areaid_1,areaid_2,transport_id,transport_title,goods_freight,goods_stcids,plateid_top,plateid_bottom,is_virtual,virtual_indate,virtual_limit,virtual_invalid_refund,sup_id,is_own_shop) VALUES ('1121312','','635','593','599','635','食品饮品 &gt;饮料冲调 &gt;牛奶','','','0','1_05224219081691769.jpg','3','6','0','50','','0','','N;','N;','','','0','1','1469077920','0','1','1','gzkj','N;','N;','0','0','0','0',NULL,'0','','0','0','0','0','0','0',NULL,'1')

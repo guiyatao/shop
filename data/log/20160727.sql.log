@@ -1,0 +1,270 @@
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('1',NULL,'')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'饼干类')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'传统糕点')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'西式糕点')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('2',NULL,'')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'水、饮料')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'中外名酒')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('3',NULL,'')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'牛奶')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'咖啡')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'茗茶')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'营养保健')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('4',NULL,'')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'食用油')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'干面杂粮')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'干货')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('5',NULL,'')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'调味料')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'调味酱')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'调味油')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'其他厨房调料')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('6',NULL,'')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'速食品')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'冲饮谷物')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'坚果蜜饯')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('7',NULL,'')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'零食')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'雪糕')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('8',NULL,'')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'衣物清洗')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'家庭清洁')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'清洁工具')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'驱虫用品')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'皮具护理')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'纸巾湿巾')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'一次性用品')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'个护化妆')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('9',NULL,'')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'水果、蔬菜')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'低温乳品')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'速冻食品')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'海鲜、水产品')
+[2016-07-27 13:06:47]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'肉、禽、蛋制品')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('1',NULL,'')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'饼干类')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'传统糕点')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'西式糕点')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('2',NULL,'')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'水、饮料')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'中外名酒')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('3',NULL,'')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'牛奶')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'咖啡')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'茗茶')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'营养保健')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('4',NULL,'')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'食用油')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'干面杂粮')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'干货')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('5',NULL,'')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'调味料')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'调味酱')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'调味油')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'其他厨房调料')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('6',NULL,'')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'速食品')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'冲饮谷物')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'坚果蜜饯')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('7',NULL,'')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'零食')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'雪糕')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('8',NULL,'')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'衣物清洗')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'家庭清洁')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'清洁工具')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'驱虫用品')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'皮具护理')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'纸巾湿巾')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'一次性用品')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'个护化妆')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('9',NULL,'')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'水果、蔬菜')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'低温乳品')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'速冻食品')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'海鲜、水产品')
+[2016-07-27 13:08:20]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'肉、禽、蛋制品')
+[2016-07-27 13:11:23]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('1',NULL,'')
+[2016-07-27 13:11:23]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'')
+[2016-07-27 13:11:23]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'软曲奇')
+[2016-07-27 13:11:23]/admin/modules/shop/index.php?act=goods_class&op=goods_class_import
+ERR : Db Error: Column 'gc_parent_id' cannot be null
+INSERT  INTO `shopnc`.`shopnc_goods_class` (gc_sort,gc_parent_id,gc_name) VALUES ('255',NULL,'曲奇')

@@ -1,0 +1,207 @@
+[2016-08-15 08:29:26]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 08:29:26]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-15 08:29:26]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 08:29:26]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-15 08:40:11]/scm/modules/client/index.php?act=client_stock
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+INSERT INTO `gzkj`.`gzkj_scm_client_order` (supp_id,goods_barcode,goods_nm,goods_price,goods_discount,goods_unit,goods_rate,goods_spec,min_set_num,produce_company,produce_area,clie_id,order_no,order_num,goods_discount_price,order_pay,order_date) VALUES ('DLGJZQWWSPGYS','6922507006376','康师傅酸梅汤','65.00','0.90','箱','15.00','500ml*24','10','沈阳康辉食品有限公司','沈阳','client1','clie1471221611','1','58.5','58.5','2016-08-15 08:40:11'),('DLGJZQWWSPGYS','6922507006384','农夫山泉 饮用天然水 4L*4桶/箱','30.00','0.80','箱','16.00','4L*4桶/箱','20','大连甘井子区','大连','client1','clie1471221611','1','24','24','2016-08-15 08:40:11'),('DLGJZQWWSPGYS','6922507006377','蒙牛牛奶','50.00','0.90','箱','15.00','225mL*12袋','10','大连甘井子区','大连','client1','clie1471221611','1','45','45','2016-08-15 08:40:11'),('DLGJZQWWSPGYS','6922507006385','康师傅 鲜虾鱼板面 98g*5/袋 方便面泡面袋面','15.00','0.85','袋','15.00','98g*5/袋','20','大连甘井子区','大连','client1','clie1471221611','1','12.75','12.75','2016-08-15 08:40:11'),('DLGJZQWWSPGYS','6922507006375','可口可乐汽水330ml*24罐/箱碳酸饮料团聚可乐大包装','45.00','0.90','箱','15.00','500ml*24','10','大连甘井子区','大连','client1','clie1471221611','1','40.5','40.5','2016-08-15 08:40:11'),('DLGJZQWWSPGYS','6922507006378','伊利牛奶','50.00','0.90','箱','15.00','225mL*12袋','10','大连','大连','client1','clie1471221611','1','45','45','2016-08-15 08:40:11'),('CHLY0000101','6922507006396','酱爆鱿鱼','20.00','0.90','袋','0.00','','20','大连','大连','client1','clie1471221611','1','18','18','2016-08-15 08:40:11'),('alww','569712','酱香鸡丁','10.00','0.95','袋','15.00','','20','大连','大连','client1','clie1471221611','1','9.5','9.5','2016-08-15 08:40:11'),('alww','655489','香辣鸡丁','10.00','1.00','袋','15.00','','20','大连','大连','client1','clie1471221611','1','10','10','2016-08-15 08:40:11')
+[2016-08-15 08:40:28]/scm/modules/client/index.php?act=client_stock
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+INSERT INTO `gzkj`.`gzkj_scm_client_order` (supp_id,goods_barcode,goods_nm,goods_price,goods_discount,goods_unit,goods_rate,goods_spec,min_set_num,produce_company,produce_area,clie_id,order_no,order_num,goods_discount_price,order_pay,order_date) VALUES ('DLGJZQWWSPGYS','6922507006385','康师傅 鲜虾鱼板面 98g*5/袋 方便面泡面袋面','15.00','0.85','袋','15.00','98g*5/袋','20','大连甘井子区','大连','client1','clie1471221628','1','12.75','12.75','2016-08-15 08:40:28'),('DLGJZQWWSPGYS','6922507006375','可口可乐汽水330ml*24罐/箱碳酸饮料团聚可乐大包装','45.00','0.90','箱','15.00','500ml*24','10','大连甘井子区','大连','client1','clie1471221628','1','40.5','40.5','2016-08-15 08:40:28')
+[2016-08-15 08:49:54]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 08:49:54]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-15 08:49:55]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 08:49:55]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id desc LIMIT 0,15  
+[2016-08-15 08:49:56]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 08:49:56]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 0,15  
+[2016-08-15 08:51:54]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 08:53:39]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 09:04:07]/scm/modules/client/index.php?act=client_stock
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+INSERT INTO `gzkj`.`gzkj_scm_client_order` (supp_id,goods_barcode,goods_nm,goods_price,goods_discount,goods_unit,goods_rate,goods_spec,min_set_num,produce_company,produce_area,clie_id,order_no,order_num,goods_discount_price,order_pay,order_date) VALUES ('DLGJZQWWSPGYS','6922507006376','康师傅酸梅汤','65.00','0.90','箱','15.00','500ml*24','10','沈阳康辉食品有限公司','沈阳','client1','clie1471223047','11','58.5','643.5','2016-08-15 09:04:07')
+[2016-08-15 09:26:20]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 09:26:21]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 10:07:58]/scm/modules/client/index.php?act=client_stock
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+INSERT INTO `gzkj`.`gzkj_scm_client_order` (supp_id,goods_barcode,goods_nm,goods_price,goods_discount,goods_unit,goods_rate,goods_spec,min_set_num,produce_company,produce_area,clie_id,order_no,order_num,goods_discount_price,order_pay,order_date) VALUES ('DLGJZQWWSPGYS','6922507006385','康师傅 鲜虾鱼板面 98g*5/袋 方便面泡面袋面','15.00','0.85','袋','15.00','98g*5/袋','20','大连甘井子区','大连','client1','clie1471226877','666','12.75','8491.5','2016-08-15 10:07:57')
+[2016-08-15 10:08:03]/scm/modules/client/index.php?act=client_stock
+ERR : Db Error: Unknown column 'goods_barcode' in 'field list'
+INSERT INTO `gzkj`.`gzkj_scm_client_order` (supp_id,goods_barcode,goods_nm,goods_price,goods_discount,goods_unit,goods_rate,goods_spec,min_set_num,produce_company,produce_area,clie_id,order_no,order_num,goods_discount_price,order_pay,order_date) VALUES ('DLGJZQWWSPGYS','6922507006376','康师傅酸梅汤','65.00','0.90','箱','15.00','500ml*24','10','沈阳康辉食品有限公司','沈阳','client1','clie1471226883','66','58.5','3861','2016-08-15 10:08:03')
+[2016-08-15 10:44:47]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 10:44:47]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-15 10:45:38]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 10:45:58]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 10:45:58]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-15 11:08:38]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 11:08:38]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-15 11:08:42]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 11:08:42]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-15 11:08:49]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 11:08:49]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-15 11:09:00]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 11:09:00]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-15 11:11:39]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 11:11:40]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 11:11:45]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 11:11:45]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-15 11:22:32]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 11:22:33]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 11:24:21]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id LIMIT 1  
+[2016-08-15 11:24:21]http://192.168.3.250/scm/modules/system/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Table 'gzkj.gzkj_scm_client_supp' doesn't exist
+SELECT * FROM `gzkj`.`gzkj_scm_client_supp` AS `scm_client_supp` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_client_supp.supp_id = scm_supplier.supp_id ORDER BY scm_supplier.supp_id asc LIMIT 0,15  
+[2016-08-15 13:23:52]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:23:57]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:24:01]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:29:18]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:29:24]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:29:25]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:29:26]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:29:27]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:29:35]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:31:05]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:31:13]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:32:16]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:37:02]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:37:06]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:37:11]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:37:33]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:39:34]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:42:20]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:43:37]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:44:04]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:44:10]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 13:44:16]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 14:27:05]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 14:27:07]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 14:27:18]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 14:27:19]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 14:27:21]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = 'CHLY0000101' ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 17:03:38]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  
+[2016-08-15 17:04:00]http://192.168.3.250/scm/modules/system/index.php?act=client_order&op=get_xml
+ERR : Db Error: Unknown column 'goods_discount_price' in 'field list'
+SELECT order_no,clie_id,clie_ch_name,sum(goods_discount_price*order_num) as total,order_date,order_status,out_flag  FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( supp_id = NULL ) AND ( order_status = '0' ) AND ( out_flag = '0' ) GROUP BY order_no LIMIT 0,15  

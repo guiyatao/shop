@@ -1,0 +1,21 @@
+[2016-09-14 13:40:00]/scm/modules/supplier/index.php?act=supp_clie&op=get_xml&query=&qtype=clie_id&sortname=number&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  
+[2016-09-14 13:41:02]/scm/modules/supplier/index.php?act=supp_clie&op=get_xml&query=&qtype=clie_id&sortname=number&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  
+[2016-09-14 13:41:40]/scm/modules/supplier/index.php?act=supp_clie&op=get_xml&query=&qtype=clie_id&sortname=number&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  
+[2016-09-14 13:42:55]/scm/modules/supplier/index.php?act=supp_clie&op=get_xml&query=&qtype=clie_id&sortname=number&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  
+[2016-09-14 13:42:56]/scm/modules/supplier/index.php?act=supp_clie&op=get_xml&query=&qtype=clie_id&sortname=number&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  
+[2016-09-14 13:43:06]/scm/modules/supplier/index.php?act=supp_clie&op=get_xml&query=&qtype=clie_id&sortname=number&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  
+[2016-09-14 13:44:48]/scm/modules/supplier/index.php?act=supp_clie&op=get_xml&query=&qtype=clie_id&sortname=number&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  

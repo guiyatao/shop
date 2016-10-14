@@ -1,0 +1,42 @@
+[2016-09-26 08:58:50]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-26 09:20:12]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-26 15:58:51]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006378' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-26 16:30:20]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6953245711849' ) AND ( clie_id = 'LHHS0000101' ) LIMIT 1  
+[2016-09-26 16:46:10]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-26 16:50:15]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-26 16:50:17]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-26 16:51:01]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-26 16:51:28]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-26 16:51:29]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-26 16:51:29]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-26 16:51:30]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-26 16:52:47]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-09-26 17:02:17]/scm/modules/supplier/index.php?act=supp_clie&op=get_xml&query=&qtype=clie_id&sortname=number&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  
