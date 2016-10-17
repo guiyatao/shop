@@ -1,0 +1,81 @@
+[2016-10-14 11:24:18]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'pay_start_day' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '1' ) AND ( settlement_id = 'is null' ) AND ( (pay_start_day = NULL)  ) ORDER BY order_no desc LIMIT 1000  
+[2016-10-14 11:24:31]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'pay_start_day' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '1' ) AND ( settlement_id = 'is null' ) AND ( (pay_start_day = NULL)  ) ORDER BY order_no desc LIMIT 1000  
+[2016-10-14 11:29:06]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'pay_start_day' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '1' ) AND ( settlement_id = 'null' ) AND ( pay_start_day > '0' ) ORDER BY order_no desc LIMIT 1000  
+[2016-10-14 11:29:16]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'pay_start_day' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '1' ) AND ( settlement_id = 'null' ) AND ( pay_start_day > '0' ) ORDER BY order_no desc LIMIT 1000  
+[2016-10-14 11:29:26]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'pay_start_day' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '1' ) AND ( settlement_id = 'null' ) AND ( pay_start_day > '0' ) ORDER BY order_no desc LIMIT 1000  
+[2016-10-14 11:32:47]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'pay_start_day' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '1' ) AND ( settlement_id is null ) AND ( pay_start_day > '0' ) ORDER BY order_no desc LIMIT 1000  
+[2016-10-14 11:32:57]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'pay_start_day' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_client_order` scm_client_order WHERE ( order_status = '1' ) AND ( settlement_id is null ) AND ( pay_start_day > '0' ) ORDER BY order_no desc LIMIT 1000  
+[2016-10-14 15:55:42]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'created' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_settlement` (supp_id,amount,created,flag) VALUES ('SLSP0000102','0.07','2016-10-14 15:55:42','2')
+[2016-10-14 15:55:42]/wwwroot/crontab/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id IN ('257','245','244','243','242','241') )' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_order` scm_client_order SET settlement_id= WHERE ( id IN ('257','245','244','243','242','241') )
+[2016-10-14 15:55:42]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'created' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_settlement` (supp_id,amount,created,flag) VALUES ('CHLY0000101','4658.05','2016-10-14 15:55:42','2')
+[2016-10-14 15:55:42]/wwwroot/crontab/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id IN ('258','237','232','145') )' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_order` scm_client_order SET settlement_id= WHERE ( id IN ('258','237','232','145') )
+[2016-10-14 15:56:14]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'created' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_settlement` (supp_id,amount,created,flag) VALUES ('SLSP0000102','0.07','2016-10-14 15:56:14','2')
+[2016-10-14 15:56:14]/wwwroot/crontab/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id IN ('257','245','244','243','242','241') )' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_order` scm_client_order SET settlement_id= WHERE ( id IN ('257','245','244','243','242','241') )
+[2016-10-14 15:56:14]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'created' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_settlement` (supp_id,amount,created,flag) VALUES ('CHLY0000101','4658.05','2016-10-14 15:56:14','2')
+[2016-10-14 15:56:14]/wwwroot/crontab/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id IN ('258','237','232','145') )' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_order` scm_client_order SET settlement_id= WHERE ( id IN ('258','237','232','145') )
+[2016-10-14 15:58:42]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'created' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_settlement` (supp_id,amount,created,flag) VALUES ('SLSP0000102','0.07','2016-10-14 15:58:42','2')
+[2016-10-14 15:58:42]/wwwroot/crontab/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id IN ('257','245','244','243','242','241') )' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_order` scm_client_order SET settlement_id= WHERE ( id IN ('257','245','244','243','242','241') )
+[2016-10-14 15:58:42]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'created' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_settlement` (supp_id,amount,created,flag) VALUES ('CHLY0000101','4658.05','2016-10-14 15:58:42','2')
+[2016-10-14 15:58:42]/wwwroot/crontab/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id IN ('258','237','232','145') )' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_order` scm_client_order SET settlement_id= WHERE ( id IN ('258','237','232','145') )
+[2016-10-14 16:02:20]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'created' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_settlement` (supp_id,amount,created,flag) VALUES ('SLSP0000102','0.07','2016-10-14 16:02:20','2')
+[2016-10-14 16:02:20]/wwwroot/crontab/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id IN ('257','245','244','243','242','241') )' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_order` scm_client_order SET settlement_id= WHERE ( id IN ('257','245','244','243','242','241') )
+[2016-10-14 16:02:20]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'created' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_settlement` (supp_id,amount,created,flag) VALUES ('CHLY0000101','4658.05','2016-10-14 16:02:20','2')
+[2016-10-14 16:02:20]/wwwroot/crontab/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id IN ('258','237','232','145') )' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_order` scm_client_order SET settlement_id= WHERE ( id IN ('258','237','232','145') )
+[2016-10-14 16:04:51]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'created' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_settlement` (supp_id,amount,created,flag) VALUES ('SLSP0000102','0.07','2016-10-14 16:04:51','2')
+[2016-10-14 16:04:51]/wwwroot/crontab/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id IN ('257','245','244','243','242','241') )' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_order` scm_client_order SET settlement_id= WHERE ( id IN ('257','245','244','243','242','241') )
+[2016-10-14 16:04:51]/wwwroot/crontab/index.php
+ERR : Db Error: Unknown column 'created' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_settlement` (supp_id,amount,created,flag) VALUES ('CHLY0000101','4658.05','2016-10-14 16:04:51','2')
+[2016-10-14 16:04:51]/wwwroot/crontab/index.php
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( id IN ('258','237','232','145') )' at line 1
+UPDATE `gzkj`.`gzkj_scm_client_order` scm_client_order SET settlement_id= WHERE ( id IN ('258','237','232','145') )

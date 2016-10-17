@@ -1,0 +1,3 @@
+[2016-10-12 11:22:45]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6953245711849' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
