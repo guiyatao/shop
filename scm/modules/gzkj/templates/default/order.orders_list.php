@@ -18,7 +18,7 @@
     <script>
         $(function () {
             $("#flexigrid").flexigrid({
-                url: 'index.php?act=order&op=get_order_xml&supp_id=<?=$output['supp_id']?>&clie_id=<?=$output['clie_id']?>',
+                url: 'index.php?act=order&op=get_order_xml&settlement_id=<?=$output['settlement_id']?>&clie_id=<?=$output['clie_id']?>',
                 colModel: [
                     {display: '操作', name : 'operation', width : 150, sortable : false, align: 'center'},
                     {display: '终端店编码', name: 'clie_id', width: 120, sortable: false, align: 'left'},

@@ -212,4 +212,9 @@ class gzkj_settlementModel extends Model
     {
         return $this->table('scm_settlement')->insert($data);
     }
+
+	public function getSettlementInfo($condition = array(), $field = '*', $page = null, $order = '')
+	{
+		return $this->table('scm_settlement,scm_supplier,scm_client,scm_client_order')->join('left join')->on('scm_settlement.supp_id=scm_supplier.supp_id,scm_settlement.clie_id=scm_client.clie_id,scm_settlement.settlement_id=scm_client_order.settlement_id')->where($condition)->field($field)->page($page)->order($order)->select();
+	}
 }

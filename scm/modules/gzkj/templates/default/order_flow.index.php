@@ -66,7 +66,7 @@
             CUR_DIALOG = ajax_form('hehhe','订单"' + id +'"的商品列表',_uri, 480);
         }
 
-        function fg_sku2(clie_id) {
-            window.location.href = 'index.php?act=order&op=show_orders&clie_id='+clie_id;
+        function fg_sku1(settlement_id) {
+            window.location.href = 'index.php?act=order&op=show_orders&settlement_id='+settlement_id;
         }
     </script>

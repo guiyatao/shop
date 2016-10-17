@@ -28,7 +28,8 @@
                     {display: '资金流向', name: 'cash_flow', width: 120, sortable: false, align: 'left'},
                     {display: '结算金额', name: 'order_pay', width: 120, sortable: false, align: 'left'},
                     {display: '结算状态', name: 'pay_flag', width: 120, sortable: false, align: 'left'},
-                    {display: '结算日期', name: 'time', width: 60, sortable: false, align: 'center'}
+                    {display: '结算日期', name: 'time', width: 60, sortable: false, align: 'center'},
+                    {display: '结算清单', name: 'photo', width: 60, sortable: false, align: 'center'}
 
                 ],
 //                searchitems: [
@@ -68,10 +69,10 @@
             _uri = "index.php?act=order&op=show_goods&id=" + id;
             CUR_DIALOG = ajax_form('hehhe','订单"' + id +'"的商品列表',_uri, 480);
         }
-        function fg_sku1(supp_id) {
+        function fg_sku1(settlement_id) {
 //            _uri = "index.php?act=order&op=show_orders&supp_id=" + supp_id;
 //            CUR_DIALOG = ajax_form('hehhe','供应商"' + supp_id +'"的订单列表',_uri, 480);
-            window.location.href = 'index.php?act=order&op=show_orders&supp_id='+supp_id;
+            window.location.href = 'index.php?act=order&op=show_orders&settlement_id='+settlement_id;
         }
 
 

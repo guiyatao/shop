@@ -25,7 +25,6 @@ class orderControl extends SCMControl
     private $links = array(
         array('url' => 'act=order&op=index', 'text' => '供应商结算'),
         array('url' => 'act=order&op=show_flow', 'text' => '终端店结算'),
-        array('url' => 'act=order&op=show_payed', 'text' => '交易清单'),
     );
 
     public function indexOp()
@@ -59,288 +58,51 @@ class orderControl extends SCMControl
 
     public function get_xmlOp()
     {
-        $pre=C('tablepre');
-        $order = SCMModel('gzkj_client_order');
+        $order = SCMModel('gzkj_settlement');
 
-        $page_num = $_POST['rp'];
+        if($_GET['type']==1){
+            $where=array();
+            $where['scm_settlement.clie_id']= array('neq','');
+            $field="DISTINCT scm_settlement.clie_id,scm_settlement.settlement_id ,scm_settlement.amount,scm_settlement.flag,scm_settlement.photo,scm_client.clie_ch_name,scm_settlement.settlement_date";
+        }else{
+            $where=array();
+            $where['scm_settlement.supp_id']= array('neq','');
+            $field="DISTINCT scm_settlement.supp_id,scm_settlement.settlement_id ,scm_settlement.amount,scm_settlement.flag,scm_settlement.photo,scm_supplier.supp_ch_name,scm_settlement.settlement_date";
+        }
+
+        $orders=$order->getSettlementInfo($where,$field,$_POST['rp']);
         $data = array();
         $data['now_page'] = $order->shownowpage();
-        $index = ($data['now_page'] - 1) * $page_num;
-        if ($_GET['pay_end'] == 1) {
-            $sql = "SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,order_status, order_pay,pay_flag from ".$pre."scm_client_order WHERE pay_flag=1  limit ".$index.",".$page_num;
-            $sql_total_count= "SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,order_status, order_pay,pay_flag from ".$pre."scm_client_order WHERE pay_flag=1  ";
-            $data['total_num'] = count($order->execute_sql($sql_total_count));
-            $orders = $order->execute_sql($sql);
-        }else{
-
-            if ($_GET['type'] == 1) {   //type=1表示退单
-                $condition['order_status'] = array('in', '3,4');
-                $condition['in_flag'] = 0;
-                $group='clie_id';
-                $sql = "SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,order_status,pay_flag ,SUM(order_pay)as order_pay from ".$pre."scm_client_order WHERE  (TO_DAYS(NOW()) - TO_DAYS(pay_start_time)) >= 3 AND order_status IN (3, 4) AND pay_flag=0 GROUP BY clie_id limit ".$index.",".$page_num;
-                $sql_total_count = "SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,order_status,pay_flag,SUM(order_pay)as order_pay from ".$pre."scm_client_order WHERE  (TO_DAYS(NOW()) - TO_DAYS(pay_start_time)) >= 3 AND order_status IN (3, 4) AND pay_flag=0 GROUP BY clie_id ";
-                $data['total_num'] = count($order->execute_sql($sql_total_count));
-                $orders = $order->execute_sql($sql);
-            } else {
-                if(25<date('j')){
-                    $sql = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-SUM(order_pay)as order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time >= CONCAT(DATE_FORMAT(NOW(),'%Y-%m'),'-19 00:00:00')
-AND
-pay_start_time <= CONCAT(DATE_FORMAT(DATE_ADD(NOW(), INTERVAL 1 MONTH) ,'%Y-%m'),'-01 00:00:00')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-GROUP BY supp_id limit ".$index.",".$page_num;
-                    $sql_total_count = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-SUM(order_pay)as order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time >= CONCAT(DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 MONTH),'%Y-%m'),'-19 00:00:00')
-AND
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-01 00:00:00')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-GROUP BY supp_id";
-
-                    $data['total_num'] = count($order->execute_sql($sql_total_count));
-                    $orders = $order->execute_sql($sql);
-                }
-                if((1<=date('j')&&date('j'))<=7){
-                    $sql = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-SUM(order_pay)as order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time >= CONCAT(DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 MONTH),'%Y-%m'),'-19 00:00:00')
-AND
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-01 00:00:00')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-GROUP BY supp_id limit ".$index.",".$page_num;
-                    $sql_total_count = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-SUM(order_pay)as order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time >= CONCAT(DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 MONTH),'%Y-%m'),'-19 00:00:00')
-AND
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-01 00:00:00')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-GROUP BY supp_id";
-
-                    $data['total_num'] = count($order->execute_sql($sql_total_count));
-                    $orders = $order->execute_sql($sql);
-                }
-                if(7<date('j')&&date('j')<=16){
-                    $sql = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-SUM(order_pay)as order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-09 23:59:59')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-GROUP BY supp_id limit ".$index.",".$page_num;
-                    $sql_total_count = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-SUM(order_pay)as order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-09 23:59:59')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-GROUP BY supp_id";
-
-                    $data['total_num'] = count($order->execute_sql($sql_total_count));
-                    $orders = $order->execute_sql($sql);
-                }
-                if(16<date('j')&&date('j')<=25){
-                    $sql = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-SUM(order_pay)as order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-18 23:59:59')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-GROUP BY supp_id limit ".$index.",".$page_num;
-                    $sql_total_count = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-SUM(order_pay)as order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-18 23:59:59')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-GROUP BY supp_id";
-
-                    $data['total_num'] = count($order->execute_sql($sql_total_count));
-                    $orders = $order->execute_sql($sql);
-                }
-            }
-        }
+        $data['total_num'] = $order->gettotalnum();
         if(!empty($orders)) {
             foreach ($orders as $k => $info) {
-                $list = array();
-                if($_GET['pay_end']==1){
-                    $index++;
-                    $list['number']=$index;
-                    $list['order_no']=$info['order_no'];
-                    $list['clie_id'] = $info['clie_id'];
-                    $model = SCMModel('gzkj_client');
-                    $list['clie_ch_name'] = $model->getfby_clie_id($info['clie_id'],'clie_ch_name');
-                    $list['supp_id'] = $info['supp_id'];
-                    $model = SCMModel('gzkj_supplier');
-                    $list['supp_ch_name'] = $model->getfby_supp_id($info['supp_id'],'supp_ch_name');
-                    if ($info['order_status'] == 3 || $info['order_status'] == 4) {
-                        $list['cash_flow'] = '共铸商城->终端店';
-                    } else {
-                        $list['cash_flow'] = '共铸商城->供应商';
-                    }
-
-                    $list['order_pay'] = $info['order_pay'];
-                    if ($info['pay_flag'] == 0) {
-                        $list['pay_flag'] = '未结算';
-                    } else {
-                        $list['pay_flag'] = '已结算';
-                    }
-                }else{
-                    if($_GET['type'] == 1){
-                        $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"fg_sku2('" . $info['clie_id'] . "')\">查看订单</a></li>";
-                        $list['clie_id'] = $info['clie_id'];
-                        $model = SCMModel('gzkj_client');
-                        $list['clie_ch_name'] = $model->getfby_clie_id($info['clie_id'],'clie_ch_name');
-
-                        if ($info['order_status'] == 3 || $info['order_status'] == 4) {
+                        $list = array();
+                        $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"fg_sku1('" . $info['settlement_id'] . "')\">查看订单</a></li>";
+                        if($_GET['type']==1){
+                            $list['clie_id'] = $info['clie_id'];
+                            $list['clie_ch_name'] = $info['clie_ch_name'];
                             $list['cash_flow'] = '共铸商城->终端店';
-                        } else {
+                        }else{
+                            $list['supp_id'] = $info['supp_id'];
+                            $list['supp_ch_name'] = $info['supp_ch_name'];
                             $list['cash_flow'] = '共铸商城->供应商';
                         }
 
-                        $list['order_pay'] = $info['order_pay'];
-                        if ($info['pay_flag'] == 0) {
+                        $list['order_pay'] = $info['amount'];
+                        if($info['flag']==0){
                             $list['pay_flag'] = '未结算';
-                        } else {
+                        }elseif($info['flag']==2||$info['flag']==3){
                             $list['pay_flag'] = '已结算';
                         }
-                        $list['time']=date('Y-m-d');
-                    }else{
-                        $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"fg_sku1('" . $info['supp_id'] . "')\">查看订单</a></li>";
-                        $list['supp_id'] = $info['supp_id'];
-                        $model = SCMModel('gzkj_supplier');
-                        $list['supp_ch_name'] = $model->getfby_supp_id($info['supp_id'],'supp_ch_name');
-
-                        if ($info['order_status'] == 3 || $info['order_status'] == 4) {
-                            $list['cash_flow'] = '共铸商城->终端店';
-                        } else {
-                            $list['cash_flow'] = '共铸商城->供应商';
-                        }
-
-                        $list['order_pay'] = $info['order_pay'];
-                        if ($info['pay_flag'] == 0) {
-                            $list['pay_flag'] = '未结算';
-                        } else {
-                            $list['pay_flag'] = '已结算';
-                        }
-                        if(25<date('j')){
-                            $list['time']=date('Y-m',strtotime(date('Y').'-'.(date('m')+1))).'-7';
-                        }
-                        if(1<=date('j')&&date('j')<=7){
-                            $list['time']=date('Y-m').'-7';
-                        }
-                        if(7<date('j')&&date('j')<=16){
-                            $list['time']=date('Y-m').'-16';
-                        }
-                        if(16<date('j')&&date('j')<=25){
-                            $list['time']=date('Y-m').'-25';
-                        }
-                    }
+                        $list['time']=$info['settlement_date'];
+                        $list['photo']=$info['photo'];
+                $data['list'][$info['settlement_id']] = $list;
                 }
-                $data['list'][$info['id']] = $list;
             }
-        }
         echo Tpl::flexigridXML($data);
         exit();
 
     }
-
     public function show_goodsOp()
     {
 
@@ -355,238 +117,28 @@ GROUP BY supp_id";
     public function show_ordersOp()
     {
 
-        Tpl::output('supp_id', $_GET['supp_id']);
+        Tpl::output('settlement_id', $_GET['settlement_id']);
         Tpl::output('clie_id', $_GET['clie_id']);
         Tpl::showpage('order.orders_list');
     }
     public function get_order_xmlOp()
     {
-        $pre=C('tablepre');
         $order = SCMModel('gzkj_client_order');
-
-        $page_num = $_POST['rp'];
+        $orders=$order->where(array('settlement_id'=>$_GET['settlement_id']))->page($_POST['rp'])->select();
         $data = array();
         $data['now_page'] = $order->shownowpage();
-        $index = ($data['now_page'] - 1) * $page_num;
-
-        $supp_id = $_GET['supp_id'];
-        $clie_id = $_GET['clie_id'];
-        if($supp_id){
-            if(25<date('j')){
-                $sql = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time >= CONCAT(DATE_FORMAT(NOW(),'%Y-%m'),'-19 00:00:00')
-AND
-pay_start_time <= CONCAT(DATE_FORMAT(DATE_ADD(NOW(), INTERVAL 1 MONTH) ,'%Y-%m'),'-01 00:00:00')
-AND order_status IN (1, 2)
-AND pay_flag = 0
- limit ".$index.",".$page_num;
-                $sql_total_count = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time >= CONCAT(DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 MONTH),'%Y-%m'),'-19 00:00:00')
-AND
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-01 00:00:00')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-";
-
-                $data['total_num'] = count($order->execute_sql($sql_total_count));
-                $orders = $order->execute_sql($sql);
-            }
-            if((1<=date('j')&&date('j'))<=7){
-                $sql = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time >= CONCAT(DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 MONTH),'%Y-%m'),'-19 00:00:00')
-AND
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-01 00:00:00')
-AND order_status IN (1, 2)
-AND pay_flag = 0
- limit ".$index.",".$page_num;
-                $sql_total_count = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time >= CONCAT(DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 MONTH),'%Y-%m'),'-19 00:00:00')
-AND
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-01 00:00:00')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-";
-
-                $data['total_num'] = count($order->execute_sql($sql_total_count));
-                $orders = $order->execute_sql($sql);
-            }
-            if(7<date('j')&&date('j')<=16){
-                $sql = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
-order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time >= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-01 00:00:00')
-AND
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-09 23:59:59')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-limit ".$index.",".$page_num;
-                $sql_total_count = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
- order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time >= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-01 00:00:00')
-AND
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-09 23:59:59')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-";
-
-                $data['total_num'] = count($order->execute_sql($sql_total_count));
-                $orders = $order->execute_sql($sql);
-            }
-            if(16<date('j')&&date('j')<=25){
-                $sql = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
- order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-18 23:59:59')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-limit ".$index.",".$page_num;
-                $sql_total_count = "SELECT
-	id,
-	order_no,
-	clie_id,
-	clie_ch_name,
-	supp_id,
-	supp_ch_name,
-	order_status,
-	pay_flag,
- order_pay
-
-FROM
-	".$pre."scm_client_order
-WHERE
-pay_start_time <= CONCAT(DATE_FORMAT(NOW() ,'%Y-%m'),'-18 23:59:59')
-AND order_status IN (1, 2)
-AND pay_flag = 0
-";
-
-                $data['total_num'] = count($order->execute_sql($sql_total_count));
-                $orders = $order->execute_sql($sql);
-            }
-        }
-        if($clie_id){
-            $sql = "SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,order_status,order_pay from ".$pre."scm_client_order WHERE  (TO_DAYS(NOW()) - TO_DAYS(pay_start_time)) >= 3 AND order_status IN (3, 4) AND clie_id = '" . $clie_id . "' limit ".$index.",".$page_num;
-            $sql_total_count="SELECT id,order_no,clie_id,clie_ch_name,supp_id,supp_ch_name,order_status,order_pay from ".$pre."scm_client_order WHERE  (TO_DAYS(NOW()) - TO_DAYS(pay_start_time)) >= 3 AND order_status IN (3, 4) AND clie_id = '" . $clie_id . "'";
-            $data['total_num'] = count($order->execute_sql($sql_total_count));
-            $orders = $order->execute_sql($sql);
-        }
-
+        $data['total_num'] = $order->gettotalnum();
         foreach ($orders as $k => $info) {
-
             $list = array();
             $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"fg_sku('" . $info['id'] . "')\">查看商品</a></li>";
             $list['clie_id'] = $info['clie_id'];
             $list['order_no'] = $info['order_no'];
-            $model = SCMModel('gzkj_client');
-            $list['clie_ch_name'] = $model->getfby_clie_id($info['clie_id'],'clie_ch_name');
+            $list['clie_ch_name'] =  SCMModel('gzkj_client')->getfby_clie_id($info['clie_id'],'clie_ch_name');
             $list['supp_id'] = $info['supp_id'];
-            $model = SCMModel('gzkj_supplier');
-            $list['supp_ch_name'] = $model->getfby_supp_id($info['supp_id'],'supp_ch_name');
+            $list['supp_ch_name'] = SCMModel('gzkj_supplier')->getfby_supp_id($info['supp_id'],'supp_ch_name');
             $list['order_pay'] = $info['order_pay'];
-            if($supp_id){
-                if(25<date('j')){
-                    $list['time']=date('Y-m',strtotime(date('Y').'-'.(date('m')+1))).'-7';
-                }
-                if(1<=date('j')&&date('j')<=7){
-                    $list['time']=date('Y-m').'-7';
-                }
-                if(7<date('j')&&date('j')<=16){
-                    $list['time']=date('Y-m').'-16';
-                }
-                if(16<date('j')&&date('j')<=25){
-                    $list['time']=date('Y-m').'-25';
-                }
-            }
-            if($clie_id){
-                $list['time']=date('Y-m-d');
-            }
+            $list['time']=SCMModel('gzkj_settlement')->getfby_settlement_id($_GET['settlement_id'],'settlement_date');
             $data['list'][$info['id']] = $list;
-
         }
         echo Tpl::flexigridXML($data);
         exit();
