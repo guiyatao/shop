@@ -4,7 +4,7 @@
     <div class="fixed-bar">
 
         <div class="item-title">
-            <a class="back" href="index.php?act=order&op=show_flow" title="返回列表"><i class="fa fa-arrow-circle-o-left"></i></a>
+            <a class="back" href="index.php?act=order" title="返回列表"><i class="fa fa-arrow-circle-o-left"></i></a>
             <div class="subject">
                 <h3>订单结算</h3>
                 <h5>订单结算及资金流的显示</h5>

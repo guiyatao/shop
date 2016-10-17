@@ -118,7 +118,6 @@ class orderControl extends SCMControl
     {
 
         Tpl::output('settlement_id', $_GET['settlement_id']);
-        Tpl::output('clie_id', $_GET['clie_id']);
         Tpl::showpage('order.orders_list');
     }
     public function get_order_xmlOp()
