@@ -437,10 +437,9 @@
         'child' => 
         array (
           'goods_analyse' => '商品分析',
-          'sale_analyse' => '销售统计',
-          'area_analyse' => '区域分布',
-          'buying_analyse' => '购买分析',
+          'sale_analyse' => '运营报告',
           'goods_flow' => '商品流量排名',
+          'purchase_analyse' => '批发统计',
         ),
       ),
       6 => 

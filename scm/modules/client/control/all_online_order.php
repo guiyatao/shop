@@ -82,6 +82,10 @@ class all_online_orderControl extends SCMControl{
                 $list['payment_code'] = "货到付款";
             elseif($order_info['payment_code'] == 'alipay')
                 $list['payment_code'] = "支付宝";
+            elseif($order_info['payment_code'] == 'wx_saoma')
+                $list['payment_code'] = "微信支付";
+            elseif($order_info['payment_code'] == 'online')
+                $list['payment_code'] = "在线支付未付款";
             $list['order_amount'] = $order_info['order_amount'];
             $list['order_state'] = Order::getShopOrderStatusByID($order_info['order_state']);
             if($order_info['pay_flag'] == 1)
@@ -128,6 +132,10 @@ class all_online_orderControl extends SCMControl{
                 $list['payment_code'] = "货到付款";
             elseif($order_info['payment_code'] == 'alipay')
                 $list['payment_code'] = "支付宝";
+            elseif($order_info['payment_code'] == 'wx_saoma')
+                $list['payment_code'] = "微信支付";
+            elseif($order_info['payment_code'] == 'online')
+                $list['payment_code'] = "在线支付未付款";
             $list['order_amount'] = $order_info['order_amount'];
             $list['order_state'] = Order::getShopOrderStatusByID($order_info['order_state']);
             if($order_info['pay_flag'] == 1)

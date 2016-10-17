@@ -18,19 +18,12 @@ defined('InShopNC') or exit('Access Invalid!');
 class syncControl{
 
     //客户端类型
-    protected $client_type_array = array('android', 'wap', 'wechat', 'ios', 'windows');
-    //列表默认分页数
-    protected $page = 5;
-
-
+    protected $client_type_array = array('pos');
+    
+    protected $pos_client_id = "";
+    
     public function __construct() {
         Language::read('sync');
-
-        //分页数处理
-        $page = intval($_GET['page']);
-        if($page > 0) {
-            $this->page = $page;
-        }
     }
 }
 

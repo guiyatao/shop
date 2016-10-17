@@ -36,14 +36,15 @@ $(function(){
             {display: '送货方式', name : 'pickup_mode', width : 80, sortable : true, align: 'center'},
             {display: '订单金额', name : 'order_amount', width : 100, sortable : true, align: 'center'},
             {display: '订单状态', name : 'order_state', width : 100, sortable : true, align: 'center'},
+            {display: '退款状态', name : 'lock_state', width : 100, sortable : true, align: 'center'},
             ],
         buttons : [
             {display: '<i class="fa fa-file-excel-o"></i>导出数据', name : 'csv', bclass : 'csv', title : '将选定行数据导出excel文件,如果不选中行，将导出列表所有数据', onpress : fg_operate }
         ],
         searchitems : [
-                       {display: '订单编号', name : 'order_sn', isdefault: true},
-                       {display: '买家姓名', name : 'buyer_name'},
-                       {display: '买家电话', name : 'buyer_phone'}
+                       {display: '订单编号', name : 'scm_online_order.order_sn', isdefault: true},
+                       {display: '买家姓名', name : 'scm_online_order.buyer_name'},
+                       {display: '买家电话', name : 'scm_online_order.buyer_phone'}
             ],
         sortname: "order_id",
         sortorder: "desc",

@@ -4,7 +4,33 @@
     <bookmark url="file://$PROJECT_DIR$/core/framework/libraries/model.php" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a7a4df-787c-460f-a4ed-d75a2dba7d51" name="Default" comment="" />
+    <list default="true" id="82a7a4df-787c-460f-a4ed-d75a2dba7d51" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crontab/control/date.php" afterPath="$PROJECT_DIR$/crontab/control/date.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/cache/scm_menu.php" afterPath="$PROJECT_DIR$/data/cache/scm_menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/cache/setting.php" afterPath="$PROJECT_DIR$/data/cache/setting.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/cache/setting_updates.php" afterPath="$PROJECT_DIR$/data/cache/setting_updates.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/cache/wechat_access_token.php" afterPath="$PROJECT_DIR$/data/cache/wechat_access_token.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/config/config.ini.php" afterPath="$PROJECT_DIR$/data/config/config.ini.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/log/20161008.sql.log" afterPath="$PROJECT_DIR$/data/log/20161008.sql.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/log/20161009.sql.log" afterPath="$PROJECT_DIR$/data/log/20161009.sql.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/log/20161013.sql.log" afterPath="$PROJECT_DIR$/data/log/20161013.sql.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/logic/buy_1.logic.php" afterPath="$PROJECT_DIR$/data/logic/buy_1.logic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scm/control/common.php" afterPath="$PROJECT_DIR$/scm/control/common.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scm/model/scm_online_order.model.php" afterPath="$PROJECT_DIR$/scm/model/scm_online_order.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scm/modules/client/control/accept_order.php" afterPath="$PROJECT_DIR$/scm/modules/client/control/accept_order.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scm/modules/client/control/all_online_order.php" afterPath="$PROJECT_DIR$/scm/modules/client/control/all_online_order.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scm/modules/client/control/client_purchase.php" afterPath="$PROJECT_DIR$/scm/modules/client/control/client_purchase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scm/modules/client/control/online_order.php" afterPath="$PROJECT_DIR$/scm/modules/client/control/online_order.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scm/modules/client/templates/default/accepted_order.index.php" afterPath="$PROJECT_DIR$/scm/modules/client/templates/default/accepted_order.index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scm/modules/client/templates/default/stockout_warn.index.php" afterPath="$PROJECT_DIR$/scm/modules/client/templates/default/stockout_warn.index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scm/modules/client/templates/default/unsalable_warn.index.php" afterPath="$PROJECT_DIR$/scm/modules/client/templates/default/unsalable_warn.index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scm/modules/client/templates/default/validity_warn.index.php" afterPath="$PROJECT_DIR$/scm/modules/client/templates/default/validity_warn.index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/control/member_order.php" afterPath="$PROJECT_DIR$/shop/control/member_order.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sync/control/control.php" afterPath="$PROJECT_DIR$/sync/control/control.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sync/control/index.php" afterPath="$PROJECT_DIR$/sync/control/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sync/index.php" afterPath="$PROJECT_DIR$/sync/index.php" />
+    </list>
     <ignored path="htdocs.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -48,7 +74,7 @@
       <file leaf-file-name="stat.goods.hotgoods.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scm/modules/supplier/templates/default/stat.goods.hotgoods.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.5">
+            <state vertical-scroll-proportion="-2.8947368">
               <caret line="169" column="25" selection-start-line="169" selection-start-column="25" selection-end-line="169" selection-end-column="25" />
               <folding />
             </state>
@@ -58,18 +84,28 @@
       <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scm/modules/shop/include/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.184211">
+            <state vertical-scroll-proportion="-0.7631579">
               <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="order.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scm/modules/shop/control/order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55326086">
+            <state vertical-scroll-proportion="-0.7631579">
               <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pd.list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scm/modules/shop/templates/default/pd.list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,21 +114,31 @@
       <file leaf-file-name="order.index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scm/modules/shop/templates/default/order.index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.973684">
+            <state vertical-scroll-proportion="-19.078947">
               <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
-              <folding>
-                <element signature="n#form#0;n#div#4;n#div#0;n#!!top" expanded="false" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.ini.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/config/config.ini.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.19484882">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scm/modules/gzkj/templates/default/online_order_manager.index.php" />
         <option value="$PROJECT_DIR$/scm/modules/gzkj/control/online_order_manager.php" />
         <option value="$PROJECT_DIR$/scm/modules/gzkj/templates/default/delivered.detail_backup.php" />
         <option value="$PROJECT_DIR$/shop/templates/default/layout/member_layout.php" />
@@ -143,6 +189,7 @@
         <option value="$PROJECT_DIR$/shop/templates/default/member/member_order.show.php" />
         <option value="$PROJECT_DIR$/scm/modules/shop/templates/default/order.index.php" />
         <option value="$PROJECT_DIR$/scm/modules/shop/control/order.php" />
+        <option value="$PROJECT_DIR$/scm/modules/shop/templates/default/pd.list.php" />
       </list>
     </option>
   </component>
@@ -165,10 +212,10 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="127.0.0.1" port="80" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="-344" />
+    <option name="y" value="162" />
+    <option name="width" value="1932" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -237,11 +284,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -255,89 +298,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scm" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="htdocs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="control" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -348,10 +313,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/tshop" />
+    <property name="last_opened_file_path" value="D:/php/canvas" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="debugger.stepping" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="店铺代金券&#9;null&#9;null&#10;平台可给商家提供站内信、手机短信、邮件三种通知方式。平台可以选择开启一种或多种通知方式供商家选择。 开启强制接收后，商家不能取消该方式通知的接收。&#9;null&#9;null&#10;message.seller_tpl.php&#9;FILE&#9;file://D:/xampp/htdocs/admin/modules/shop/templates/default/message.seller_tpl.php&#10;goods_album.index.php&#9;FILE&#9;file://D:/xampp/htdocs/admin/modules/shop/templates/default/goods_album.index.php&#10;spec.index.php&#9;FILE&#9;file://D:/xampp/htdocs/admin/modules/shop/templates/default/spec.index.php&#10;brand.index.php&#9;FILE&#9;file://D:/xampp/htdocs/admin/modules/shop/templates/default/brand.index.php&#10;cache.clear.php&#9;FILE&#9;file://D:/xampp/htdocs/admin/modules/system/templates/default/cache.clear.php&#10;upload.thumb.php &#9;FILE&#9;file://D:/xampp/htdocs/admin/modules/shop/templates/default/upload.thumb.php&#10;seo.setting.php&#9;FILE&#9;file://D:/xampp/htdocs/scm/modules/shop/templates/default/seo.setting.php&#10;seo.setting&#9;FILE&#9;file://D:/xampp/htdocs/admin/modules/shop/templates/default/seo.setting.php&#10;upload.thumb.php&#9;FILE&#9;file://D:/xampp/htdocs/admin/modules/shop/templates/default/upload.thumb.php&#10;upload.param.php&#9;FILE&#9;file://D:/xampp/htdocs/admin/modules/shop/templates/default/upload.param.php&#10;voucher.quotalist.php&#9;FILE&#9;file://D:/xampp/htdocs/scm/modules/shop/templates/default/voucher.quotalist.php" />
   </component>
@@ -439,15 +404,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-344" y="162" width="1932" height="1092" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20885417" sideWeight="0.4964539" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21581197" sideWeight="0.4964539" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20504974" sideWeight="0.50298953" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15625" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15972222" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12691697" sideWeight="0.5035461" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -509,20 +474,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mobile/api/payment/alipay/alipay.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/api/payment/alipay/alipay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/api/payment/alipay/alipayapi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -639,9 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1476343088863" expanded="true" signature="2794:3718" placeholder="SELECT sii.i... ${C('tablepre')}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -649,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -657,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -665,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -681,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -689,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,17 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-          <folding>
-            <marker date="1475887626751" expanded="true" signature="9504:10882" placeholder="..." />
-            <marker date="1475887626751" expanded="true" signature="9565:10851" placeholder="..." />
-            <marker date="1475887626751" expanded="true" signature="9692:10820" placeholder="..." />
-            <marker date="1475887626751" expanded="true" signature="9737:10184" placeholder="..." />
-            <marker date="1475887626751" expanded="true" signature="9787:10153" placeholder="..." />
-            <marker date="1475887626751" expanded="true" signature="9945:10014" placeholder="..." />
-            <marker date="1475887626751" expanded="true" signature="10242:10789" placeholder="..." />
-            <marker date="1475887626751" expanded="true" signature="10299:10654" placeholder="..." />
-            <marker date="1475887626751" expanded="true" signature="10358:10623" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -747,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -763,7 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,10 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1475887633537" expanded="true" signature="990:1005" placeholder="..." />
-            <marker date="1475887633537" expanded="true" signature="1105:1120" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -790,9 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,9 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,9 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -820,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,11 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1475887633646" expanded="true" signature="631:660" placeholder="..." />
-            <marker date="1475887633646" expanded="true" signature="727:759" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -840,9 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -850,7 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,9 +758,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.18162839">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/resource/js/jquery-ui/jquery.ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34301075">
+          <caret line="64" column="36783" selection-start-line="64" selection-start-column="36783" selection-end-line="64" selection-end-column="36783" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/resource/js/fileupload/jquery.fileupload-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.3256783">
+          <caret line="593" column="16" selection-start-line="593" selection-start-column="16" selection-end-line="593" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -880,25 +791,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/resource/js/jquery-ui/jquery.ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34301075">
-          <caret line="64" column="36783" selection-start-line="64" selection-start-column="36783" selection-end-line="64" selection-end-column="36783" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/resource/js/fileupload/jquery.fileupload-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.3256783">
-          <caret line="593" column="16" selection-start-line="593" selection-start-column="16" selection-end-line="593" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scm/modules/supplier/templates/default/stat.goods.hotgoods.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.5">
+        <state vertical-scroll-proportion="-2.8947368">
           <caret line="169" column="25" selection-start-line="169" selection-start-column="25" selection-end-line="169" selection-end-column="25" />
           <folding />
         </state>
@@ -906,26 +801,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scm/modules/shop/include/menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.184211">
+        <state vertical-scroll-proportion="-0.7631579">
           <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scm/modules/shop/control/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7631579">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scm/modules/shop/templates/default/pd.list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scm/modules/shop/templates/default/order.index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.973684">
+        <state vertical-scroll-proportion="-19.078947">
           <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
-          <folding>
-            <element signature="n#form#0;n#div#4;n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scm/modules/shop/control/order.php">
+    <entry file="file://$PROJECT_DIR$/data/config/config.ini.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55326086">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.19484882">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>

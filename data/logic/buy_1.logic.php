@@ -767,6 +767,11 @@ class buy_1Logic {
                         QueueClient::push('sendChainCode', $param);
                     }
                 }
+                
+                //scm 分单
+                $orderid = $order_info['order_id'];
+                $this->addToScm($orderid);
+                                
             } else {
                 //暂冻结充值卡,后面还需要 API彻底完成支付
                 if ($available_rcb_amount > 0) {
@@ -890,6 +895,9 @@ class buy_1Logic {
                         QueueClient::push('sendChainCode', $param);
                     }
                 }
+                //scm 分单
+                $orderid = $order_info['order_id'];
+                $this->addToScm($orderid);                
             } else {
                 //暂冻结预存款,后面还需要 API彻底完成支付
                 if ($available_pd_amount > 0) {
@@ -1608,5 +1616,15 @@ class buy_1Logic {
             return sprintf('满%s%s%s',$rule_info['price'],$discount_desc,$goods_desc);
         }
     }
-
+    private function addToScm($order_id) {
+        
+        $model_setting = SCMModel('shoponlineorder');
+        $model_scm_wechat = SCMModel("scm_wechat");
+    
+        $clients= $model_setting->addToScmOrder($order_id);
+        foreach ($clients as $c) {
+            $model_scm_wechat->wxMsgSend($c['clie_id'], $c["msg"], $c['wx_openid']);
+        }
+    
+    }
 }

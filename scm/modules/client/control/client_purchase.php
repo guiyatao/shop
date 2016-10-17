@@ -134,7 +134,7 @@ class client_purchaseControl extends SCMControl{
         $this->_get_condition($condition);
         $list = $model->getAllGoodsList($condition, $page, $field);
 //        $src = UPLOAD_SITE_URL_HTTPS.DS.ATTACH_GOODS.DS.'1'.DS.$pic_name;
-        $src = "http://192.168.3.250/data/upload/shop/store/goods/1/1_05211427960233743_240.jpg";
+        $src = "/data/upload/shop/store/goods/1/1_05211427960233743_240.jpg";
         $out_list = array();
         if (!empty($list) && is_array($list)){
             $fields_array = array('goods_barcode','goods_nm','goods_discount_price','goods_unit','unit_num','goods_spec','supp_id','produce_company', 'produce_area','min_set_num','goods_online_exist', 'is_new_good');

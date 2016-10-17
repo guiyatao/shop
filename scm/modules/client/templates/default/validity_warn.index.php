@@ -59,7 +59,7 @@ $(function(){
             {display: '供应商手机', name : 'supp_mobile', width : 90, sortable : false, align: 'center'}
             ],
         buttons : [
-            {display: '<i class="fa fa-file-excel-o"></i>导出数据', name : 'csv', bclass : 'csv', title : '将选定行数据导出csv文件,如果不选中行，将导出列表所有数据', onpress : fg_operate}
+            {display: '<i class="fa fa-file-excel-o"></i>导出数据', name : 'csv', bclass : 'csv', title : '将选定行数据导出Excel文件,如果不选中行，将导出列表所有数据', onpress : fg_operate}
         ],
         searchitems : [
            {display: '供应商编号', name : 'supp_id'},

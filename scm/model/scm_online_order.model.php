@@ -313,6 +313,7 @@ class scm_online_orderModel extends Model {
         return $order_list;
     }
 
+
     /**
      * 取得并且联表查询(所有)
      * @param unknown $condition
@@ -330,6 +331,37 @@ class scm_online_orderModel extends Model {
         $order_list = array();
         if (empty($order_list)) $order_list = $list;
         return $order_list;
+    }
+
+    /**
+     * 获取当前订单的退款状态
+     */
+    public function getOrderRefundState($order){
+        //获取退货单中未拆单之前的订单中的商品列表
+        $refundGoodsList = $this->table('refund_return')->field("*")->where(array("order_sn" =>$order['order_sn']))->select();
+        //获取当前订单中全部的商品
+        $goodsList = $this->table('scm_online_order_goods')->field("*")->where(array("order_id" =>$order['order_id'],"clie_id"=>$order['clie_id']))->select();
+
+        $refund_flag = 0;
+        $count =0;
+        foreach($goodsList as $k => $v){
+            foreach($refundGoodsList as $kk => $vv){
+                if($v['goods_id'] == $vv['goods_id']){
+                    $refund_flag = 1;
+                    break;
+                }
+            }
+            if( $refund_flag == 1){
+                $count++;
+                $refund_flag = 0;
+            }
+        }
+        if($count == 0)
+            return 0;
+        elseif($count > 0 && $count < count($goodsList) )
+            return 1;
+        elseif($count == count($goodsList))
+            return 2;
     }
 
 

@@ -1,3 +1,30 @@
-[2016-10-13 15:42:51]http://localhost/scm/modules/supplier/index.php?act=statistics_goods&op=goodslist&orderby=ordergoodsnum+desc&search_gname=%E7%89%9B%E5%A5%B6
-ERR : Db Error: Unknown column 'ordergoodsnum' in 'order clause'
-SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` INNER JOIN `gzkj`.`gzkj_scm_order_goods` AS `scm_order_goods` ON scm_client_order.id=scm_order_goods.order_id WHERE ( scm_client_order.supp_id = 'CHLY0000101' ) AND ( scm_client_order.order_status IN ('1','2') ) AND (  (scm_client_order.order_date BETWEEN '2016-09-13 00:00:00' AND '2016-10-12 23:59:59' ) ) AND ( scm_order_goods.goods_nm LIKE '%牛奶%' ) GROUP BY scm_order_goods.goods_barcode ORDER BY ordergoodsnum desc LIMIT 1  
+[2016-10-13 10:38:02]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6931345988040' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-10-13 10:38:34]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6931345988040' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-10-13 10:40:40]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6931345988040' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-10-13 10:40:51]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6931345988040' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-10-13 10:45:22]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6922507006399' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-10-13 10:46:21]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6931345988040' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-10-13 10:46:44]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6931345988040' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-10-13 10:48:07]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6931345988040' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-10-13 10:48:25]/scm/modules/client/index.php?act=client_purchase&op=batch_cart
+ERR : Db Error: Unknown column 'clie_id' in 'where clause'
+SELECT * FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( goods_barcode = '6931345988040' ) AND ( clie_id = 'LHHS0000101' ) AND ( supp_id = 'CHLY0000101' ) LIMIT 1  
+[2016-10-13 14:43:47]/scm/modules/client/index.php?act=client_purchase&op=cartList
+ERR : Db Error: Column count doesn't match value count at row 2
+INSERT INTO `gzkj`.`gzkj_scm_order_goods` (supp_id,goods_barcode,goods_nm,goods_price,goods_discount,goods_discount_price,goods_unit,goods_spec,unit_num,min_set_num,produce_company,produce_area,actual_amount,clie_id,order_num,set_num,order_id) VALUES ('SLSP0000102','6953392554351','怡泉+C柠檬汽水 500ml','0.01','1.00','0.0100','箱','500ml/瓶','24','1','大连食品厂','大连甘井子区','0.01','LHHS0000101','1','1','250'),('SLSP0000102','6953245711849','衣谷无糖酸奶味糖-蓝莓味(压片糖果)','0.01','1.00','0.0100','盒','15g*24盒','24','1','沈阳康辉食品有限公司','沈阳','0','LHHS0000101','0','0')

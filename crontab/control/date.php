@@ -73,9 +73,9 @@ class dateControl extends BaseCronControl {
 
         //  //预定订单及时支付尾款提醒
         // $this->_order_book_end_pay_notice();
-
+//need to open
         // //订单自动完成
-        // $this->_order_auto_complete();
+        //$this->_order_auto_complete();
 
         // //预定订单超时未付尾款取消订单
         // $this->_order_book_timeout_cancel();
@@ -115,8 +115,11 @@ class dateControl extends BaseCronControl {
 
         // //生成结算
         // $this->_create_bill();
-
-        $this->_testWechat();
+//need to open
+        //$this->_testWechat();
+        
+        $this->_start_settlement();
+        $this->_get_all_wechat_user_openid();
     }
 
     private function _get_all_wechat_user_openid($access_token){
@@ -1662,4 +1665,8 @@ class dateControl extends BaseCronControl {
         return $this->_model_vr_bill->editOrderBill($update,array('ob_id'=>$data_bill['ob_id']));
     }
 
+    private function _start_settlement() {
+        $model_settlement = SCMModel('gzkj_settlement');
+        $model_settlement->generate();
+    }
 }

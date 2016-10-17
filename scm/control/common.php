@@ -190,9 +190,13 @@ class commonControl extends SCMControl{
             //获取商城订单
             $model_online_order = SCMModel('scm_online_order');
             $online_condition  = array();
-            $online_condition['clie_id'] = $user['supp_clie_id'];
-            $online_condition['order_state'] = 20;
-            $online_order_list = $model_online_order->getOrderList($online_condition);
+            $online_condition['scm_online_order.clie_id'] = $user['supp_clie_id'];
+            $online_condition['scm_online_order.order_state'] = 20;
+            //只获取订单状态为未退款的
+            $online_condition['orders.refund_state'] = array('neq', 2);
+            $field = "scm_online_order.*,orders.lock_state,orders.order_state AS status,orders.payment_code AS pay_way";
+            $online_order_list = $model_online_order->getOrderListOn($online_condition,null,$field);
+
             $statistics['client_online_order_count'] = count($online_order_list);
             //获取已发货订单
             $model_client_order = SCMModel('scm_client_order');

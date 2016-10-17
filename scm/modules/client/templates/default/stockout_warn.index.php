@@ -25,66 +25,7 @@
     </ul>
   </div>
   <div id="flexigrid"></div>
-<!--    <div class="ncap-search-ban-s" id="searchBarOpen"><i class="fa fa-search-plus"></i>高级搜索</div>-->
-<!--    <div class="ncap-search-bar">-->
-<!--      <div class="handle-btn" id="searchBarClose"><i class="fa fa-search-minus"></i>收起边栏</div>-->
-<!--      <div class="title">-->
-<!--        <h3>高级搜索</h3>-->
-<!--      </div>-->
-<!--      <form method="get" name="formSearch" id="formSearch">-->
-<!--        <div id="searchCon" class="content">-->
-<!--          <div class="layout-box">-->
-<!--            <dl>-->
-<!--              <dt>账单编号</dt>-->
-<!--              <dd>-->
-<!--                <input type="text" value="" name="ob_id" id="ob_id" class="s-input-txt">-->
-<!--              </dd>-->
-<!--            </dl>-->
-<!--            <dl>-->
-<!--              <dt>商家名称</dt>-->
-<!--              <dd>-->
-<!--              <label><input type="text" value="" name=ob_store_name id="ob_store_name" class="s-input-txt"></label>-->
-<!--              <label><input type="checkbox" value="1" name="jq_query">精确</label>-->
-<!--              </dd>-->
-<!--            </dl>-->
-<!--            <dl>-->
-<!--              <dt>结算状态</dt>-->
-<!--              <dd>-->
-<!--                    <select class="s-select" name="ob_state">-->
-<!--                    <option value="">-请选择-</option>-->
-<!--                    <option value="1">已经出账</option>-->
-<!--                    <option value="2">商家已确认</option>-->
-<!--                    <option value="3">平台已审核</option>-->
-<!--                    <option value="4">结算完成</option>-->
-<!--                    </select>-->
-<!--              </dd>-->
-<!--            </dl>-->
-<!--            <dl>-->
-<!--              <dt>结账月份</dt>-->
-<!--              <dd>-->
-<!--                <select name="query_year">-->
-<!--                <option value=""> 年份&nbsp;&nbsp;</option>-->
-<!--                --><?php //for($i=date('Y',time())-4;$i<=date('Y',time())+4;$i++) { ?>
-<!--                <option value="--><?php //echo $i;?><!--">--><?php //echo $i;?><!--</option>-->
-<!--                --><?php //} ?>
-<!--                </select> - -->
-<!--                <select name="query_month">-->
-<!--                <option value=""> 月份&nbsp;&nbsp;</option>-->
-<!--                --><?php //for($i=1;$i<=12;$i++) { ?>
-<!--                <option value="--><?php //echo str_pad($i,2,'0',STR_PAD_LEFT);?><!--">--><?php //echo $i;?><!--</option>-->
-<!--                --><?php //} ?>
-<!--                </select>-->
-<!--              </dd>-->
-<!--              </dd>-->
-<!--            </dl>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="bottom">-->
-<!--          <a href="javascript:void(0);" id="ncsubmit" class="ncap-btn ncap-btn-green">提交查询</a>-->
-<!--          <a href="javascript:void(0);" id="ncreset" class="ncap-btn ncap-btn-orange" title="撤销查询结果，还原列表项所有内容"><i class="fa fa-retweet"></i>--><?php //echo $lang['nc_cancel_search'];?><!--</a>-->
-<!--        </div>-->
-<!--      </form>-->
-<!--    </div>-->
+
 </div>
 <script type="text/javascript">
 $(function(){
@@ -117,7 +58,7 @@ $(function(){
             {display: '商品预警状态', name : 'warn_status', width : 90, sortable : true, align : 'center'}
             ],
         buttons : [
-            {display: '<i class="fa fa-file-excel-o"></i>导出数据', name : 'csv', bclass : 'csv', title : '将选定行数据导出csv文件,如果不选中行，将导出列表所有数据', onpress : fg_operate}
+            {display: '<i class="fa fa-file-excel-o"></i>导出数据', name : 'csv', bclass : 'csv', title : '将选定行数据导出Excel文件,如果不选中行，将导出列表所有数据', onpress : fg_operate}
         ],
         searchitems : [
            {display: '供应商名称', name : 'supp_ch_name'},

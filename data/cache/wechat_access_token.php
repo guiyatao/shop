@@ -1,1 +1,1 @@
-<?php defined('InShopNC') or exit('Access Invalid!'); return 'a:2:{s:5:"token";s:138:"eEJBYYEtKwNzUYClHkIDhaoMywgyhGcioGuUmbseWsoBVlBifdMQLdMhy89KDI86wD8ocZhOx5VtXnAq-5fGHhOxsawCcai--FKCnyxIISG0mnva1eNwfeqPYZpT0j1IHCPjAAASNA";s:4:"time";i:1475225902;}';
+<?php defined('InShopNC') or exit('Access Invalid!'); return 'a:2:{s:5:"token";s:138:"3YYUhSzzQRqrREXc1bkJSjmU2BurfsmBZwagS9_UDGEIWdDiBh8MNsywM805ebMgF4wd4hRUfCY3jc9jAdHFTtL3dSmqaXEt9PYl2RI1GlpPVDEcUrjr3B0iRdvcSsN2PNYjAAAWUF";s:4:"time";i:1476672236;}';

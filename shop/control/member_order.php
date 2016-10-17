@@ -171,6 +171,7 @@ class member_orderControl extends BaseMemberControl {
         }
         Tpl::output('order_group_list',$order_group_list);
         Tpl::output('show_page',$model_order->showpage());
+
         self::profile_menu($_GET['recycle'] ? 'member_order_recycle' : 'member_order');
         Tpl::showpage('member_order.index');
     }
@@ -246,7 +247,6 @@ class member_orderControl extends BaseMemberControl {
 
         $model_scmorder = SCMModel("scm_online_order");
         $orderinfo = $model_scmorder->getOrderInfo(array("order_id"=>$_GET['order_id'], "pickup_mode"=>0));
-
 
         if($orderinfo && count($orderinfo) > 0) {
             $clie_id = $orderinfo['clie_id'];
