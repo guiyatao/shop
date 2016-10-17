@@ -26,7 +26,8 @@
                     {display: '资金流向', name: 'cash_flow', width: 120, sortable: false, align: 'left'},
                     {display: '结算金额', name: 'order_pay', width: 120, sortable: false, align: 'left'},
                     {display: '结算状态', name: 'pay_flag', width: 120, sortable: false, align: 'left'},
-                    {display: '结算日期', name: 'time', width: 120, sortable: false, align: 'left'}
+                    {display: '结算日期', name: 'time', width: 120, sortable: false, align: 'left'},
+                    {display: '结算清单', name: 'photo', width: 120, sortable: false, align: 'left'}
                 ],
 //                searchitems: [
 //                    {display: '终端店编码', name: 'clie_id'},
