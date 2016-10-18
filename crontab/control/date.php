@@ -75,7 +75,7 @@ class dateControl extends BaseCronControl {
         // $this->_order_book_end_pay_notice();
 //need to open
         // //订单自动完成
-        //$this->_order_auto_complete();
+//         $this->_order_auto_complete();
 
         // //预定订单超时未付尾款取消订单
         // $this->_order_book_timeout_cancel();
@@ -116,16 +116,18 @@ class dateControl extends BaseCronControl {
         // //生成结算
         // $this->_create_bill();
 //need to open
-        //$this->_testWechat();
+        $this->_testWechat();
         
         $this->_start_settlement();
-        $this->_get_all_wechat_user_openid();
+//         $this->_get_all_wechat_user_openid();
     }
 
-    private function _get_all_wechat_user_openid($access_token){
+    private function _get_all_wechat_user_openid(){
         echo "---------------------\n\n";
         $model_wechat = SCMModel('scm_wechat');
+        $access_token = $model_wechat->getAccessToken();//"Y-RL7psE831H1Xh39M7E-CEaZgOcOAVuZkhGHd47oQ63o9qe9VFKwt2nsLkaaW475Gw4bRFBKTofG9IA6ppzGg_JjuY8r7fNoaEvN2bWFtYOWIeAJACKW";
         $url = 'https://api.weixin.qq.com/cgi-bin/user/get?access_token=' . $access_token;
+
         $data = json_decode(http_get($url), true);
         $openids = $data['data']['openid'];
         // var_dump($openids); 
@@ -146,9 +148,11 @@ class dateControl extends BaseCronControl {
     }
 
     private function _testWechat() {
-        $appid = "wx134e9c8f60f06f47";
-        $appsecret = "ad43034140c565002ee93d3342dc6ea6";
-        $access_token = $this->_get_wechat_access_token($appid, $appsecret);
+//         $appid = "wx134e9c8f60f06f47";
+//         $appsecret = "ad43034140c565002ee93d3342dc6ea6";
+//         $access_token = $this->_get_wechat_access_token($appid, $appsecret);
+        $model_wechat = SCMModel('scm_wechat');
+        $access_token = $model_wechat->getAccessToken();
 
         //取得所有client
         $model_stock = SCMModel('scm_client_stock');
@@ -173,78 +177,85 @@ class dateControl extends BaseCronControl {
             $unsalable_count = count($unsalable_list);
 
             $touser_id = $client['wechat_id'];
-            if ($access_token && ($stockout_count > 0 || $date_warn_count > 0 || $unsalable_count > 0)) {
-                $info = array(
-                        'touser' => $touser_id,
+
+            if ($access_token ) {
+                if(!empty($touser_id) && ($stockout_count > 0 || $date_warn_count > 0 || $unsalable_count > 0)) {
+                    $info = array(
+                        "touser" => $touser_id,
                         "template_id" => "D7AdP5qfqaOE1sHKbiGAar5Na4ekjQiFCduK6foYvyE",
                         "data" => array(
                             "first" => array(
-                                    "value" => "尊敬的".$client['clie_ch_name'] ."店主",
-                                    "color" => "#173177"
-                                ),
+                                "value" => "尊敬的".$client['clie_ch_name'] ."店主",
+                                "color" => "#173177"
+                            ),
                             "keyword1" => array(
-                                    "value" => "店内商品预警提醒",
-                                    "color" => "#173177"
-                                ),
+                                "value" => "店内商品预警提醒",
+                                "color" => "#173177"
+                            ),
                             "keyword2" => array(
-                                    "value" => "共铸商城",
-                                    "color" => "#173177"
-                                ),
+                                "value" => "共铸商城",
+                                "color" => "#173177"
+                            ),
                             "keyword3" => array(
-                                    "value" => $alert_time,
-                                    "color" => "#173177"
-                                ),
+                                "value" => $alert_time,
+                                "color" => "#173177"
+                            ),
                             "keyword4" => array(
-                                    "value" => "您店中的".$stockout_count."种商品缺货，".$date_warn_count."种商品即将过期，".$unsalable_count."种商品滞销。",
-                                    "color" => "#173177"
-                                ),
+                                "value" => "您店中的".$stockout_count."种商品缺货，".$date_warn_count."种商品即将过期，".$unsalable_count."种商品滞销。",
+                                "color" => "#173177"
+                            ),
                             "remark" => array(
-                                    "value" => '请登入商城系统查看详细信息，并及时处理。',
-                                    "color" => "#173177"
-                                )
+                                "value" => '请登入商城系统查看详细信息，并及时处理。',
+                                "color" => "#173177"
+                            )
                         )
                     );
-                $jsdata=json_encode($info);
-                $url = 'https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=' . $access_token;
-                $data = http_postdata($url, $jsdata);
-                var_dump($data);
+                    $jsdata=json_encode($info);
+                    $url = 'https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=' . $access_token;
+                    $data = json_decode(http_postdata($url, $jsdata));
+
+                    if(isset($data->errcode) && $data->errcode > 0) {
+                        var_dump($data);
+                    }
+                }
+
             } else {
-                echo 'error get access_token';
+                echo 'error get access_token==' . $access_token. "\n\r<br/>";
             }
         }
         return;
     }
 
-    /**
-     * 获取微信access_token
-     */
-    private function _get_wechat_access_token($appid, $appsecret) {
-        // 尝试读取缓存的access_token
-        $access_token = rkcache('wechat_access_token');
-        if($access_token) {
-            $access_token = unserialize($access_token);
-            // 如果access_token未过期直接返回缓存的access_token
-            if($access_token['time'] > TIMESTAMP) {
-                return $access_token['token'];
-            }
-        }
+//     /**
+//      * 获取微信access_token
+//      */
+//     private function _get_wechat_access_token($appid, $appsecret) {
+//         // 尝试读取缓存的access_token
+//         $access_token = rkcache('wechat_access_token');
+//         if($access_token) {
+//             $access_token = unserialize($access_token);
+//             // 如果access_token未过期直接返回缓存的access_token
+//             if($access_token['time'] > TIMESTAMP) {
+//                 return $access_token['token'];
+//             }
+//         }
 
-        $url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s';
-        $url = sprintf($url, $appid, $appsecret);
-        $re = http_get($url);
-        $result = json_decode($re, true);
-        if($result['errcode']) {
-            return '';
-        }
+//         $url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=%s&secret=%s';
+//         $url = sprintf($url, $appid, $appsecret);
+//         $re = http_get($url);
+//         $result = json_decode($re, true);
+//         if($result['errcode']) {
+//             return '';
+//         }
 
-        // 缓存获取的access_token
-        $access_token = array();
-        $access_token['token'] = $result['access_token'];
-        $access_token['time'] = TIMESTAMP + $result['expires_in'];
-        wkcache('wechat_access_token', serialize($access_token));
+//         // 缓存获取的access_token
+//         $access_token = array();
+//         $access_token['token'] = $result['access_token'];
+//         $access_token['time'] = TIMESTAMP + $result['expires_in'];
+//         wkcache('wechat_access_token', serialize($access_token));
 
-        return $result['access_token'];
-    }
+//         return $result['access_token'];
+//     }
 
     /**
      * 预定订单及时支付尾款提醒

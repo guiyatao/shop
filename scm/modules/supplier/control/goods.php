@@ -444,7 +444,7 @@ class goodsControl extends SCMControl
                 exit(json_encode(array('state'=>true,'msg'=>'删除成功')));
             }
             else
-                exit(json_encode(array('state'=>true,'msg'=>'删除失败')));
+                exit(json_encode(array('state'=>false,'msg'=>'删除失败')));
         }
     }
 

@@ -30,9 +30,8 @@ $(function(){
             {display: '供应商编号', name : 'supp_id', width : 120, sortable : false, align: 'center'},
             {display: '商品条码', name : 'goods_barcode', width: 120, sortable : true, align : 'center'},
             {display: '商品名称', name : 'goods_nm', width : 180, sortable : true, align: 'center'},
-            {display: '商品原价', name : 'goods_price', width: 80, sortable : true, align : 'center'},
-            {display: '商品折扣', name : 'goods_discount', width: 60, sortable : true, align : 'center'},
-            {display: '单位', name : 'goods_unit', width : 60, sortable : true, align: 'center'},
+            {display: '零售价', name : 'goods_price', width: 80, sortable : true, align : 'center'},
+            {display: '库存单位', name : 'goods_unit', width : 60, sortable : true, align: 'center'},
             {display: '商品库存', name : 'goods_stock', width : 80, sortable : true, align: 'center'},
             {display: '库存下限', name : 'goods_low_stock', width : 80, sortable : true, align: 'center'},
             {display: '生产日期', name : 'production_date', width : 120, sortable : false, align: 'center'},
@@ -42,6 +41,8 @@ $(function(){
             {display: '商品状态', name : 'status', width : 150, sortable : false, align: 'center'},
             ],
         buttons : [
+            {display: '<i class="fa fa-plus"></i>新增数据', name : 'add', bclass : 'add', title : '新增数据', onpress : fg_operation },
+            {display: '<i class="fa fa-trash"></i>批量删除', name : 'del', bclass : 'del', title : '将选定行数据批量删除', onpress : fg_operation },
             {display: '<i class="fa fa-file-excel-o"></i>导出数据', name : 'csv', bclass : 'csv', title : '将选定行数据导出Excel文件', onpress : fg_operation }
             ],
         searchitems : [
@@ -80,6 +81,20 @@ function fg_operation(name, bDiv) {
             itemids[i] = $(this).attr('data-id');
         });
         fg_csv(itemids);
+    }else if (name == 'add') {
+//        _uri = "index.php?act=good_manage&op=goods_add";
+//        CUR_DIALOG = ajax_form('goods_add', '新增商品', _uri, 840);
+        window.location.href = "index.php?act=good_manage&op=goods_add";
+    }else if(name == 'del'){
+        if ($('.trSelected', bDiv).length == 0) {
+            showError('请选择要操作的数据项！');
+        }else{
+            var itemids = new Array();
+            $('.trSelected', bDiv).each(function(i){
+                itemids[i] = $(this).attr('data-id');
+            });
+            fg_del(itemids);
+        }
     }
 }
 
@@ -93,14 +108,16 @@ function fg_sku(commonid) {
 }
 
 function goods_edit(goods_id){
-    console.log(goods_id);
-    _uri = "index.php?act=good_manage&op=goods_edit&id="+goods_id;
-    CUR_DIALOG = ajax_form('goods_edit', '编辑商品', _uri, 640);
+//    console.log(goods_id);
+//    _uri = "index.php?act=good_manage&op=goods_edit&id="+goods_id;
+//    CUR_DIALOG = ajax_form('goods_edit', '编辑商品', _uri, 840);
+    window.location.href = "index.php?act=good_manage&op=goods_edit&id="+goods_id;
 }
 // 删除
 function fg_del(id) {
     if(confirm('删除后将不能恢复，确认删除这项吗？')){
-        $.getJSON('index.php?act=goods&op=goods_del', {id:id}, function(data){
+
+        $.getJSON('index.php?act=good_manage&op=goods_del', {id:id}, function(data){
             if (data.state) {
                 $("#flexigrid").flexReload();
             } else {

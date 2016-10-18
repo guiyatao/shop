@@ -342,26 +342,30 @@ class scm_online_orderModel extends Model {
         //获取当前订单中全部的商品
         $goodsList = $this->table('scm_online_order_goods')->field("*")->where(array("order_id" =>$order['order_id'],"clie_id"=>$order['clie_id']))->select();
 
-        $refund_flag = 0;
-        $count =0;
-        foreach($goodsList as $k => $v){
-            foreach($refundGoodsList as $kk => $vv){
-                if($v['goods_id'] == $vv['goods_id']){
-                    $refund_flag = 1;
-                    break;
+        if(count($refundGoodsList) == 1 && $refundGoodsList[0]['goods_id'] == 0 ){
+            return 2;
+        }else{
+            $refund_flag = 0;
+            $count =0;
+            foreach($goodsList as $k => $v){
+                foreach($refundGoodsList as $kk => $vv){
+                    if($v['goods_id'] == $vv['goods_id']){
+                        $refund_flag = 1;
+                        break;
+                    }
+                }
+                if( $refund_flag == 1){
+                    $count++;
+                    $refund_flag = 0;
                 }
             }
-            if( $refund_flag == 1){
-                $count++;
-                $refund_flag = 0;
-            }
+            if($count == 0)
+                return 0;
+            elseif($count > 0 && $count < count($goodsList) )
+                return 1;
+            elseif($count == count($goodsList) )
+                return 2;
         }
-        if($count == 0)
-            return 0;
-        elseif($count > 0 && $count < count($goodsList) )
-            return 1;
-        elseif($count == count($goodsList))
-            return 2;
     }
 
 

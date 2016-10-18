@@ -1,6 +1,6 @@
 <?php
 /**
- * 近效期预警
+ * 商品管理
  *
  *
  *
@@ -17,8 +17,11 @@ defined('InShopNC') or exit('Access Invalid!');
 class good_manageControl extends SCMControl{
     const EXPORT_SIZE = 1000;
 
+    protected $user_info;
+
     public function __construct(){
         parent::__construct();
+        $this->user_info = SCMModel('scm_user')->getUserInfo($this->admin_info['id']);
         Language::read('goods');
     }
 
@@ -64,7 +67,6 @@ class good_manageControl extends SCMControl{
             $list['goods_barcode'] = $stock_info['goods_barcode'];
             $list['goods_nm'] = $stock_info['goods_nm'];
             $list['goods_price'] = ncPriceFormat($stock_info['goods_price']);
-            $list['goods_discount'] = $stock_info['goods_discount'];
             $list['goods_unit'] = $stock_info['goods_unit'];
             $list['goods_stock'] = $stock_info['goods_stock'];
             $list['goods_low_stock'] = $stock_info['goods_low_stock'];
@@ -129,6 +131,35 @@ class good_manageControl extends SCMControl{
     }
 
     /**
+     * 新增商品
+     */
+    public function goods_addOp(){
+        $model = SCMModel('scm_client_stock');
+        if (chksubmit()) {
+            $goods = array();
+            $goods['goods_nm'] = trim($_POST['goods_nm']);
+            $goods['goods_barcode'] = trim($_POST['goods_barcode']);
+            $goods['goods_spec'] = trim($_POST['goods_spec']);
+            $goods['goods_price'] = trim($_POST['goods_price']);
+            $goods['goods_unit'] = trim($_POST['goods_unit']);
+            $goods['goods_stock'] = trim($_POST['goods_stock']);
+            $goods['goods_stock'] = trim($_POST['goods_stock']);
+            $goods['goods_low_stock'] = trim($_POST['goods_low_stock']);
+            $goods['production_date'] = $_POST['production_date'];
+            $goods['valid_remind'] = trim($_POST['valid_remind']);
+            $goods['shelf_life'] = trim($_POST['shelf_life']).$_POST['shelf_life_unit'] ;
+            $goods['drug_remind'] = trim($_POST['drug_remind']);
+            $goods['clie_id'] = $this->user_info['supp_clie_id'];
+            $result =$model->addNewGoodsStock($goods);
+            if($result)
+                showDialog(L('nc_common_op_succ'), urlSCMClient('good_manage', 'index'), 'succ', '$("#flexigrid").flexReload();CUR_DIALOG.close()');
+            else
+                showDialog(L('nc_common_op_succ'), urlSCMClient('good_manage', 'index'), 'error', '$("#flexigrid").flexReload();CUR_DIALOG.close()');
+        }
+        Tpl::showpage('goods_add');
+    }
+
+    /**
      * 编辑商品
      */
     public function goods_editOp(){
@@ -136,16 +167,103 @@ class good_manageControl extends SCMControl{
         if (chksubmit()) {
             $result = $model-> editGoods(array(
                 'id'=> $_POST['id'],
-                'goods_low_stock' => $_POST['goods_low_stock'],
-                'valid_remind' => $_POST['valid_remind'],
-                'drug_remind'=> $_POST['drug_remind'],
+                'goods_nm' => trim($_POST['goods_nm']),
+                'goods_barcode' => trim($_POST['goods_barcode']),
+                'goods_spec' => trim($_POST['goods_spec']),
+                'goods_price' => trim($_POST['goods_price']),
+                'goods_unit' => trim($_POST['goods_unit']),
+                'goods_stock' => trim($_POST['goods_stock']),
+                'goods_stock' => trim($_POST['goods_stock']),
+                'goods_low_stock' => trim($_POST['goods_low_stock']),
+                'production_date' => $_POST['production_date'],
+                'valid_remind' => trim($_POST['valid_remind']),
+                'shelf_life' => trim($_POST['shelf_life']).$_POST['shelf_life_unit'] ,
+               'drug_remind' => trim($_POST['drug_remind']),
             ));
-            showDialog(L('nc_common_op_succ'), urlSCMClient('good_manage', 'index'), 'succ', '$("#flexigrid").flexReload();CUR_DIALOG.close()');
+            if($result)
+                showDialog(L('nc_common_op_succ'), urlSCMClient('good_manage', 'index'), 'succ', '$("#flexigrid").flexReload();CUR_DIALOG.close()');
+            else
+                showDialog(L('nc_common_op_succ'), urlSCMClient('good_manage', 'index'), 'error', '$("#flexigrid").flexReload();CUR_DIALOG.close()');
         }
         $goods_info = $model-> getGoodsInfoById($_GET['id']);
         if($goods_info){
             Tpl::output('goods_info', $goods_info);
-            Tpl::showpage('goods_edit.close_remark', 'null_layout');
+            $number = $this->findNum($goods_info['shelf_life']);
+            Tpl::output('shelf_life',$number);
+            $shelf_life_unit = str_replace($number,'',$goods_info['shelf_life']);
+            Tpl::output('shelf_life_unit',$shelf_life_unit);
+            Tpl::showpage('goods_edit');
+        }
+    }
+
+    /**
+     * ajax操作
+     */
+    public function ajaxOp(){
+        $model_goods = SCMModel('scm_client_stock');
+        switch ($_GET['branch']){
+            /**
+             * 验证商品名称是否重复
+             *
+             */
+            case 'check_goods_name':
+                $condition['goods_nm']   = $_GET['goods_name'];
+                $condition['id'] = array('neq',intval($_GET['goods_id']));
+                $condition['clie_id'] = $this->user_info['supp_clie_id'];
+                $goods = $model_goods->getClientGoodInfo($condition);
+                if (empty($goods)){
+                    echo 'true';exit;
+                }else {
+                    echo 'false';exit;
+                }
+                break;
+            /**
+             * 验证当前供应商商品的条形码是否重复,不同供应商的商品条码不能重复
+             */
+            case 'check_goods_barcode':
+                $condition['goods_barcode']   = $_GET['goods_barcode'];
+                $condition['id'] = array('neq',intval($_GET['goods_id']));
+                $condition['clie_id'] = $this->user_info['supp_clie_id'];
+                $goods = $model_goods->getClientGoodInfo($condition);
+                if (empty($goods)){
+                    echo 'true';exit;
+                }else {
+                    echo 'false';exit;
+                }
+                break;
+
+        }
+    }
+
+
+    /**
+     * 提取字符串中所有的数字
+     * @param string $str
+     * @return string
+     */
+    private function findNum($str=''){
+        $str=trim($str);
+        if(empty($str)){return '';}
+        $result='';
+        for($i=0;$i<strlen($str);$i++){
+            if(is_numeric($str[$i])){
+                $result.=$str[$i];
+            }
+        }
+        return $result;
+    }
+
+    /**
+     * 删除商品
+     */
+    public function goods_delOp(){
+        $model_goods = SCMModel('scm_client_stock');
+        if ($_GET['id'] != '') {
+            if($model_goods->delGoodsByIdString($_GET['id'])){
+                exit(json_encode(array('state'=>true,'msg'=>'删除成功')));
+            }
+            else
+                exit(json_encode(array('state'=>false,'msg'=>'删除失败')));
         }
     }
 

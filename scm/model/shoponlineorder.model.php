@@ -72,6 +72,7 @@ class shoponlineorderModel extends Model
                 $scmordergoodsdata['goods_price']  = $g['goods_price'];
                 $scmordergoodsdata['goods_num']  = $g['goods_num'];
                 $scmordergoodsdata['goods_barcode']  = $barcodes[$g['goods_id']];
+                $scmordergoodsdata['goods_id']  = $g['goods_id'];
                 $this->table('scm_online_order_goods')->insert($scmordergoodsdata);
             }
             $client_info = $model_scm_client->getClientInfo(array('clie_id'=>$order_info_common['pickup_store']));
@@ -130,6 +131,7 @@ class shoponlineorderModel extends Model
                         $order_amount += ($g['goods_price'] * $g['goods_num']);
                         $scmordergoodsdata['goods_num']  = $g['goods_num'];
                         $scmordergoodsdata['goods_barcode']  = $barcodes[$g['goods_id']];
+                        $scmordergoodsdata['goods_id']  = $g['goods_id'];
                         $this->table('scm_online_order_goods')->insert($scmordergoodsdata);
                     }
                 }

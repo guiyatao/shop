@@ -134,10 +134,6 @@ class client_storageControl extends SCMControl{
                             'production_date' =>  $good['production_date'],
                             'shelf_life' => $good['shelf_life'],
                             'goods_nm' => $good['goods_nm'],
-                            'goods_price' => $good['goods_price'],
-                            'goods_discount' => $good['goods_discount'],
-                            'goods_unit' => $good['goods_unit'],
-                            'goods_spec' => $good['goods_spec'],
                             'supp_id' => $good['supp_id'],
                         );
                         $model_stock->editStockInfo($condition);

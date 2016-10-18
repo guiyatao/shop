@@ -94,7 +94,7 @@
   'mobile_app' => 'mb_app.png',
   'mobile_ios' => '',
   'mobile_isuse' => '1',
-  'mobile_wx' => NULL,
+  'mobile_wx' => '05301044758338099.jpg',
   'pointprod_isuse' => '1',
   'pointshop_isuse' => '1',
   'points_comments' => '50',

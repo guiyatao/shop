@@ -264,12 +264,41 @@ class scm_client_stockModel extends Model {
      * @return int
      */
     public function addNewGoodsToClientStock($order_good) {
-        $order_good['goods_low_stock'] = 10;
-        $order_good['goods_stock'] = $order_good['set_num'];
-        unset($order_good['id'], $order_good['order_id'], $order_good['goods_discount_price'], $order_good['produce_company'], $order_good['produce_area'],
-            $order_good['order_num'], $order_good['set_num'],$order_good['unit_num'], $order_good['actual_amount'], $order_good['min_set_num'],$order_good['unpacking_num']);
-        $result = $this->table('scm_client_stock')->insert($order_good);
+        $new_goods = array(
+            'clie_id' => $order_good['clie_id'],
+            'supp_id' => $order_good['supp_id'],
+            'goods_barcode' => $order_good['goods_barcode'],
+            'goods_nm' => $order_good['goods_nm'],
+            'goods_stock' => $order_good['set_num'] * $order_good['unit_num'],
+            'goods_low_stock' => 10,
+            'drug_remind'=>30,
+            'production_date' => $order_good['production_date'],
+            'valid_remind'=>$order_good['valid_remind'],
+            'shelf_life' => $order_good['shelf_life'],
+        );
+        $result = $this->table('scm_client_stock')->insert($new_goods);
         return $result ? $result : null;
+    }
+
+    public function addNewGoodsStock($goods){
+        $result = $this->table('scm_client_stock')->insert($goods);
+        return $result ? $result : null;
+    }
+
+    /**
+     * 批量删除商品
+     * @param $ids
+     * @return bool
+     */
+    public function delGoodsByIdString($ids){
+        if(empty($ids)){
+            return false;
+        }
+        $delete_goods = $this->table('scm_client_stock')->where(array('id' => array('in', $ids)))->delete();
+        if($delete_goods)
+            return true;
+        else
+            return false;
     }
 
     /**
