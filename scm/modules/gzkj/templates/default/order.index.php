@@ -65,9 +65,10 @@
             }
         }
 
-        function fg_sku(id) {
-            _uri = "index.php?act=order&op=show_goods&id=" + id;
-            CUR_DIALOG = ajax_form('hehhe','订单"' + id +'"的商品列表',_uri, 480);
+        function settlement(settlement_id) {
+            window.location.href = 'index.php?act=order&op=settlement&settlement_id='+settlement_id;
+//            _uri = "index.php?act=order&op=settlement&id=" + settlement_id;
+//            CUR_DIALOG = ajax_form('hehhe','订单"' + id +'"的商品列表',_uri, 1000);
         }
         function fg_sku1(settlement_id) {
 //            _uri = "index.php?act=order&op=show_orders&supp_id=" + supp_id;

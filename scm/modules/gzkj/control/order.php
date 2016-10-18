@@ -17,7 +17,8 @@ defined('InShopNC') or exit('Access Invalid!');
 
 class orderControl extends SCMControl
 {
-
+    const PAY_TO_SUPPLIER = 2;
+    const PAY_TO_CLIENT = 3;
     public function __construct()
     {
         parent::__construct();
@@ -50,12 +51,6 @@ class orderControl extends SCMControl
         Tpl::showpage('order_flow.index');
     }
 
-    public function show_payedOp()
-    {
-        Tpl::output('top_link', $this->sublink($this->links, 'show_payed'));
-        Tpl::showpage('order_payend.index');
-    }
-
     public function get_xmlOp()
     {
         $order = SCMModel('gzkj_settlement');
@@ -69,15 +64,17 @@ class orderControl extends SCMControl
             $where['scm_settlement.supp_id']= array('neq','');
             $field="DISTINCT scm_settlement.supp_id,scm_settlement.settlement_id ,scm_settlement.amount,scm_settlement.flag,scm_settlement.photo,scm_supplier.supp_ch_name,scm_settlement.settlement_date";
         }
-
-        $orders=$order->getSettlementInfo($where,$field,$_POST['rp']);
+        $page = new Page();
+        $page->setEachNum($_REQUEST['rp']);
+        $orders=$order->getSettlementInfo($where,$field,$page);
         $data = array();
-        $data['now_page'] = $order->shownowpage();
-        $data['total_num'] = $order->gettotalnum();
+        $data['now_page'] = $page->get('now_page');
+        $data['total_num'] = $page->get('total_num');
         if(!empty($orders)) {
             foreach ($orders as $k => $info) {
                         $list = array();
                         $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"fg_sku1('" . $info['settlement_id'] . "')\">查看订单</a></li>";
+                        $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"settlement('" . $info['settlement_id'] . "')\">结算</a></li>";
                         if($_GET['type']==1){
                             $list['clie_id'] = $info['clie_id'];
                             $list['clie_ch_name'] = $info['clie_ch_name'];
@@ -89,13 +86,17 @@ class orderControl extends SCMControl
                         }
 
                         $list['order_pay'] = $info['amount'];
-                        if($info['flag']==0){
+                        if($info['flag']==0||$info['flag']==2||$info['flag']==3){
                             $list['pay_flag'] = '未结算';
-                        }elseif($info['flag']==2||$info['flag']==3){
+                        }elseif($info['flag']==20||$info['flag']==30){
                             $list['pay_flag'] = '已结算';
                         }
                         $list['time']=$info['settlement_date'];
-                        $list['photo']=$info['photo'];
+                $img = UPLOAD_SITE_URL."/scm/settlement/".$info['photo'];
+                $list['photo'] =  <<<EOB
+            <a href="javascript:;" class="pic-thumb-tip" onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
+            <i class='fa fa-picture-o'></i></a>
+EOB;
                 $data['list'][$info['settlement_id']] = $list;
                 }
             }
@@ -143,5 +144,60 @@ class orderControl extends SCMControl
         exit();
     }
 
+    public function settlementOp()
+    {
 
+        $model_settlement=SCMModel('gzkj_settlement');
+        if (chksubmit()) {
+            $result = $model_settlement->where(array("settlement_id"=>$_GET['settlement_id']))->find();
+            $temp_img = $result['photo'];
+            $data = array();
+            $data['user_name']=$this->getAdminInfo()['name'];
+            $data['change_date']=date("Y-m-d H:i:s");
+            $data['comments'] = trim($_POST['comments']);
+            $data['flag'] = 20;
+            if($_FILES['photo']['name']) {
+                @unlink(BASE_UPLOAD_PATH.DS.'scm/settlement'.DS.$temp_img);
+                $upload = new UploadFile();
+                $upload->set('default_dir', 'scm/settlement');
+                $result = $upload->upfile('photo');
+                if (!$result) {
+                    showMessage($upload->error);
+                }
+                $data['photo'] = $upload->file_name;
+                $settlement_id=$_GET['settlement_id'];
+                $result=$model_settlement->where(array('settlement_id'=>$settlement_id))->update($data,$settlement_id);
+
+                if($_POST['type']){
+                    $re=$this->changeState($_GET['settlement_id'],self::PAY_TO_SUPPLIER);
+                }else{
+                    $re=$this->changeState($_GET['settlement_id'],self::PAY_TO_CLIENT);
+                }
+                if ($result&&$re){
+                    $url = array(
+                        array(
+                            'url'=>'index.php?act=order&op=index',
+                            'msg'=>"返回结算列表",
+                        )
+                    );
+                    $this->log('结算[ID:'.intval($_GET['$settlement_id']).']',1);
+                    showMessage("结算成功",$url);
+                }else {
+                    //添加失败则删除刚刚上传的图片,节省空间资源
+                    @unlink(BASE_UPLOAD_PATH.DS.'scm/settlement'.DS.$upload->file_name);
+                    showMessage("结算失败");
+                }
+            }
+        }else{
+            $settlement = $model_settlement->where(array("settlement_id"=>$_GET['settlement_id']))->find();
+            Tpl::output('settlement', $settlement);
+        }
+        Tpl::showpage('order.settlement1');
+    }
+
+    private function changeState($settlement_id,$state){
+        $client_order=SCMModel('gzkj_client_order');
+        $result=$client_order->where(array('settlement_id'=>$settlement_id))->update(array('pay_flag'=>$state));
+        return $result;
+    }
 }
