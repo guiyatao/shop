@@ -56,20 +56,29 @@ class orderControl extends SCMControl
         $order = SCMModel('gzkj_settlement');
 
         if($_GET['type']==1){
+
             $where=array();
-            $where['scm_settlement.clie_id']= array('neq','');
-            $field="DISTINCT scm_settlement.clie_id,scm_settlement.settlement_id ,scm_settlement.amount,scm_settlement.flag,scm_settlement.photo,scm_client.clie_ch_name,scm_settlement.settlement_date";
+            $where['clie_id']= array('neq','');
+            $orders=$order->where($where)->page($_POST['rp'])->select();
+//            $field="DISTINCT scm_settlement.clie_id,scm_settlement.settlement_id ,scm_settlement.amount,scm_settlement.flag,scm_settlement.photo,scm_client.clie_ch_name,scm_settlement.settlement_date";
         }else{
+
             $where=array();
             $where['scm_settlement.supp_id']= array('neq','');
-            $field="DISTINCT scm_settlement.supp_id,scm_settlement.settlement_id ,scm_settlement.amount,scm_settlement.flag,scm_settlement.photo,scm_supplier.supp_ch_name,scm_settlement.settlement_date";
+            $orders= $order->where($where)->page($_POST['rp'])->select();
+//            $field="DISTINCT scm_settlement.supp_id,scm_settlement.settlement_id ,scm_settlement.amount,scm_settlement.flag,scm_settlement.photo,scm_supplier.supp_ch_name,scm_settlement.settlement_date";
         }
-        $page = new Page();
-        $page->setEachNum($_REQUEST['rp']);
-        $orders=$order->getSettlementInfo($where,$field,$page);
+//        var_dump($orders);die();
+
         $data = array();
-        $data['now_page'] = $page->get('now_page');
-        $data['total_num'] = $page->get('total_num');
+        $data['now_page'] = $order->shownowpage();
+        $data['total_num'] = $order->gettotalnum();
+//        $page = new Page();
+//        $page->setEachNum($_REQUEST['rp']);
+//        $orders=$order->getSettlementInfo($where,$field,$page);
+//        $data = array();
+//        $data['now_page'] = $page->get('now_page');
+//        $data['total_num'] = $page->get('total_num');
         if(!empty($orders)) {
             foreach ($orders as $k => $info) {
                         $list = array();
@@ -77,11 +86,11 @@ class orderControl extends SCMControl
                         $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"settlement('" . $info['settlement_id'] . "')\">结算</a></li>";
                         if($_GET['type']==1){
                             $list['clie_id'] = $info['clie_id'];
-                            $list['clie_ch_name'] = $info['clie_ch_name'];
+                            $list['clie_ch_name'] =  SCMModel('gzkj_client')->getfby_clie_id($info['clie_id'],'clie_ch_name');
                             $list['cash_flow'] = '共铸商城->终端店';
                         }else{
                             $list['supp_id'] = $info['supp_id'];
-                            $list['supp_ch_name'] = $info['supp_ch_name'];
+                            $list['supp_ch_name'] = SCMModel('gzkj_supplier')->getfby_supp_id($info['supp_id'],'supp_ch_name');
                             $list['cash_flow'] = '共铸商城->供应商';
                         }
 

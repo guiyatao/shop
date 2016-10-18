@@ -17,13 +17,14 @@
             $("#flexigrid").flexigrid({
                 url: 'index.php?act=online_order&op=get_xml',
                 colModel: [
-                    {display: '操作', name : 'operation', width : 70, sortable : false, align: 'center'},
+                    {display: '操作', name : 'operation', width : 120, sortable : false, align: 'center'},
                     {display: '终端店编码', name: 'clie_id', width: 120, sortable: false, align: 'left'},
                     {display: '终端店名称', name: 'clie_ch_name', width: 120, sortable: false, align: 'left'},
                     {display: '订单总价格', name: 'order_amount', width: 120, sortable: false, align: 'left'},
                     {display: '资金流向', name: 'cash_flow', width: 120, sortable: false, align: 'left'},
                     {display: '结算状态', name: 'pay_flag', width: 120, sortable: false, align: 'left'},
-                    {display: '结算日期', name: 'time', width: 120, sortable: false, align: 'left'}
+                    {display: '结算日期', name: 'time', width: 120, sortable: false, align: 'left'},
+                    {display: '结算凭证', name: 'photo', width: 120, sortable: false, align: 'left'}
 
                 ],
 //                searchitems: [
@@ -54,11 +55,14 @@
                 });
             }
         }
-        function fg_sku(id) {
-            _uri = "index.php?act=online_order&op=show_goods&id=" + id;
-            CUR_DIALOG = ajax_form('hehhe','订单"' + id +'"的商品列表',_uri, 480);
+//        function fg_sku(id) {
+//            _uri = "index.php?act=online_order&op=show_goods&id=" + id;
+//            CUR_DIALOG = ajax_form('hehhe','订单"' + id +'"的商品列表',_uri, 480);
+//        }
+        function fg_sku1(settlement_id) {
+            window.location.href = 'index.php?act=online_order&op=show_orders&settlement_id='+settlement_id;
         }
-        function fg_sku1(clie_id) {
-            window.location.href = 'index.php?act=online_order&op=show_orders&clie_id='+clie_id;
+        function online_settlement(settlement_id) {
+            window.location.href = 'index.php?act=online_order&op=settlement&settlement_id='+settlement_id;
         }
     </script>

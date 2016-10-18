@@ -19,11 +19,11 @@
     <script>
         $(function () {
             $("#flexigrid").flexigrid({
-                url: 'index.php?act=online_order&op=get_order_xml&clie_id=<?=$output['clie_id']?>',
+                url: 'index.php?act=online_order&op=get_order_xml&settlement_id=<?=$output['settlement_id']?>',
                 colModel: [
                     {display: '操作', name : 'operation', width : 150, sortable : false, align: 'center'},
-                    {display: '终端店编码', name: 'clie_id', width: 120, sortable: false, align: 'left'},
                     {display: '订单号', name: 'order_no', width: 120, sortable: false, align: 'left'},
+                    {display: '终端店编码', name: 'clie_id', width: 120, sortable: false, align: 'left'},
                     {display: '终端店名', name: 'clie_ch_name', width: 60, sortable: false, align: 'center'},
                     {display: '供应商编码', name: 'supp_id', width: 120, sortable: false, align: 'left'},
                     {display: '供应商名', name: 'supp_ch_name', width: 60, sortable: false, align: 'center'},
