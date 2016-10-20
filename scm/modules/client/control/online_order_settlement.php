@@ -14,16 +14,17 @@
 use Shopnc\Tpl;
 
 defined('InShopNC') or exit('Access Invalid!');
-class online_orderControl extends SCMControl
+class online_order_settlementControl extends SCMControl
 {
-
+    protected $user_info;
     public function __construct()
     {
         parent::__construct();
+        $this->user_info = SCMModel('scm_user')->getUserInfo($this->admin_info['id']);
     }
     private $links = array(
-        array('url' => 'act=online_order&op=index', 'text' => '商城订单结算'),
-//        array('url' => 'act=online_order&op=show_payed', 'text' => '交易清单'),
+        array('url' => 'act=online_order_setttlement&op=index', 'text' => '商城订单结算'),
+//        array('url' => 'act=online_order_settlement&op=show_payed', 'text' => '交易清单'),
     );
 
 
@@ -34,7 +35,7 @@ class online_orderControl extends SCMControl
     public function showOp()
     {
         Tpl::output('top_link', $this->sublink($this->links, 'index'));
-        Tpl::showpage('online_order.index');
+        Tpl::showpage('online_order_settlement.index');
     }
 
     /**
@@ -49,10 +50,9 @@ class online_orderControl extends SCMControl
 
     public function get_xmlOp()
     {
-
-
         $online_order=SCMModel('gzkj_online_settlement');
-        $orders=$online_order->page($_POST['rp'])->select();
+        $where['clie_id']=$this->user_info['supp_clie_id'];
+        $orders=$online_order->where($where)->page($_POST['rp'])->select();
 
         $data = array();
         $data['now_page'] = $online_order->shownowpage();
@@ -61,11 +61,7 @@ class online_orderControl extends SCMControl
             foreach ($orders as $k => $info) {
                 $list = array();
                     $list['operation'] .= "<a  class=\"btn blue\" href='javascript:void(0)' onclick=\"fg_sku1('" . $info['settlement_id'] . "')\">查看订单</a></li>";
-                if($info['flag']==30){
-                    $list['operation'] .= "<a  class=\"btn \" href='javascript:void(0)' ><i class=\"fa fa-ban\" ></i>结算</a></li>";
-                }else{
-                    $list['operation'] .= "<a  class=\"btn blue\" href='javascript:void(0)' onclick=\"online_settlement('" . $info['settlement_id'] . "')\">结算</a></li>";
-                }
+//                    $list['operation'] .= "<a  class=\"btn blue\" href='javascript:void(0)' onclick=\"online_settlement('" . $info['settlement_id'] . "')\">结算</a></li>";
                     $list['clie_id'] = $info['clie_id'];
                     $list['clie_ch_name'] = SCMModel('scm_client')->getfby_clie_id($info['clie_id'], 'clie_ch_name');
                     $list['order_amount'] = $info['amount'];
@@ -75,10 +71,11 @@ class online_orderControl extends SCMControl
                     }else{
                         $list['pay_flag'] = '未结算';
                     }
-                    $list['time']=substr($info['settlement_date'],5,5);
+
+                    $list['time']=$info['settlement_date'];
                 $img = UPLOAD_SITE_URL."/scm/online_settlement/".$info['photo'];
                 $list['photo'] =  <<<EOB
-            <a href="{$img}" class="pic-thumb-tip nyroModal"  onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
+            <a href="javascript:;" class="pic-thumb-tip" onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
             <i class='fa fa-picture-o'></i></a>
 EOB;
                     $data['list'][$info['settlement_id']] = $list;
@@ -98,7 +95,7 @@ EOB;
         $list = $goods->where($condition)->select();
 
         Tpl::output('goods_list', $list);
-        Tpl::showpage('online_order.goods_list', 'null_layout');
+        Tpl::showpage('online_order_settlement.goods_list', 'null_layout');
     }
 
 
@@ -107,7 +104,7 @@ EOB;
     public function show_ordersOp()
     {
         Tpl::output('settlement_id', $_GET['settlement_id']);
-        Tpl::showpage('online_order.orders_list');
+        Tpl::showpage('online_order_settlement.orders_list');
     }
     public function get_order_xmlOp()
     {

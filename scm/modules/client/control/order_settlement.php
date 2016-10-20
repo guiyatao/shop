@@ -15,19 +15,23 @@ use Shopnc\Tpl;
 
 defined('InShopNC') or exit('Access Invalid!');
 
-class orderControl extends SCMControl
+class order_settlementControl extends SCMControl
 {
     const PAY_TO_SUPPLIER = 2;
     const PAY_TO_CLIENT = 3;
+    protected $user_info;
     public function __construct()
     {
         parent::__construct();
+        $this->user_info = SCMModel('scm_user')->getUserInfo($this->admin_info['id']);
     }
     private $links = array(
-        array('url' => 'act=order&op=index', 'text' => '供应商结算'),
-        array('url' => 'act=order&op=show_flow', 'text' => '终端店结算'),
+        array('url' => 'act=order_settlement&op=show_flow', 'text' => '终端店结算'),
     );
 
+    /**
+     *
+     */
     public function indexOp()
     {
         return $this->showOp();
@@ -37,15 +41,6 @@ class orderControl extends SCMControl
      * 显示
      */
     public function showOp()
-    {
-        Tpl::output('top_link', $this->sublink($this->links, 'index'));
-        Tpl::showpage('order.index');
-    }
-
-    /**
-     * 显示
-     */
-    public function show_flowOp()
     {
         Tpl::output('top_link', $this->sublink($this->links, 'show_flow'));
         Tpl::showpage('order_flow.index');
@@ -57,12 +52,14 @@ class orderControl extends SCMControl
         if($_GET['type']==1){
             $where=array();
             $where['clie_id']= array('neq','');
+            $where['clie_id']=$this->user_info['supp_clie_id'];
             $orders=$order->where($where)->page($_POST['rp'])->select();
         }else{
             $where=array();
             $where['scm_settlement.supp_id']= array('neq','');
             $orders= $order->where($where)->page($_POST['rp'])->select();
         }
+
         $data = array();
         $data['now_page'] = $order->shownowpage();
         $data['total_num'] = $order->gettotalnum();
@@ -70,11 +67,6 @@ class orderControl extends SCMControl
             foreach ($orders as $k => $info) {
                         $list = array();
                         $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"fg_sku1('" . $info['settlement_id'] . "')\">查看订单</a></li>";
-                if($info['flag']==20||$info['flag']==30){
-                    $list['operation'] .= "<a class=\"btn \" href='javascript:void(0)' ><i class=\"fa fa-ban\" ></i>结算</a></li>";
-                }else{
-                    $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"settlement('" . $info['settlement_id'] . "')\">结算</a></li>";
-                }
                         if($_GET['type']==1){
                             $list['clie_id'] = $info['clie_id'];
                             $list['clie_ch_name'] =  SCMModel('gzkj_client')->getfby_clie_id($info['clie_id'],'clie_ch_name');
@@ -91,10 +83,10 @@ class orderControl extends SCMControl
                         }elseif($info['flag']==20||$info['flag']==30){
                             $list['pay_flag'] = '已结算';
                         }
-                        $list['time']=substr($info['settlement_date'],5,5);
+                        $list['time']=$info['settlement_date'];
                 $img = UPLOAD_SITE_URL."/scm/settlement/".$info['photo'];
                 $list['photo'] =  <<<EOB
-            <a   href="{$img}" class="pic-thumb-tip" class="nyroModal"  onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
+            <a href="javascript:;" class="pic-thumb-tip" onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
             <i class='fa fa-picture-o'></i></a>
 EOB;
                 $data['list'][$info['settlement_id']] = $list;
@@ -137,9 +129,7 @@ EOB;
             $list['supp_id'] = $info['supp_id'];
             $list['supp_ch_name'] = SCMModel('gzkj_supplier')->getfby_supp_id($info['supp_id'],'supp_ch_name');
             $list['order_pay'] = $info['order_pay'];
-
-            $date=SCMModel('gzkj_settlement')->getfby_settlement_id($_GET['settlement_id'],'settlement_date');
-            $list['time']=substr($date,5,5);
+            $list['time']=SCMModel('gzkj_settlement')->getfby_settlement_id($_GET['settlement_id'],'settlement_date');
             $data['list'][$info['id']] = $list;
         }
         echo Tpl::flexigridXML($data);

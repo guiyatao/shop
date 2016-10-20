@@ -2,7 +2,7 @@
 
 <div class="page">
     <div class="fixed-bar">
-        <div class="item-title"><a class="back" href=""  title="返回结算列表" onclick="window.history.go(-1)"><i class="fa fa-arrow-circle-o-left"></i></a>
+        <div class="item-title"><a class="back"  title="返回结算列表" onclick="window.history.go(-1)"><i class="fa fa-arrow-circle-o-left"></i></a>
             <div class="subject">
                 <h3><?php echo "结算管理"?> - <?php echo "修改"?></h3>
                 <h5><?php echo "结算活动的管理"?></h5>
@@ -81,13 +81,37 @@
                 </dd>
             </dl>
 
+<!--            <dl class="row">-->
+<!--                <dt class="tit">-->
+<!--                    <label for="set_type"><em>*</em>发送方式</label>-->
+<!--                </dt>-->
+<!--                <dd class="opt">-->
+<!--                    <select name="set_type">-->
+<!--                        <option value="V">微信</option>-->
+<!--                        <option value="D">短信</option>-->
+<!--                    </select>-->
+<!--                </dd>-->
+<!--            </dl>-->
+
+            <!--            <dl class="row">-->
+            <!--                <dt class="tit">发送状态</dt>-->
+            <!--                <dd class="opt">-->
+            <!--                    <div class="onoff">-->
+            <!--                        <label for="status_1" class="cb-enable">已发送</label>-->
+            <!--                        <label for="status_2" class="cb-disable selected">未发送</label>-->
+            <!--                        <input id="status_1" name="status" value="1" type="radio">-->
+            <!--                        <input id="status_2" name="status" value="0" checked type="radio">-->
+            <!--                    </div>-->
+            <!--                </dd>-->
+            <!--            </dl>-->
+
             <div class="bot"><a href="JavaScript:void(0);" class="ncap-btn-big ncap-btn-green" id="submitBtn"><?php echo $lang['nc_submit'];?></a></div>
 
         </div>
     </form>
 </div>
 
-<script type="text/javascript" src="<?php echo ADMIN_RESOURCE_URL;?>/js/jquery.nyroModal.js"></script>
+
 <script type="text/javascript">
     $(function(){
         $("#start_date").datepicker({dateFormat: 'yy-mm-dd'});
@@ -142,8 +166,6 @@
                 }
             }
         });
-
-        $('.nyroModal').nyroModal();
     });
 
     $(function(){

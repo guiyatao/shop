@@ -30,12 +30,19 @@ $_menu['client'] = array (
                                 // 'refund_not_in' => $lang['scm_refund_not_in'],
                         )
                 ),
+//                array(
+//                        'name' => "结算管理",
+//                        'child' => array(
+//                                'all_online_order' => $lang['scm_all_online_order'],
+//                                'client_order' => $lang['scm_client_order'],
+//                        )
+//                ),
                 array(
-                        'name' => "结算管理",
-                        'child' => array(
-                                'all_online_order' => $lang['scm_all_online_order'],
-                                'client_order' => $lang['scm_client_order'],
-                        )
+                    'name' => "结算管理",
+                    'child' => array(
+                        'order_settlement' => "批发订单管理",
+                        'online_order_settlement' => "商城订单管理",
+                    )
                 ),
                 array(
                         'name' => "商品管理",

@@ -47,7 +47,7 @@
         </form>
     </div>
 </div>
-
+<script type="text/javascript" src="<?php echo ADMIN_RESOURCE_URL;?>/js/jquery.nyroModal.js"></script>
 <script>
     $(function(){
         var flexUrl = 'index.php?act=activity&op=get_xml';
@@ -88,6 +88,8 @@
             $("#flexigrid").flexOptions({url: flexUrl}).flexReload();
             $("#formSearch")[0].reset();
         });
+
+        $('.nyroModal').nyroModal();
     });
 
     function fg_operation(name, bDiv) {

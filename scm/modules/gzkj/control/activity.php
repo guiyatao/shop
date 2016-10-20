@@ -125,7 +125,7 @@ class activityControl extends SCMControl
             $param['act_name'] = $value['act_name'];
             $img = UPLOAD_SITE_URL."/scm/activity/".$value['act_banner'];
             $param['act_banner'] =  <<<EOB
-            <a href="javascript:;" class="pic-thumb-tip" onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
+            <a href="{$img}" class="pic-thumb-tip nyroModal "  onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
             <i class='fa fa-picture-o'></i></a>
 EOB;
 

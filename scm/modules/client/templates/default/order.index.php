@@ -12,37 +12,23 @@
     </div>
     <div id="flexigrid"></div>
 </div>
-<script type="text/javascript" src="<?php echo ADMIN_RESOURCE_URL;?>/js/jquery.nyroModal.js"></script>
-<script>
+    <script>
         $(function () {
 
             $("#flexigrid").flexigrid({
-                url: 'index.php?act=order&op=get_xml',
+                url: 'index.php?act=order_settlement&op=get_xml',
                 colModel: [
                     {display: '操作', name : 'operation', width : 150, sortable : false, align: 'center'},
                     {display: '供应商编码', name: 'supp_id', width: 120, sortable: false, align: 'left'},
-                    {display: '供应商名', name: 'supp_ch_name', width: 120, sortable: false, align: 'left'},
+                    {display: '供应商名', name: 'supp_ch_name', width: 60, sortable: false, align: 'center'},
                     {display: '资金流向', name: 'cash_flow', width: 120, sortable: false, align: 'left'},
                     {display: '结算金额', name: 'order_pay', width: 120, sortable: false, align: 'left'},
                     {display: '结算状态', name: 'pay_flag', width: 120, sortable: false, align: 'left'},
-                    {display: '结算日期', name: 'time', width: 60, sortable: false, align: 'left'},
-                    {display: '结算清单', name: 'photo', width: 60, sortable: false, align: 'left'}
-
+                    {display: '结算日期', name: 'time', width: 60, sortable: false, align: 'center'},
+                    {display: '结算清单', name: 'photo', width: 60, sortable: false, align: 'center'}
                 ],
-//                searchitems: [
-//                    {display: '终端店编码', name: 'clie_id'},
-//                    {display: '订单号', name: 'order_no'},
-//                    {display: '终端店名', name: 'clie_ch_name'},
-//                    {display: '供应商编码', name: 'supp_id'},
-//                    {display: '终端店名', name: 'supp_ch_name'}
-//                ],
-
                 title: '供应商结算列表',
-//                rpOptions: [1,2],
-//                rp :1,
             });
-
-            $('.nyroModal').nyroModal();
         });
 
         function fg_operation(name, grid) {
@@ -64,15 +50,9 @@
             }
         }
 
-        function settlement(settlement_id) {
-            window.location.href = 'index.php?act=order&op=settlement&settlement_id='+settlement_id;
-//            _uri = "index.php?act=order&op=settlement&id=" + settlement_id;
-//            CUR_DIALOG = ajax_form('hehhe','订单"' + id +'"的商品列表',_uri, 1000);
-        }
         function fg_sku1(settlement_id) {
-//            _uri = "index.php?act=order&op=show_orders&supp_id=" + supp_id;
-//            CUR_DIALOG = ajax_form('hehhe','供应商"' + supp_id +'"的订单列表',_uri, 480);
-            window.location.href = 'index.php?act=order&op=show_orders&settlement_id='+settlement_id;
+            window.location.href = 'index.php?act=order_settlement&op=show_orders&settlement_id='+settlement_id;
         }
+
 
     </script>
