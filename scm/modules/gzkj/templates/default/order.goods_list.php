@@ -6,6 +6,8 @@
         <h4>商品名称</h4>
         <h4>订购数量</h4>
         <h4>生产厂家</h4>
+        <h4>供应商编码</h4>
+        <h4>终端店编码</h4>
     </div>
     <div class="content">
         <ul>
@@ -14,6 +16,8 @@
                     <span><?php echo $val['goods_nm']; ?></span>
                     <span><?php echo $val['set_num']; ?></span>
                     <span><?php echo $val['produce_company']; ?></span>
+                    <span><?php echo $val['supp_id']; ?></span>
+                    <span><?php echo $val['clie_id']; ?></span>
                 </li>
             <?php } ?>
         </ul>

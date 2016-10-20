@@ -937,7 +937,7 @@ background: rgba(0,0,0,0.5); width: 100%; }
 .ncap-goods-goods .content li { background-color: #FFF; border-top: solid 1px #E6E6E6; }
 .ncap-goods-goods .content li:nth-child(even) { background-color: #F5F5F4; }
 .ncap-goods-goods .title h4,
-.ncap-goods-goods .content span { font-size: 12px; line-height: 24px; vertical-align: middle; display: inline-block; height: auto; padding: 3px 2%; width: 16%; }
+.ncap-goods-goods .content span { font-size: 12px; line-height: 24px; vertical-align: middle; display: inline-block; height: auto; padding: 3px 2%; width: 12%; }
 .ncap-goods-goods .content span img { max-width: 24px; max-height: 24px; }
 /*满送详情*/
 .promotion-ms { }

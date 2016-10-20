@@ -1,6 +1,6 @@
 <?php defined('InShopNC') or exit('Access Invalid!'); ?>
 
-<div class="ncap-goods-sku">
+<div class="ncap-goods-goods">
     <div class="title">
         <h4>订单索引编号</h4>
         <h4>终端店编码</h4>
@@ -13,6 +13,7 @@
         <ul>
             <?php foreach ($output['goods_list'] as $val) { ?>
                 <li><span><?php echo $val['order_id']; ?></span>
+                    <span><?php echo $val['clie_id']; ?></span>
                     <span><?php echo $val['goods_name']; ?></span>
                     <span><?php echo $val['goods_price']; ?></span>
                     <span><?php echo $val['goods_num']; ?></span>

@@ -65,6 +65,6 @@
 
         function fg_sku(id) {
             _uri = "index.php?act=order&op=show_goods&id=" + id;
-            CUR_DIALOG = ajax_form('hehhe','订单"' + id +'"的商品列表',_uri, 480);
+            CUR_DIALOG = ajax_form('hehhe','订单"' + id +'"的商品列表',_uri, 1000);
         }
     </script>

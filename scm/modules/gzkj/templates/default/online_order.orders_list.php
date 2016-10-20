@@ -68,7 +68,7 @@
             console.log(order_id);
             console.log(clie_id);
             _uri = "index.php?act=online_order&op=show_goods&order_id=" +order_id+"&clie_id="+clie_id;
-            CUR_DIALOG = ajax_form('hehhe','订单"' + order_id +'"的商品列表',_uri, 480);
+            CUR_DIALOG = ajax_form('hehhe','订单"' + order_id +'"的商品列表',_uri, 1000);
         }
 //        function fg_sku1(supp_id) {
 //            _uri = "index.php?act=order&op=show_orders&supp_id=" + supp_id;
