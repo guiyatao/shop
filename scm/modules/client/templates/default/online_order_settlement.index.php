@@ -19,7 +19,7 @@
                 colModel: [
                     {display: '操作', name : 'operation', width : 120, sortable : false, align: 'center'},
                     {display: '终端店编码', name: 'clie_id', width: 120, sortable: false, align: 'left'},
-                    {display: '终端店名称', name: 'clie_ch_name', width: 120, sortable: false, align: 'left'},
+                    {display: '终端店名称', name: 'clie_ch_name', width: 150, sortable: false, align: 'left'},
                     {display: '订单总价格', name: 'order_amount', width: 120, sortable: false, align: 'left'},
                     {display: '资金流向', name: 'cash_flow', width: 120, sortable: false, align: 'left'},
                     {display: '结算状态', name: 'pay_flag', width: 120, sortable: false, align: 'left'},

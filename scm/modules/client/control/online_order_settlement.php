@@ -72,7 +72,7 @@ class online_order_settlementControl extends SCMControl
                         $list['pay_flag'] = '未结算';
                     }
 
-                    $list['time']=$info['settlement_date'];
+                    $list['time']=substr($info['settlement_date'],5,5);
                 $img = UPLOAD_SITE_URL."/scm/online_settlement/".$info['photo'];
                 $list['photo'] =  <<<EOB
             <a href="javascript:;" class="pic-thumb-tip" onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
@@ -120,15 +120,15 @@ EOB;
                 $list['order_sn'] = $info['order_sn'];
                 $list['clie_id'] = $info['clie_id'];
                 $list['clie_ch_name'] = SCMModel('scm_client')->getfby_clie_id($info['clie_id'],'clie_ch_name');
-                $list['order_amount'] = $info['order_amount'];
                 $list['cash_flow'] = '共铸商城->终端店';
                 $list['order_amount'] = $info['order_amount'];
-                if($info['pay_flag']==0){
-                    $list['pay_flag'] = '未结算';
-                }else{
-                    $list['pay_flag'] = '已结算';
-                }
-                $list['time']=SCMModel('gzkj_online_settlement')->getfby_settlement_id($_GET['settlement_id'],'settlement_date');
+//                if($info['pay_flag']==0){
+//                    $list['pay_flag'] = '未结算';
+//                }else{
+//                    $list['pay_flag'] = '已结算';
+//                }
+                $date=SCMModel('gzkj_online_settlement')->getfby_settlement_id($_GET['settlement_id'],'settlement_date');
+                $list['time']=substr($date,5,5);
                 $data['list'][$info['id']] = $list;
             }
         }

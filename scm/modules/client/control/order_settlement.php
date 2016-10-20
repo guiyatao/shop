@@ -83,7 +83,7 @@ class order_settlementControl extends SCMControl
                         }elseif($info['flag']==20||$info['flag']==30){
                             $list['pay_flag'] = '已结算';
                         }
-                        $list['time']=$info['settlement_date'];
+                        $list['time']=substr($info['settlement_date'],5,5);
                 $img = UPLOAD_SITE_URL."/scm/settlement/".$info['photo'];
                 $list['photo'] =  <<<EOB
             <a href="javascript:;" class="pic-thumb-tip" onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
@@ -129,7 +129,8 @@ EOB;
             $list['supp_id'] = $info['supp_id'];
             $list['supp_ch_name'] = SCMModel('gzkj_supplier')->getfby_supp_id($info['supp_id'],'supp_ch_name');
             $list['order_pay'] = $info['order_pay'];
-            $list['time']=SCMModel('gzkj_settlement')->getfby_settlement_id($_GET['settlement_id'],'settlement_date');
+            $date=SCMModel('gzkj_settlement')->getfby_settlement_id($_GET['settlement_id'],'settlement_date');
+            $list['time']=substr($date,5,5);
             $data['list'][$info['id']] = $list;
         }
         echo Tpl::flexigridXML($data);

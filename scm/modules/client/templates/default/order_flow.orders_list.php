@@ -22,10 +22,10 @@
                 colModel: [
                     {display: '操作', name : 'operation', width : 150, sortable : false, align: 'center'},
                     {display: '终端店编码', name: 'clie_id', width: 120, sortable: false, align: 'left'},
-                    {display: '订单号', name: 'order_no', width: 120, sortable: false, align: 'left'},
-                    {display: '终端店名', name: 'clie_ch_name', width: 60, sortable: false, align: 'center'},
+                    {display: '订单号', name: 'order_no', width: 150, sortable: false, align: 'left'},
+                    {display: '终端店名', name: 'clie_ch_name', width: 150, sortable: false, align: 'left'},
                     {display: '供应商编码', name: 'supp_id', width: 120, sortable: false, align: 'left'},
-                    {display: '供应商名', name: 'supp_ch_name', width: 60, sortable: false, align: 'center'},
+                    {display: '供应商名', name: 'supp_ch_name', width: 150, sortable: false, align: 'left'},
                     {display: '结算金额', name: 'order_pay', width: 120, sortable: false, align: 'left'},
                     {display: '结算日期', name: 'time', width: 120, sortable: false, align: 'left'},
 
@@ -65,6 +65,6 @@
 
         function fg_sku(id) {
             _uri = "index.php?act=order&op=show_goods&id=" + id;
-            CUR_DIALOG = ajax_form('hehhe','订单"' + id +'"的商品列表',_uri, 480);
+            CUR_DIALOG = ajax_form('hehhe','订单"' + id +'"的商品列表',_uri, 1000);
         }
     </script>
