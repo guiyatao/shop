@@ -23,13 +23,13 @@
 ////                    {display: '订单号', name: 'order_no', width: 120, sortable: false, align: 'left'},
 //                    {display: '终端店名', name: 'clie_ch_name', width: 60, sortable: false, align: 'center'},
                     {display: '供应商编码', name: 'supp_id', width: 120, sortable: false, align: 'left'},
-                    {display: '供应商名', name: 'supp_ch_name', width: 60, sortable: false, align: 'center'},
+                    {display: '供应商名', name: 'supp_ch_name', width: 150, sortable: false, align: 'left'},
 
                     {display: '资金流向', name: 'cash_flow', width: 120, sortable: false, align: 'left'},
                     {display: '结算金额', name: 'order_pay', width: 120, sortable: false, align: 'left'},
                     {display: '结算状态', name: 'pay_flag', width: 120, sortable: false, align: 'left'},
-                    {display: '结算日期', name: 'time', width: 60, sortable: false, align: 'center'},
-                    {display: '结算清单', name: 'photo', width: 60, sortable: false, align: 'center'}
+                    {display: '结算日期', name: 'time', width: 60, sortable: false, align: 'left'},
+                    {display: '结算清单', name: 'photo', width: 60, sortable: false, align: 'left'}
 
                 ],
 //                searchitems: [
