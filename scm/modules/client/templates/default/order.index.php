@@ -12,6 +12,7 @@
     </div>
     <div id="flexigrid"></div>
 </div>
+<script type="text/javascript" src="<?php echo ADMIN_RESOURCE_URL;?>/js/jquery.nyroModal.js"></script>
     <script>
         $(function () {
 
@@ -29,6 +30,7 @@
                 ],
                 title: '供应商结算列表',
             });
+            $('.nyroModal').nyroModal();
         });
 
         function fg_operation(name, grid) {

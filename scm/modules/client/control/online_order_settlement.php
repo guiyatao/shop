@@ -75,7 +75,7 @@ class online_order_settlementControl extends SCMControl
                     $list['time']=substr($info['settlement_date'],5,5);
                 $img = UPLOAD_SITE_URL."/scm/online_settlement/".$info['photo'];
                 $list['photo'] =  <<<EOB
-            <a href="javascript:;" class="pic-thumb-tip" onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
+            <a href="{$img}" class="pic-thumb-tip  nyroModal" onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
             <i class='fa fa-picture-o'></i></a>
 EOB;
                     $data['list'][$info['settlement_id']] = $list;
