@@ -341,30 +341,55 @@ class scm_online_orderModel extends Model {
         $refundGoodsList = $this->table('refund_return')->field("*")->where(array("order_sn" =>$order['order_sn']))->select();
         //获取当前订单中全部的商品
         $goodsList = $this->table('scm_online_order_goods')->field("*")->where(array("order_id" =>$order['order_id'],"clie_id"=>$order['clie_id']))->select();
-
-        if(count($refundGoodsList) == 1 && $refundGoodsList[0]['goods_id'] == 0 ){
-            return 2;
-        }else{
-            $refund_flag = 0;
-            $count =0;
-            foreach($goodsList as $k => $v){
-                foreach($refundGoodsList as $kk => $vv){
-                    if($v['goods_id'] == $vv['goods_id']){
-                        $refund_flag = 1;
-                        break;
+        $refund_flag = 0;  // 0  未退款  1 部分退款   2 全部退款
+        $flag = 0;
+        $count =0;
+        $refund_state = 0;
+        $refund_state_count = 0;
+        foreach($goodsList as $k => $v){
+            foreach($refundGoodsList as $kk => $vv){
+                if($v['goods_id'] == $vv['goods_id'] && $vv['seller_state'] != 3 ){  //退款失败的也看做未申请退款
+                    $refund_flag = 1;
+                    $flag = 1;
+                    if($vv['refund_state'] ==3 ){  //同意退款
+                        $refund_state_count++;
                     }
-                }
-                if( $refund_flag == 1){
-                    $count++;
-                    $refund_flag = 0;
+                    break;
+                }elseif($vv['goods_id'] == 0){
+                    $refund_flag = 2;
+                    if($vv['refund_state'] ==3 ){  //同意退款
+                        $refund_state = 1;
+                    }
+                    break;
                 }
             }
-            if($count == 0)
-                return 0;
-            elseif($count > 0 && $count < count($goodsList) )
-                return 1;
-            elseif($count == count($goodsList) )
-                return 2;
+            if( $flag == 1){
+                $count++;
+                $flag = 0;
+            }elseif($refund_flag == 2){
+                break;
+            }
+        }
+        if($count == 0 && $refund_flag == 0){  //未申请退货  (发货，交易完成)
+            return 0;
+        }
+        elseif($count > 0 && $count < count($goodsList) && $refund_flag == 1 ){  //申请部分退货 (退款处理中，退款完成)  (发货，交易完成)(退款完成 另外一些还未收货)
+
+            return 1;
+        }
+        elseif( ($count == count($goodsList) && $refund_flag == 1)){   //申请全部退货 (退款处理中，退款完成)  (发货，交易完成)
+            if($refund_state_count ==count($goodsList) ) //交易完成
+            {
+                return array('order_state' => ORDER_STATE_SUCCESS,'refund_state' => 2);
+            }else{
+                return array('order_state' => ORDER_STATE_SEND,'refund_state' => 2);
+            }
+        }elseif($refund_flag == 2){
+            if($refund_state == 1){  //交易完成
+                return array('order_state' => ORDER_STATE_SUCCESS,'refund_state' => 2);
+            }else{
+                return array('order_state' => ORDER_STATE_SEND,'refund_state' => 2);
+            }
         }
     }
 

@@ -14,7 +14,7 @@ defined('InShopNC') or exit('Access Invalid!');
 
 final class Order
 {
-    private static $shop_status = array(0=>"已取消",10=>"未付款",20=>"待发货",30=>"已发货",40=>"已收货",50=>"已接单",60=>"已弃单");
+    private static $shop_status = array(0=>"已取消",10=>"未付款",20=>"待发货",30=>"已发货",40=>"交易完成",50=>"已接单",60=>"已弃单");
     //订单状态(未完成0/已完成1/半单2/取消单3/退货单4)
     private static $client_status = array(0=>"未完成", 1=>"已完成", 2=>"半单", 3=>"取消", 4=>"退货");
 

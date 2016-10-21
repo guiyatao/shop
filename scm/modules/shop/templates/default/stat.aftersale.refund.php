@@ -108,7 +108,7 @@ function update_flex(){
             {display: '操作', name : 'operation', width : 60, sortable : false, align: 'center', className: 'handle-s'},
             {display: '订单编号', name : 'order_sn', width : 130, sortable : false, align: 'center'},
             {display: '退款编号', name : 'refund_sn', width : 150, sortable : false, align: 'center'},
-//            {display: '店铺名称', name : 'store_name',  width : 120, sortable : false, align: 'center'},
+            {display: '商城名称', name : 'store_name',  width : 120, sortable : false, align: 'center'},
             {display: '商品名称', name : 'goods_name', width : 150, sortable : false, align: 'center'},
             {display: '买家会员名', name : 'buyer_name', width : 80, sortable : false, align: 'center'},
             {display: '申请时间', name : 'add_time', width : 80, sortable : true, align: 'center'},

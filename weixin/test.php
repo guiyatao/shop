@@ -40,7 +40,7 @@
                 {
                     "type": "view", 
                     "name": "我的订单", 
-                    "url": "http://www.gongzhuying.com/weixin/myorders.php"
+                    "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx134e9c8f60f06f47&redirect_uri=http%3A%2F%2Fwww.gongzhuying.com%2Fweixin%2Fmyorders.php&response_type=code&scope=snsapi_base&state=wxbase#wechat_redirect"
                 }
             ]
         },

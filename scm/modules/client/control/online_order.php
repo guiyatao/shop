@@ -44,6 +44,7 @@ class online_orderControl extends SCMControl{
         if ($_POST['sortorder'] != '' && in_array($_POST['sortname'],$sort_fields)) {
             $order = $_POST['sortname'].' '.$_POST['sortorder'];
         }
+
         $field = "scm_online_order.*,orders.refund_state,orders.lock_state,orders.order_state AS status,orders.payment_code AS pay_way";
         $order_list = $model_order->getOrderListOn($condition,$_POST['rp'],$field,$order);
         $data = array();
@@ -71,22 +72,51 @@ class online_orderControl extends SCMControl{
             elseif($order_info['pickup_mode'] == 1)
                 $list['pickup_mode'] = "上门送";
             $list['order_amount'] = $order_info['order_amount'];
-            $list['order_state'] = Order::getShopOrderStatusByID($order_info['status']);
             if($order_info['lock_state'] == 0){
-                if($order_info['refund_state'] == 2)
+                if($order_info['refund_state'] == 2){
+                    $list['order_state'] = Order::getShopOrderStatusByID(ORDER_STATE_SUCCESS);
                     $list['refund_state'] = "<span style='color:red;'>已申请全部退款/退款完成</span>";
-                else if($order_info['refund_state'] == 0)
+                }
+                else if($order_info['refund_state'] == 0){
+                    $list['order_state'] = Order::getShopOrderStatusByID($order_info['status']);
                     $list['refund_state'] = "未申请退款";
-                elseif($order_info['refund_state'] == 1)  //部分退款
-                    $list['refund_state'] = "<span style='color:red;'>已申请部分退款/退款完成</span>";
-            }elseif($order_info['lock_state'] > 0){
+                }
+                elseif($order_info['refund_state'] == 1) {   //是不是当前终端店的部分退款
+                    $refund_flag = $model_order->getOrderRefundState($order_info);
+                    if($refund_flag == 1 ){
+                        $list['order_state'] = Order::getShopOrderStatusByID($order_info['status']);
+                        $list['refund_state'] = "<span style='color:red;'>已申请部分退款/退款完成</span>";
+                    }
+                    elseif($refund_flag['refund_state'] == 2 ){
+                        $list['order_state'] = Order::getShopOrderStatusByID(ORDER_STATE_SUCCESS);
+                        $list['refund_state'] = "<span style='color:red;'>已申请全部退款/退款完成</span>";
+                    }
+                    elseif($refund_flag == 0 ){
+                        $list['order_state'] = Order::getShopOrderStatusByID($order_info['status']);
+                        $list['refund_state'] = "未申请退款";
+                    }
+
+                }
+            }elseif($order_info['lock_state'] > 0){  //正在处理退款请求(不能排除的情况 当前订单已经退货完成， 另外的订单正在处理退货请求)
                 $refund_flag = $model_order->getOrderRefundState($order_info);
-                if($refund_flag == 0)
+                $list['order_state'] = Order::getShopOrderStatusByID(ORDER_STATE_SEND);
+                if($refund_flag == 0){
                     $list['refund_state'] = "未申请退款";
-                elseif($refund_flag == 1)
+                }
+                elseif($refund_flag == 1){
+
                     $list['refund_state'] = "<span style='color:red;'>已申请部分退款/退款处理中</span>";
-                elseif($refund_flag == 2)
-                    $list['refund_state'] = "<span style='color:red;'>已申请全部退款/退款处理中</span>";
+                }
+                elseif($refund_flag['refund_state'] == 2){
+                    $list['order_state'] = Order::getShopOrderStatusByID($refund_flag['order_state']);
+                    if($refund_flag['order_state'] == ORDER_STATE_SUCCESS){
+                        $list['refund_state'] = "<span style='color:red;'>已申请全部退款/退款完成</span>";
+                    }elseif($refund_flag['order_state'] == ORDER_STATE_SEND){
+                        $list['refund_state'] = "<span style='color:red;'>已申请全部退款/退款处理中</span>";
+                    }
+
+                }
+
             }
             $data['list'][$order_info['id']] = $list;
         }

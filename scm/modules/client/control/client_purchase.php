@@ -78,7 +78,7 @@ class client_purchaseControl extends SCMControl{
                     $out_array['goods_num'] = '<input id="num_'.$v['goods_barcode'].'"style="width:50px" type="number" min="0" name=num_'.$v['goods_barcode'].'" title="订购数量" class="editable" />';
                     $out_array['status'] = "正常";
                 }
-                $out_array['goods_discount_price'] = $temp_goods['goods_price'] * $temp_goods['goods_discount'];
+                $out_array['goods_discount_price'] = round($temp_goods['goods_price'] * $temp_goods['goods_discount'],2);
                 $out_array['goods_unit'] = $temp_goods['goods_unit'];
                 $out_array['goods_spec'] = $temp_goods['goods_spec'];
                 $out_array['min_set_num'] = $temp_goods['min_set_num'];
@@ -134,7 +134,7 @@ class client_purchaseControl extends SCMControl{
         $this->_get_condition($condition);
         $list = $model->getAllGoodsList($condition, $page, $field);
 //        $src = UPLOAD_SITE_URL_HTTPS.DS.ATTACH_GOODS.DS.'1'.DS.$pic_name;
-        $src = "/data/upload/shop/store/goods/1/1_05211427960233743_240.jpg";
+        $src = "http://192.168.3.250/data/upload/shop/store/goods/1/1_05211427960233743_240.jpg";
         $out_list = array();
         if (!empty($list) && is_array($list)){
             $fields_array = array('goods_barcode','goods_nm','goods_discount_price','goods_unit','unit_num','goods_spec','supp_id','produce_company', 'produce_area','min_set_num','goods_online_exist', 'is_new_good');
@@ -146,6 +146,7 @@ class client_purchaseControl extends SCMControl{
                 $out_array['operation'] = $operation;
                 //$out_array['goods_nm'] = "<a href='javascript:void(0);' onmouseover=\"toolTip('<img src=" . $src .">')\" onmouseout=\"toolTip()\">{$v['goods_nm']}</a>";
                 $out_array['goods_nm'] = $v['goods_nm'];
+                $out_array['goods_discount_price'] = round($out_array['goods_discount_price'],2);
                 $out_list[$v['id']] = $out_array;
             }
         }

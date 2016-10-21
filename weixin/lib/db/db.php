@@ -61,8 +61,7 @@ class DB {
 			$setvalues[] = " `". addslashes($k)."`='".addslashes($v)."' ";
 		}
 		$setvaluestr = implode(",", $setvalues);
-       
-		$ret = $this->pdo->exec("UPDATE `".TABLEPRE."$table` set $setvaluestr where $where");
+		$ret = $this->pdo->exec("UPDATE `".TABLEPRE."$table` set $setvaluestr where $where");		
 		$this->addToLog2("UPDATE `".TABLEPRE."$table` set $setvaluestr where $where");
 		return $ret;
 	}
@@ -122,6 +121,25 @@ class DB {
 		    }
 		}
 		return $this->query($sql);
+	}
+	/**
+	 * 返回数组的维度
+	 * @param  [type] $arr [description]
+	 * @return [type]      [description]
+	 */
+	function arrayLevel($arr){
+	    $al = array(0);
+	    function aL($arr,&$al,$level=0){
+	        if(is_array($arr)){
+	            $level++;
+	            $al[] = $level;
+	            foreach($arr as $v){
+	                aL($v,$al,$level);
+	            }
+	        }
+	    }
+	    aL($arr,$al);
+	    return max($al);
 	}
 	
 }

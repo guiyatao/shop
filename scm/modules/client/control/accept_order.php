@@ -53,6 +53,7 @@ class accept_orderControl extends SCMControl{
         $data = array();
         $data['now_page'] = $model_order->shownowpage();
         $data['total_num'] = count($model_order->getOrderListOn($condition,null,$field,$order));
+
         foreach ($order_list as $order_id => $order_info) {
             $list = array();
             if($order_info['lock_state'] == 1 || $order_info['status'] == 0 || $order_info['refund_state'] == 2 || $order_info['refund_state'] == 1)
@@ -80,22 +81,39 @@ class accept_orderControl extends SCMControl{
             $list['order_amount'] = $order_info['order_amount'];
             $list['order_state'] = Order::getShopOrderStatusByID($order_info['status']);
             if($order_info['lock_state'] == 0){
-                if($order_info['refund_state'] == 2)
+                if($order_info['refund_state'] == 2){
+                    $list['order_state'] = Order::getShopOrderStatusByID(ORDER_STATE_CANCEL);
                     $list['refund_state'] = "<span style='color:red;'>已申请全部退款/退款完成</span>";
-                else if($order_info['refund_state'] == 0)
+                }
+                else if($order_info['refund_state'] == 0){
                     $list['refund_state'] = "未申请退款";
-                elseif($order_info['refund_state'] == 1)  //部分退款
-                    $list['refund_state'] = "<span style='color:red;'>已申请部分退款/退款完成</span>";
+                }
+                elseif($order_info['refund_state'] == 1){   //部分退款
+                    $list['order_state'] = Order::getShopOrderStatusByID(ORDER_STATE_CANCEL);
+                    $refund_flag = $model_order->getOrderRefundState($order_info);
+                    if($refund_flag == 1 )
+                        $list['refund_state'] = "<span style='color:red;'>已申请部分退款/退款完成</span>";
+                    elseif($refund_flag['refund_state'] == 2 )
+                        $list['refund_state'] = "<span style='color:red;'>已申请全部退款/退款完成</span>";
+                    elseif($refund_flag == 0 ){
+                        $list['order_state'] = Order::getShopOrderStatusByID($order_info['status']);
+                        $list['refund_state'] = "未申请退款";
+                    }
+                }
             }elseif($order_info['lock_state'] > 0){
                     $refund_flag = $model_order->getOrderRefundState($order_info);
-                    if($refund_flag == 0)
+                    if($refund_flag == 0){
                         $list['refund_state'] = "未申请退款";
-                    elseif($refund_flag == 1)
+                    }
+                    elseif($refund_flag == 1){
+                        $list['order_state'] = Order::getShopOrderStatusByID(ORDER_STATE_PAY);
                         $list['refund_state'] = "<span style='color:red;'>已申请部分退款/退款处理中</span>";
-                    elseif($refund_flag == 2)
+                    }
+                    elseif($refund_flag['refund_state'] == 2){
+                        $list['order_state'] = Order::getShopOrderStatusByID(ORDER_STATE_PAY);
                         $list['refund_state'] = "<span style='color:red;'>已申请全部退款/退款处理中</span>";
+                    }
             }
-
 			$data['list'][$order_info['id']] = $list;
         }
         exit(Tpl::flexigridXML($data));
@@ -120,7 +138,7 @@ class accept_orderControl extends SCMControl{
             foreach ($goods_array as $goods) {
                 $model_order->editStock($goods, '-', $this->user_info['supp_clie_id']);
             }
-            //jinyu 2016/09/12 遍历相同的订单号order_sn，如果所有订单状态都为50(已接单),gzkj_orders的订单状态为30(待收货)
+            //jinyu 2016/09/12 遍历相同的订单号order_sn，如果所有订单状态都为50(已接单/已发货),gzkj_orders的订单状态为30(已发货/待收货)
             $order = $model_order->getOrderInfo(array('order_id'=> $_POST['order_id'] ),null,'*');
             $order_list = $model_order->getOrderList(array('order_sn'=>$order['order_sn']),null,'*');
             $flag = true;

@@ -181,6 +181,19 @@ class scm_supp_clientModel extends Model{
     }
 
     /**
+     * @param array $condition
+     * @param string $page
+     * @param string $limit
+     * @param string $fields
+     * @param string $order
+     * @return mixed
+     */
+    public function getAllSupplier($condition = array(), $page = '', $limit = '', $fields = '*', $order = 'id desc') {
+        $result = $this->table('scm_supplier')->field($fields)->where($condition)->page($page)->limit($limit)->order($order)->select();
+        return $result;
+    }
+
+    /**
      * 帮助图片记录
      *
      * @param
@@ -209,8 +222,8 @@ class scm_supp_clientModel extends Model{
      * @param
      * @return array
      */
-    public function getSupplierList($condition = array(), $page = '', $order = 'supp_id desc') {
-        $result = $this->getSuppList($condition, $page, '', '*', $order);
+    public function getSupplierList($condition = array(),$field = '*', $page = '', $order = 'supp_id desc') {
+        $result = $this->getSuppList($condition, $page, '',$field, $order);
         return $result;
     }
 

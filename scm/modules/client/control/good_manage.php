@@ -139,6 +139,7 @@ class good_manageControl extends SCMControl{
             $goods = array();
             $goods['goods_nm'] = trim($_POST['goods_nm']);
             $goods['goods_barcode'] = trim($_POST['goods_barcode']);
+            $goods['supp_id'] = trim($_POST['supp_id']);
             $goods['goods_spec'] = trim($_POST['goods_spec']);
             $goods['goods_price'] = trim($_POST['goods_price']);
             $goods['goods_unit'] = trim($_POST['goods_unit']);
@@ -156,6 +157,8 @@ class good_manageControl extends SCMControl{
             else
                 showDialog(L('nc_common_op_succ'), urlSCMClient('good_manage', 'index'), 'error', '$("#flexigrid").flexReload();CUR_DIALOG.close()');
         }
+        $supp_list =  SCMModel('scm_supp_client')->getAllSupplier();
+        Tpl::output('supp_list',$supp_list);
         Tpl::showpage('goods_add');
     }
 
@@ -170,6 +173,7 @@ class good_manageControl extends SCMControl{
                 'goods_nm' => trim($_POST['goods_nm']),
                 'goods_barcode' => trim($_POST['goods_barcode']),
                 'goods_spec' => trim($_POST['goods_spec']),
+                'supp_id' => trim($_POST['supp_id']),
                 'goods_price' => trim($_POST['goods_price']),
                 'goods_unit' => trim($_POST['goods_unit']),
                 'goods_stock' => trim($_POST['goods_stock']),
@@ -178,16 +182,18 @@ class good_manageControl extends SCMControl{
                 'production_date' => $_POST['production_date'],
                 'valid_remind' => trim($_POST['valid_remind']),
                 'shelf_life' => trim($_POST['shelf_life']).$_POST['shelf_life_unit'] ,
-               'drug_remind' => trim($_POST['drug_remind']),
+                'drug_remind' => trim($_POST['drug_remind']),
             ));
             if($result)
                 showDialog(L('nc_common_op_succ'), urlSCMClient('good_manage', 'index'), 'succ', '$("#flexigrid").flexReload();CUR_DIALOG.close()');
             else
-                showDialog(L('nc_common_op_succ'), urlSCMClient('good_manage', 'index'), 'error', '$("#flexigrid").flexReload();CUR_DIALOG.close()');
+                showDialog('操作失败', urlSCMClient('good_manage', 'index'), 'error', '$("#flexigrid").flexReload();CUR_DIALOG.close()');
         }
         $goods_info = $model-> getGoodsInfoById($_GET['id']);
         if($goods_info){
             Tpl::output('goods_info', $goods_info);
+            $supp_list =  SCMModel('scm_supp_client')->getAllSupplier();
+            Tpl::output('supp_list',$supp_list);
             $number = $this->findNum($goods_info['shelf_life']);
             Tpl::output('shelf_life',$number);
             $shelf_life_unit = str_replace($number,'',$goods_info['shelf_life']);

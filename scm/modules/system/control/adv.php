@@ -175,7 +175,7 @@ class advControl extends SCMControl{
             $list['operation'] = "<a class='btn red' onclick=\"fg_delete({$ap_info['ap_id']})\"><i class='fa fa-trash-o'></i>删除</a>";
             $operation_detail = "<li><a href=\"index.php?act=adv&op=adv&ap_id={$ap_info['ap_id']}\"></i>管理广告</a></li>";
             $operation_detail .= "<li><a href='index.php?act=adv&op=ap_edit&ap_id={$ap_info['ap_id']}'>编辑属性</a></li>";
-        
+            $operation_detail .= "<li><a onclick=\"copyToClipBoard('{$ap_info['ap_id']}');\" href=\"javascript:void(0)\">代码调用</a></li>";
             if ($operation_detail) {
                 $list['operation'] .= "<span class='btn'><em><i class='fa fa-cog'></i>设置 <i class='arrow'></i></em><ul>{$operation_detail}</ul>";
             }

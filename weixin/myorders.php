@@ -24,8 +24,15 @@ error_reporting(E_ALL | E_STRICT);
 
 require_once "./gongzhuying.php";
 
+try {
 $auth = new wxauth();
-
+} catch (Exception $e) {
+    $url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=".WECHAT_APPID."&redirect_uri=http%3A%2F%2Fwww.gongzhuying.com%2Fweixin%2Fmyorders.php&response_type=code&scope=snsapi_base&state=wxbase#wechat_redirect";
+    header('Location: ' . $url);
+}
+if(empty($_GET["code"])) {
+    return;
+}
 $openid = $auth->wxuser['open_id'];
 
 $gongzhuying = new gongzhuying();
@@ -65,7 +72,8 @@ if($isStoreOwner){
                     <?php echo $v['supp_ch_name']; ?>
                 </div>
             </div>
-            <a class="weui-cell" href="orderGoods.php?order_id=<?php echo $v["id"]; ?>">
+            <a class="weui-cell" href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=<?php echo WECHAT_APPID;?>&redirect_uri=http%3A%2F%2Fwww.gongzhuying.com%2Fweixin%2ForderGoods.php%3Forder_id%3D<?php echo $v["id"]; ?>&response_type=code&scope=snsapi_base&state=wxbase#wechat_redirect" >
+
                 <div class="weui-cell__bd">
                     <p style="color:black;">详情</p>
                 </div>
@@ -83,7 +91,7 @@ if($isStoreOwner){
                 </div>
             </div>
             <?php }elseif ($v['refund_flag'] == 0){ ?>
-             <a href="orderGoods.php?op=instock&order_id=<?php echo $v["id"]; ?>" class="weui-btn weui-btn_primary">确认</a>
+             <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=<?php echo WECHAT_APPID;?>&redirect_uri=http%3A%2F%2Fwww.gongzhuying.com%2Fweixin%2ForderGoods.php%3Fop%3Dinstock%26order_id%3D<?php echo $v["id"]; ?>&response_type=code&scope=snsapi_base&state=wxbase#wechat_redirect" class="weui-btn weui-btn_primary">确认</a>
             <?php
             }
             ?>
