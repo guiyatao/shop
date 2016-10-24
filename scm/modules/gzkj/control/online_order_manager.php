@@ -53,8 +53,6 @@ class online_order_managerControl extends SCMControl
                 }
             }
         }
-
-
         $orders = $order->where($condition)->page($_POST['rp'])->order('add_time desc')->select();
         $data = array();
         $data['now_page'] = $order->shownowpage();
@@ -62,19 +60,16 @@ class online_order_managerControl extends SCMControl
         if(!empty($orders)) {
             foreach ($orders as $k => $info) {
                 $list = array();
-
                 if($info['order_state']==10){
                     $list['operation'] .= "<a  class=\"btn \" href='javascript:void(0)' ><i class=\"fa fa-ban\"></i>查看订单</a></li>";
                 }else{
                     $list['operation'] .= "<a  class=\"btn blue\" href='javascript:void(0)' onclick=\"fg_sku1('" . $info['order_id'] . "')\">查看订单</a></li>";
                 }
-
-
                     $list['order_sn'] = $info['order_sn'];
                     $list['order_amount'] = $info['order_amount'];
                     $goods = SCMModel('gzkj_online_order');
-                    $condition['order_sn']=$info['order_sn'];
-                    $list['order_num'] = $goods->where($condition)->count();//分单个数
+                    $where['order_sn']=$info['order_sn'];
+                    $list['order_num'] = $goods->where($where)->count();//分单个数
                     $list['buyer_id'] = $info['buyer_id'];
                 $list['buyer_name'] = $info['buyer_name'];
                 $list['buyer_email'] = $info['buyer_email'];
