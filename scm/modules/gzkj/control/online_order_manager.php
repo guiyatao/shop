@@ -41,18 +41,19 @@ class online_order_managerControl extends SCMControl
         } else{
             if (strlen($q = trim($_REQUEST['query'])) > 0) {
                 switch ($_REQUEST['qtype']) {
-                    case 'clie_id':
-                        $condition['clie_id'] = $q;
+//                    case 'clie_id':
+//                        $condition['clie_id'] = $q;
+//                        break;
+                    case 'order_sn':
+                        $condition['order_sn'] = $q;
                         break;
-                    case 'order_no':
-                        $condition['order_no'] = $q;
-                        break;
-                    case'clie_ch_name':
-                        $condition['clie_ch_name'] = $q;
-                        break;
+//                    case'clie_ch_name':
+//                        $condition['clie_ch_name'] = $q;
+//                        break;
                 }
             }
         }
+//        var_dump($condition);die();
         $orders = $order->where($condition)->page($_POST['rp'])->order('add_time desc')->select();
         $data = array();
         $data['now_page'] = $order->shownowpage();
@@ -86,11 +87,11 @@ class online_order_managerControl extends SCMControl
                 }elseif($info['order_state']==40){
                     $list['order_state'] =  '已收货';
                 }
-//                if($info['payment_code']=='offline'){
-//                    $list['payment_code'] = '货到付款';
-//                }else{
-//                    $list['payment_code'] = '在线支付';
-//                }
+                if($info['payment_code']=='offline'){
+                    $list['payment_code'] = '货到付款';
+                }else{
+                    $list['payment_code'] = '在线支付';
+                }
 
                     $data['list'][$info['order_id']] = $list;
                 }

@@ -55,13 +55,13 @@
                     {display: '买家手机', name: 'buyer_phone', width: 120, sortable: false, align: 'left'},
                     {display: '订单生成时间', name: 'add_time', width: 120, sortable: false, align: 'left'},
                     {display: '订单状态', name: 'order_state', width: 120, sortable: false, align: 'left'},
-//                    {display: '支付方式', name: 'payment_code', width: 120, sortable: false, align: 'left'},
+                    {display: '支付方式', name: 'payment_code', width: 120, sortable: false, align: 'left'},
 
                 ],
                 searchitems: [
-                    {display: '终端店编码', name: 'clie_id'},
-                    {display: '订单号', name: 'order_no'},
-                    {display: '终端店名', name: 'clie_ch_name'},
+//                    {display: '终端店编码', name: 'clie_id'},
+                    {display: '订单号', name: 'order_sn'},
+//                    {display: '终端店名', name: 'clie_ch_name'},
                 ],
 
                 title: '商城订单列表'

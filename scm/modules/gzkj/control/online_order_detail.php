@@ -325,7 +325,7 @@ $model_wx->wxMsgSend($client, $msg, 'o1KiwwzsnIPMOUXIp0EdyUCpSn4k');
                 $order_info['goods_list'][] = $value;
             }
         }
-
+//var_dump($order_info);die();
         Tpl::output('order_info',$order_info);
         Tpl::output('order_id',$order_id);
         Tpl::showpage('accepted_order.view');
