@@ -113,7 +113,6 @@ class paymentControl extends mobileHomeControl{
      */
     public function notify_alipay_nativeOp() {
         try {
-            logResult("in notify_alipay_nativeOp");
             $this->payment_code = 'alipay_native';
             $inc_file = BASE_PATH.DS.'api'.DS.'payment'.DS.$this->payment_code.DS.$this->payment_code.'.php';
     
