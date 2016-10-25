@@ -41,8 +41,6 @@ $(function(){
         ],
         searchitems : [
             {display: '订单编号', name : 'order_no', isdefault: true},
-            {display: '商品条形码', name : 'goods_barcode'},
-            {display: '商品名称', name : 'goods_nm'},
             {display: '供应商编号', name : 'supp_id'}
             ],
         sortname: "order_date",

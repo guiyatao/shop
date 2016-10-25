@@ -162,7 +162,13 @@ class store_returnControl extends BaseSellerControl {
                 $refund_array['goods_state'] = '4';
             }
             $state = $model_refund->editRefundReturn($condition, $refund_array);
-            if ($state) {
+            //对应小店增加库存
+            $goods = Model('scmonlineorder')->getGoodsBarcode(array('order_id'=> $return['order_id'],'goods_id' => $return['goods_id'] ));
+            $number = Model('scmonlineorder')->getGoodsInfo(array('goods_barcode'=> $goods['goods_barcode'],'clie_id' => $goods['clie_id'] ));
+            $stock_num = $number['goods_stock'] + $return['goods_num'];
+            //print_r(array('goods_barcode'=> $goods['goods_barcode'],'clie_id' => $goods['clie_id'],'goods_stock'=>$stock_num ));die;
+            $update_flag = Model('scmonlineorder')->editClientStock(array('goods_barcode'=> $goods['goods_barcode'],'clie_id' => $goods['clie_id'],'goods_stock'=>$stock_num ));
+            if ($state && $update_flag) {
                 $this->recordSellerLog('退货确认收货，退货编号：'.$return['refund_sn']);
 
                 // 发送买家消息
@@ -173,6 +179,7 @@ class store_returnControl extends BaseSellerControl {
                     'refund_url' => urlShop('member_return', 'view', array('return_id' => $return['refund_id'])),
                     'refund_sn' => $return['refund_sn']
                 );
+
                 QueueClient::push('sendMemberMsg', $param);
 
                 showDialog(Language::get('nc_common_save_succ'),'reload','succ','CUR_DIALOG.close();');

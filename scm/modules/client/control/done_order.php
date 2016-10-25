@@ -19,7 +19,7 @@ class done_orderControl extends SCMControl{
      * 每次导出订单数量
      * @var int
      */
-    const EXPORT_SIZE = 1000;
+    const EXPORT_SIZE = 15;
 
     protected $user_info;
 
@@ -52,22 +52,12 @@ class done_orderControl extends SCMControl{
         foreach ($order_list as $order_id => $order_info) {
             $list = array();
             $list['operation'] = "<a class=\"btn green\" href=\"index.php?act=cancel_order&op=show_order&order_id={$order_info['id']}\"><i class=\"fa fa-list-alt\"></i>查看详情</a>";
-
             $list['order_no'] = $order_info['order_no'];
             $list['clie_id'] = $order_info['clie_id'];
             $list['supp_id'] = $order_info['supp_id'];
             $list['order_date'] = $order_info['order_date'];
             $list['order_pay'] = $order_info['order_pay'];
-            if($order_info['order_status'] == 1)
-                $list['order_status'] = "已完成";
-            else if($order_info['order_status'] == 2)
-                $list['order_status'] = "半单";
-            else if($order_info['order_status'] == 3)
-                $list['order_status'] = "订单已取消";
-            else if($order_info['order_status'] == 4)
-                $list['order_status'] = "退货成功";
-            else if($order_info['order_status'] == 5)
-                $list['order_status'] = "退货失败";
+            $list['order_status'] = order::getClientOrderStatusByID($order_info['order_status']);
             $data['list'][$order_info['id']] = $list;
         }
         exit(Tpl::flexigridXML($data));
@@ -301,7 +291,7 @@ class done_orderControl extends SCMControl{
                     $array[$i] = $limit1.' ~ '.$limit2 ;
                 }
                 Tpl::output('list',$array);
-                Tpl::output('murl','index.php?act=order&op=index');
+                Tpl::output('murl','index.php?act=done_order&op=index');
                 Tpl::showpage('export.excel');
             }else{  //如果数量小，直接下载
                 $data = $model_order->getOrderList($condition,'','*',$order,self::EXPORT_SIZE);
@@ -342,16 +332,7 @@ class done_orderControl extends SCMControl{
             $tmp[] = array('data'=>$order_info['supp_id']);
             $tmp[] = array('data'=>$order_info['order_date']);
             $tmp[] = array('data'=>$order_info['order_pay']);
-            if($order_info['order_status'] == 1)
-                $tmp[] = array('data'=>'已完成');
-            else if($order_info['order_status'] == 2)
-                $tmp[] = array('data'=>'半单');
-            else if($order_info['order_status'] == 3)
-                $tmp[] = array('data'=>'订单已取消');
-            else if($order_info['order_status'] == 4)
-                $tmp[] = array('data'=>'退货成功');
-            else if($order_info['order_status'] == 5)
-                $tmp[] = array('data'=>'退货失败');
+            $tmp[] = array('data'=> order::getClientOrderStatusByID($order_info['order_status']));
             $excel_data[] = $tmp;
         }
         $excel_data = $excel_obj->charset($excel_data,CHARSET);

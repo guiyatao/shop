@@ -881,6 +881,10 @@ class scm_online_orderModel extends Model {
             }
             $order_info = $result['data'];
         }
+        //在拆单之后获取原订单的信息
+        $data = $this->table('orders')->field('order_from,pay_sn')->where(array('order_id'=>$order_info['order_id']))->find();
+        $order_info['order_from'] = $data['order_from'];
+        $order_info['pay_sn'] =  $data['pay_sn'];
     }
     
 

@@ -19,8 +19,10 @@ class indexControl extends SCMControl{
     public function __construct(){
         parent::__construct();
         Language::read('index');
+
     }
     public function indexOp(){
+        
         //输出管理员信息
         Tpl::output('admin_info',$this->getAdminInfo());
         //输出菜单

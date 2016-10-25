@@ -5,7 +5,7 @@
   <dl>
     <dt><?php echo '物流公司'.$lang['nc_colon'];?></dt>
     <dd>
-      <select name="express_id">
+      <select name="express_id" onchange="show_sub(this.options[this.options.selectedIndex].value)">
         <option value="0">-请选择-</option>
         <?php if(!empty($output['express_list']) && is_array($output['express_list'])){?>
         <?php foreach($output['express_list'] as $key=> $val){?>
@@ -16,9 +16,9 @@
     </dd>
   </dl>
   <dl>
-    <dt><i class="required">*</i><?php echo '物流单号'.$lang['nc_colon'];?></dt>
+    <dt><i class="required" id="required_icon">*</i> <span id="span_invoice_no"><?php echo '物流单号'.$lang['nc_colon'];?></span></dt>
     <dd>
-      <input type="text" class="text w150" name="invoice_no" value="" />
+      <input type="text" class="text w150" id="invoice_no" name="invoice_no" value="" />
       <p class="hint">发货 <?php echo $output['return_delay'];?> 天后，当商家选择未收到则要进行延迟时间操作；
         如果超过 <?php echo $output['return_confirm'];?> 天不处理按弃货处理，直接由管理员确认退款。</p>
     </dd>
@@ -31,6 +31,21 @@
   </div>
 </form>
 <script type="text/javascript">
+    function show_sub(v){
+        if(v == 0){
+            $('#required_icon').hide();
+            $('#span_invoice_no').hide();
+            $('#invoice_no').val("");
+            $('#invoice_no').hide();
+            $(".error:eq(1)").hide();
+
+        }else{
+            $('#required_icon').show();
+            $('#span_invoice_no').show();
+            $('#invoice_no').show();
+            $(".error:eq(1)").show();
+        }
+    }
 $(function(){
     $('#post_form').validate({
         errorLabelContainer: $('#warning'),
@@ -40,6 +55,7 @@ $(function(){
 		submitHandler:function(form){
 			ajaxpost('post_form', '', '', 'onerror')
 		},
+        ignore: ":hidden", //忽略隐藏域
         rules : {
             invoice_no : {
                 required   : true

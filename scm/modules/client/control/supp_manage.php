@@ -46,7 +46,7 @@ class supp_manageControl extends SCMControl{
             $order = 'scm_supp_client.' . $_POST['sortname'] . ' ' . $_POST['sortorder'];
         }
         $page = $_POST['rp'];
-        $supp_list = $model->getSupplierList($condition, $page, $order);
+        $supp_list = $model->getSupplierList($condition,'*', $page);
         $data = array();
         $data['now_page'] = $model->shownowpage();
         $data['total_num'] = $model->gettotalnum();

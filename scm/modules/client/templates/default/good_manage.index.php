@@ -100,7 +100,7 @@ function fg_operation(name, bDiv) {
 
 function fg_csv(ids) {
     id = ids.join(',');
-    window.location.href = $("#flexigrid").flexSimpleSearchQueryString()+'&op=export_csv&type=<?php echo $output['type'];?>&id=' + id;
+    window.location.href = $("#flexigrid").flexSimpleSearchQueryString()+'&op=export_step1&type=<?php echo $output['type'];?>&id=' + id;
 }
 
 function fg_sku(commonid) {

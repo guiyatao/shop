@@ -75,7 +75,7 @@ class dateControl extends BaseCronControl {
         // $this->_order_book_end_pay_notice();
 //need to open
         // //订单自动完成
-//         $this->_order_auto_complete();
+        $this->_order_auto_complete();
 
         // //预定订单超时未付尾款取消订单
         // $this->_order_book_timeout_cancel();
@@ -119,7 +119,7 @@ class dateControl extends BaseCronControl {
         $this->_testWechat();
         
         $this->_start_settlement();
-//         $this->_get_all_wechat_user_openid();
+        $this->_get_all_wechat_user_openid();
     }
 
     private function _get_all_wechat_user_openid(){
@@ -129,6 +129,8 @@ class dateControl extends BaseCronControl {
         $url = 'https://api.weixin.qq.com/cgi-bin/user/get?access_token=' . $access_token;
 
         $data = json_decode(http_get($url), true);
+        
+//         var_dump($data);
         $openids = $data['data']['openid'];
         // var_dump($openids); 
         $insert = array();

@@ -929,7 +929,7 @@
 			text_append += '<div class="user-info">';
     		text_append += '<div class="user-avatar">';
     		text_append += '<img id="chat_user_avatar" src=""></div>';
-    		text_append += '<div id="chat_user_store" class="store-name"></div>';
+    		//text_append += '<div id="chat_user_store" class="store-name"></div>';
 			text_append += '<div id="chat_user_name" class="user-name"></div>';
     		text_append += '</div>';
     		if(layout != 'layout/seller_layout.php' && act_op != 'goods_index') {//商家中心页面和商品详细页面不显示推荐商品

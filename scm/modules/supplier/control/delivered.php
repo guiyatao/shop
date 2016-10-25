@@ -71,16 +71,7 @@ class deliveredControl extends SCMControl
             $param['order_pay'] = $value['order_pay'];
             $param['total_amount'] = $value['total_amount'];
             $param['order_date'] = $value['order_date'];
-            if($value['order_status'] == 1)
-                $param['order_status'] = "已完成";
-            else if($value['order_status'] == 2)
-                $param['order_status'] = "半单";
-            else if($value['order_status'] == 3)
-                $param['order_status'] = "订单已取消";
-            else if($value['order_status'] == 4)
-                $param['order_status'] = "退货成功";
-            else if($value['order_status'] == 5)
-                $param['order_status'] = "退货失败";
+            $param['order_status'] = order::getClientOrderStatusByID($value['order_status']);
             $data['list'][$value['id']] = $param;
         }
         echo Tpl::flexigridXML($data);exit();
@@ -109,7 +100,7 @@ class deliveredControl extends SCMControl
     /**
      * csv导出
      */
-    public function export_csvOp() {
+    public function export_step1Op() {
         $model_supplier_client = SCMModel('supplier_client');
         $condition = array();
         $limit = false;
@@ -144,15 +135,18 @@ class deliveredControl extends SCMControl
                 Tpl::output('list',$array);
                 Tpl::output('murl','index.php?act=delivered&op=index');
                 Tpl::showpage('export.excel');
-                exit();
+            }else{
+                $order_list = $model_supplier_client->getOrderList($condition, $field, null, $order,self::EXPORT_SIZE);
+                $this->createExcel($order_list);
             }
         } else {
             $limit1 = ($_GET['curpage']-1) * self::EXPORT_SIZE;
             $limit2 = self::EXPORT_SIZE;
             $limit = $limit1 .','. $limit2;
+            $order_list = $model_supplier_client->getOrderList($condition, $field, null, $order,$limit);
+            $this->createExcel($order_list);
         }
-        $order_list = $model_supplier_client->getOrderList($condition, $field, null, $order,$limit);
-        $this->createExcel($order_list);
+
     }
     /**
      * 生成csv文件
@@ -167,20 +161,8 @@ class deliveredControl extends SCMControl
             $param['order_pay'] = $value['order_pay'];
             $param['total_amount'] = $value['total_amount'];
             $param['order_date'] =  $value['order_date'];
-            if($value['order_status'] == 1)
-                $param['order_status'] = iconv('utf-8','gb2312', "已完成");
-            else if($value['order_status'] == 2)
-                $param['order_status'] = iconv('utf-8','gb2312', "半单");
-            else if($value['order_status'] == 3)
-                $param['order_status'] = iconv('utf-8','gb2312', "订单已取消");
-            else if($value['order_status'] == 4)
-                $param['order_status'] = iconv('utf-8','gb2312', "退货成功");
-            else if($value['order_status'] == 5)
-                $param['order_status'] = iconv('utf-8','gb2312', "退货失败");
-            if($value['gift_flag'] == 1)
-                $param['gift_flag'] = iconv('utf-8','gb2312', "有赠品");
-            else
-                $param['gift_flag'] = iconv('utf-8','gb2312', "无赠品");
+            $param['order_status'] = iconv('utf-8','gb2312', order::getClientOrderStatusByID($value['order_status']));
+            $param['gift_flag'] = iconv('utf-8','gb2312', order::getGiftStatusByID($value['gift_flag']));
             $param['comments'] =  iconv('utf-8','gb2312',$value['comments']);
             $data[$value['order_no']] = $param;
         }

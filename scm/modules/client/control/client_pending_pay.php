@@ -190,7 +190,7 @@ class client_pending_payControl extends SCMControl{
                     $array[$i] = $limit1.' ~ '.$limit2 ;
                 }
                 Tpl::output('list',$array);
-                Tpl::output('murl','index.php?act=order&op=index');
+                Tpl::output('murl','index.php?act=client_pending_pay&op=index');
                 Tpl::showpage('export.excel');
             }else{  //如果数量小，直接下载
                 $data = $model_order->getOrderList($condition,'',$field,$order,self::EXPORT_SIZE);

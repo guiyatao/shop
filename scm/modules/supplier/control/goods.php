@@ -292,7 +292,7 @@ class goodsControl extends SCMControl
     /**
      * csv导出
      */
-    public function export_csvOp() {
+    public function export_step1Op() {
         $model_goods = SCMModel('supplier_goods');
         $supplier = $this->supp_info;
         $condition['supp_id'] = $supplier['supp_id'];
@@ -325,16 +325,17 @@ class goodsControl extends SCMControl
                 Tpl::output('list',$array);
                 Tpl::output('murl','index.php?act=goods&op=index');
                 Tpl::showpage('export.excel');
-                exit();
+            }else{  //如果数量小，直接下载
+                $goods_list = $model_goods->getGoodsList($condition, $field, null, $order, self::EXPORT_SIZE);
+                $this->createExcel($goods_list);
             }
         } else {
             $limit1 = ($_GET['curpage']-1) * self::EXPORT_SIZE;
             $limit2 = self::EXPORT_SIZE;
             $limit = $limit1 .','. $limit2;
+            $goods_list = $model_goods->getGoodsList($condition, $field, null, $order, $limit);
+            $this->createExcel($goods_list);
         }
-
-        $goods_list = $model_goods->getGoodsList($condition, $field, null, $order, $limit);
-        $this->createExcel($goods_list);
     }
     /**
      * 生成csv文件

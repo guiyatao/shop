@@ -384,7 +384,7 @@ class client_storageControl extends SCMControl{
                     $array[$i] = $limit1.' ~ '.$limit2 ;
                 }
                 Tpl::output('list',$array);
-                Tpl::output('murl','index.php?act=order&op=index');
+                Tpl::output('murl','index.php?act=client_storage&op=index');
                 Tpl::showpage('export.excel');
             }else{  //如果数量小，直接下载
                 $data = $model_order->getOrderList($condition,'','*',$order,self::EXPORT_SIZE);

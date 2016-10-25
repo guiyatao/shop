@@ -291,7 +291,7 @@ class good_manageControl extends SCMControl{
     /**
      * 导出数据
      */
-    public function export_csvOp(){
+    public function export_step1Op(){
         $model_order = SCMModel('scm_client_stock');
         $condition  = array();
         $this->_get_condition($condition);
@@ -306,14 +306,29 @@ class good_manageControl extends SCMControl{
             $condition['id'] = array('in',$_GET['id']);
         }
         if (!is_numeric($_GET['curpage'])) {   //没有分页默认只取1000行
-            $limit =  '0,'. self::EXPORT_SIZE;
+            $temp_list = $model_order->getStockList($condition,null,'*',$order);
+            $count = count($temp_list);
+            $array = array();
+            if ($count > self::EXPORT_SIZE ){   //显示下载链接
+                $page = ceil($count/self::EXPORT_SIZE);
+                for ($i=1;$i<=$page;$i++){
+                    $limit1 = ($i-1)*self::EXPORT_SIZE + 1;
+                    $limit2 = $i*self::EXPORT_SIZE > $count ? $count : $i*self::EXPORT_SIZE;
+                    $array[$i] = $limit1.' ~ '.$limit2 ;
+                }
+                Tpl::output('list',$array);
+                Tpl::output('murl','index.php?act=good_manage&op=index');
+                Tpl::showpage('export.excel');
+            }else{  //如果数量小，直接下载
+                $data = $model_order->getStockList($condition,null,'*',$order,self::EXPORT_SIZE);
+                $this->createExcel($data);
+            }
         } else {
             $limit1 = ($_GET['curpage'] - 1) * self::EXPORT_SIZE;
             $limit2 = self::EXPORT_SIZE;
-            $limit = $limit1 . ',' . $limit2;
+            $stock_list = $model_order->getStockList($condition,null,'*',$order,"{$limit1},{$limit2}");
+            $this->createExcel($stock_list);
         }
-        $stock_list = $model_order->getStockList($condition,null,'*',$order,$limit);
-        $this->createExcel($stock_list);
     }
     /**
      * 生成excel

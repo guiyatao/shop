@@ -222,7 +222,7 @@ class scm_supp_clientModel extends Model{
      * @param
      * @return array
      */
-    public function getSupplierList($condition = array(),$field = '*', $page = '', $order = 'supp_id desc') {
+    public function getSupplierList($condition = array(),$field = '*', $page = '', $order = 'scm_supp_client.supp_id desc') {
         $result = $this->getSuppList($condition, $page, '',$field, $order);
         return $result;
     }

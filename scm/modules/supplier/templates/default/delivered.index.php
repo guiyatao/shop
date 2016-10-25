@@ -79,7 +79,7 @@
 
     function fg_csv(ids) {
         id = ids.join(',');
-        window.location.href = $("#flexigrid").flexSimpleSearchQueryString()+'&op=export_csv&id=' + id;
+        window.location.href = $("#flexigrid").flexSimpleSearchQueryString()+'&op=export_step1&id=' + id;
     }
     function fg_del(ids) {
         if (typeof ids == 'number') {

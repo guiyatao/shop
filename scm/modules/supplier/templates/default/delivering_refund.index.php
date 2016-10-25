@@ -49,8 +49,8 @@
                 {display: '终端店名', name : 'clie_ch_name'},
                 {display: '订单号', name : 'order_no'},
             ],
-            sortname:"number",
-            sortorder:"asc",
+            sortname:"order_date",
+            sortorder:"desc",
             title:"未入库退货单列表"
         });
     });
@@ -82,7 +82,7 @@
 
     function fg_csv(ids) {
         id = ids.join(',');
-        window.location.href = $("#flexigrid").flexSimpleSearchQueryString()+'&op=export_csv&id=' + id;
+        window.location.href = $("#flexigrid").flexSimpleSearchQueryString()+'&op=export_step1&id=' + id;
     }
     function fg_del(ids) {
         if (typeof ids == 'number') {

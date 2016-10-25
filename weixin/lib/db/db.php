@@ -45,9 +45,9 @@ class DB {
         return $ret;
     }
 	function insert($table, $data) {
+	    
 		$keys = array_keys($data);
 		$fields = '`'.implode('`, `',$keys).'`';
-
 		$placeholder = substr(str_repeat('?,',count($keys)),0,-1);
 		$this->pdo->query('set names utf8;');
 		$this->pdo->prepare("INSERT INTO `".TABLEPRE."$table`($fields) VALUES($placeholder)")->execute(array_values($data));

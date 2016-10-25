@@ -8,7 +8,15 @@
 	  </dl>
 	  <dl>
 	    <dt><?php echo '物流信息'.$lang['nc_colon'];?></dt>
-	    <dd> <?php echo $output['e_name'].' , '.$output['return']['invoice_no']; ?> </dd>
+	    <dd>
+            <?php
+            if( !empty($output['return']['invoice_no'])){
+                echo $output['e_name'].' , '.$output['return']['invoice_no'];
+            }else{
+                echo '无';
+            }
+            ?>
+        </dd>
 	  </dl>
     <dl>
       <dt><i class="required">*</i><?php echo '收货情况'.$lang['nc_colon'];?></dt>

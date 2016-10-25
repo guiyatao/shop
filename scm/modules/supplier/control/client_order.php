@@ -196,7 +196,7 @@ class client_orderControl extends SCMControl
     /**
      * csv导出
      */
-    public function export_csvOp() {
+    public function export_step1Op() {
         $model_supplier_client = SCMModel('supplier_client');
         $condition = array();
         $limit = false;
@@ -234,16 +234,18 @@ class client_orderControl extends SCMControl
                 Tpl::output('list',$array);
                 Tpl::output('murl','index.php?act=client_order&op=index');
                 Tpl::showpage('export.excel');
-                exit();
+            }else{
+                $order_list = $model_supplier_client->getOrderList($condition, $field, null, $order,self::EXPORT_SIZE);
+                $this->createExcel($order_list);
             }
         } else {
             $limit1 = ($_GET['curpage']-1) * self::EXPORT_SIZE;
             $limit2 = self::EXPORT_SIZE;
             $limit = $limit1 .','. $limit2;
+            $order_list = $model_supplier_client->getOrderList($condition, $field, null, $order,$limit);
+            $this->createExcel($order_list);
         }
 
-        $order_list = $model_supplier_client->getOrderList($condition, $field, null, $order,$limit);
-        $this->createExcel($order_list);
     }
     /**
      * 生成csv文件

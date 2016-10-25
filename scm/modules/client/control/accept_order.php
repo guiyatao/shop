@@ -42,7 +42,6 @@ class accept_orderControl extends SCMControl{
         //只获取订单状态为未退款的
         //$condition['orders.refund_state'] = array('neq', 2);
         $this->_get_condition($condition);
-
         $sort_fields = array('order_id','order_no','clie_id','supp_id','goods_barcode','goods_nm','goods_price','goods_discount','goods_discount_price','order_num','order_pay','goods_rate','goods_tax','goods_stock','goods_low_stock','gift_barcode','gift_nm','gift_num','order_date','valid_date','out_date','in_date','pay_date','cycle_flag','cycle_num','warn_flag','order_flag','out_flag','in_flag','pay_flag','comments');
         if ($_POST['sortorder'] != '' && in_array($_POST['sortname'],$sort_fields)) {
             $order = $_POST['sortname'].' '.$_POST['sortorder'];
@@ -66,14 +65,7 @@ class accept_orderControl extends SCMControl{
             $list['buyer_phone'] = $order_info['buyer_phone'];
             $list['buyer_address'] = $order_info['buyer_address'];
             $list['add_time'] = date("Y-m-d H:i:s", $order_info['add_time']);
-            if($order_info['pay_way'] == 'offline')
-                $list['payment_code'] = "货到付款";
-            elseif($order_info['pay_way'] == 'alipay')
-                $list['payment_code'] = "支付宝";
-            elseif($order_info['pay_way'] == 'wx_saoma')
-                $list['payment_code'] = "微信支付";
-            elseif($order_info['pay_way'] == 'online')
-                $list['payment_code'] = "在线支付未付款";
+            $list['payment_code'] = orderPaymentName($order_info['payment_code']);
             if($order_info['pickup_mode'] == 0)
                 $list['pickup_mode'] = "自提";
             elseif($order_info['pickup_mode'] == 1)
@@ -332,7 +324,7 @@ $model_wx->wxMsgSend($client, $msg, 'o1KiwwzsnIPMOUXIp0EdyUCpSn4k');
            $value['image_240_url'] = cthumb($value['goods_image'], 240, $value['store_id']);
            $value['goods_type_cn'] = orderGoodsType($value['goods_type']);
            $value['goods_url'] = urlShop('goods','index',array('goods_id'=>$value['goods_id']));
-            
+
            $goods = Model('goods')->getGoodsList(array('goods_barcode'=> $value['goods_barcode'] ));
            $value['goods_id'] = $goods[0]['goods_id'];
            if ($value['goods_type'] == 5) {
@@ -349,7 +341,7 @@ $model_wx->wxMsgSend($client, $msg, 'o1KiwwzsnIPMOUXIp0EdyUCpSn4k');
 //        }
 
         //取得订单其它扩展信息
-//        $model_order->getOrderExtendInfo($order_info);
+        $model_order->getOrderExtendInfo($order_info);
 
         //订单变更日志
 //        $log_list   = $model_order->getOrderLogList(array('order_id'=>$order_info['order_id']));
@@ -399,6 +391,7 @@ $model_wx->wxMsgSend($client, $msg, 'o1KiwwzsnIPMOUXIp0EdyUCpSn4k');
             $order_info['pickup_mode'] = "自提";
         elseif($order_info['pickup_mode'] == 1)
             $order_info['pickup_mode'] = "上门送";
+        //print_r($order_info );die;
         Tpl::output('order_info',$order_info);
         Tpl::output('order_id',$order_id);
         Tpl::showpage('online_order.view');
@@ -437,7 +430,7 @@ $model_wx->wxMsgSend($client, $msg, 'o1KiwwzsnIPMOUXIp0EdyUCpSn4k');
                     $array[$i] = $limit1.' ~ '.$limit2 ;
                 }
                 Tpl::output('list',$array);
-                Tpl::output('murl','index.php?act=order&op=index');
+                Tpl::output('murl','index.php?act=accept_order&op=index');
                 Tpl::showpage('export.excel');
             }else{  //如果数量小，直接下载
                 $data = $model_order->getOrderListOn($condition,'','scm_online_order.*,orders.refund_state,orders.lock_state,orders.order_state AS status,orders.payment_code AS pay_way',$order,self::EXPORT_SIZE);
@@ -446,7 +439,7 @@ $model_wx->wxMsgSend($client, $msg, 'o1KiwwzsnIPMOUXIp0EdyUCpSn4k');
         }else{  //下载
             $limit1 = ($_GET['curpage']-1) * self::EXPORT_SIZE;
             $limit2 = self::EXPORT_SIZE;
-            $data = $model_order->getOrderList($condition,'','scm_online_order.*,orders.refund_state,orders.lock_state,orders.order_state AS status,orders.payment_code AS pay_way',$order,"{$limit1},{$limit2}");
+            $data = $model_order->getOrderListOn($condition,'','scm_online_order.*,orders.refund_state,orders.lock_state,orders.order_state AS status,orders.payment_code AS pay_way',$order,$limit1.",".$limit2);
             $this->createExcel($data);
         }
     }
@@ -459,6 +452,7 @@ $model_wx->wxMsgSend($client, $msg, 'o1KiwwzsnIPMOUXIp0EdyUCpSn4k');
     private function createExcel($data = array()){
         Language::read('export');
         import('libraries.excel');
+        $model_order = SCMModel('scm_online_order');
         $excel_obj = new Excel();
         $excel_data = array();
         //设置样式
@@ -483,28 +477,45 @@ $model_wx->wxMsgSend($client, $msg, 'o1KiwwzsnIPMOUXIp0EdyUCpSn4k');
             $tmp[] = array('data'=>$order_info['buyer_phone']);
             $tmp[] = array('data'=>$order_info['buyer_address']);
 			$tmp[] = array('data'=>date('Y-m-d H:i:s',$order_info['add_time']));
-            if($order_info['payment_code'] == 'alipay')
-                $tmp[] = array('data'=>"支付宝");
-            else if($order_info['payment_code'] == 'offline')
-                $tmp[] = array('data'=>"货到付款");
+            $tmp[] = array('data'=>orderPaymentName($order_info['payment_code']));
 			$tmp[] = array('data'=>$order_info['order_amount']);
-            $tmp[] = array('data'=>Order::getShopOrderStatusByID($order_info['status']));
+            $status = Order::getShopOrderStatusByID($order_info['status']);
             if($order_info['lock_state'] == 0){
-                if($order_info['refund_state'] == 2)
-                    $tmp[]  = array('data'=>"已申请全部退款/退款完成");
-                else if($order_info['refund_state'] == 0)
-                    $tmp[]  = array('data'=>"未申请退款");
-                elseif($order_info['refund_state'] == 1)  //部分退款
-                    $tmp[]  = array('data'=>"已申请部分退款/退款完成");
+                if($order_info['refund_state'] == 2){
+                    $status = Order::getShopOrderStatusByID(ORDER_STATE_CANCEL);
+                    $refund_state = "已申请全部退款/退款完成";
+                }
+                else if($order_info['refund_state'] == 0){
+                    $refund_state = "未申请退款";
+                }
+                elseif($order_info['refund_state'] == 1){   //部分退款
+                    $status = Order::getShopOrderStatusByID(ORDER_STATE_CANCEL);
+                    $refund_flag = $model_order->getOrderRefundState($order_info);
+                    if($refund_flag == 1 )
+                        $refund_state  = "已申请部分退款/退款完成";
+                    elseif($refund_flag['refund_state'] == 2 )
+                        $refund_state  = "已申请全部退款/退款完成";
+                    elseif($refund_flag == 0 ){
+                        $status = Order::getShopOrderStatusByID($order_info['status']);
+                        $refund_state  = "未申请退款";
+                    }
+                }
             }elseif($order_info['lock_state'] > 0){
-                $refund_flag = SCMModel('scm_online_order')->getOrderRefundState($order_info);
-                if($refund_flag == 0)
-                    $tmp[]  = array('data'=>"未申请退款");
-                elseif($refund_flag == 1)
-                    $tmp[]  = array('data'=>"已申请部分退款/退款处理中");
-                elseif($refund_flag == 2)
-                    $tmp[]  = array('data'=>"已申请全部退款/退款处理中");
+                $refund_flag = $model_order->getOrderRefundState($order_info);
+                if($refund_flag == 0){
+                    $refund_state  = "未申请退款";
+                }
+                elseif($refund_flag == 1){
+                    $status = Order::getShopOrderStatusByID(ORDER_STATE_PAY);
+                    $refund_state  = "<span style='color:red;'>已申请部分退款/退款处理中</span>";
+                }
+                elseif($refund_flag['refund_state'] == 2){
+                    $status = Order::getShopOrderStatusByID(ORDER_STATE_PAY);
+                    $refund_state  = "<span style='color:red;'>已申请全部退款/退款处理中</span>";
+                }
             }
+            $tmp[] = array('data'=>$status);
+            $tmp[] = array('data'=>$refund_state);
             $excel_data[] = $tmp;
         }
         $excel_data = $excel_obj->charset($excel_data,CHARSET);

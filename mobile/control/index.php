@@ -16,6 +16,7 @@ defined('InShopNC') or exit('Access Invalid!');
 class indexControl extends mobileHomeControl{
 
     public function __construct() {
+        
         parent::__construct();
     }
 
