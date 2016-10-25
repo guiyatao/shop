@@ -722,6 +722,41 @@ class scmonlineorderModel extends Model {
             $order_info = $result['data'];
         }
     }
-    
+
+    /**
+     * 取订单拆分后的单条订单信息
+     *
+     * @param unknown_type $condition
+     * @param array $extend 追加返回那些表的信息,如array('order_common','order_goods','store')
+     * @return unknown
+     */
+    public function getGoodsBarcode($condition = array(), $fields = '*', $order = '',$group = '') {
+        $goods_info = $this->table('scm_online_order_goods')->field($fields)->where($condition)->group($group)->order($order)->find();
+        if (empty($goods_info)) {
+            return array();
+        }
+        return $goods_info;
+    }
+
+    /**
+     * 获取终端店单件商品信息
+     */
+    public function getGoodsInfo($where){
+        $result = $this->table('scm_client_stock')->field('*')->where(array('goods_barcode' => $where['goods_barcode'],'clie_id'=>$where['clie_id']))->find();
+        return $result;
+    }
+
+    /**
+     * 更改小店库存
+     * @param $condition
+     * @return bool
+     */
+    public function editClientStock($condition){
+        $update_id = $this->table('scm_client_stock')->where(array('goods_barcode'=>$condition["goods_barcode"], 'clie_id'=>$condition['clie_id'] ))->update($condition);
+        if($update_id)
+            return true;
+        else
+            return false;
+    }
 
 }

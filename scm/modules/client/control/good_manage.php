@@ -19,6 +19,12 @@ class good_manageControl extends SCMControl{
 
     protected $user_info;
 
+
+    private $links = array(
+        array('url' => 'act=good_manage&op=index', 'text' => '商品管理'),
+        array('url' => 'act=good_manage&op=show_import_view', 'text' => '批量导入'),
+    );
+
     public function __construct(){
         parent::__construct();
         $this->user_info = SCMModel('scm_user')->getUserInfo($this->admin_info['id']);
@@ -33,6 +39,7 @@ class good_manageControl extends SCMControl{
      * 显示库存商品近效期
      */
     public function showAllGoods(){
+        Tpl::output('top_link', $this->sublink($this->links, 'index'));
         Tpl::showpage('good_manage.index');
     }
 
@@ -390,4 +397,133 @@ class good_manageControl extends SCMControl{
         $excel_obj->addWorksheet($excel_obj->charset(L('exp_od_order'),CHARSET));
         $excel_obj->generateXML('order-'.$_GET['curpage'].'-'.date('Y-m-d-H',time()));
     }
+
+    /**
+     * 批量导入界面
+     */
+    public function show_import_viewOp(){
+        if (chksubmit()) {
+            if (!empty ($_FILES ['csv'] ['name'])) {
+                $file_types = explode(".", $_FILES ['csv'] ['name']);
+                $file_type = $file_types [count($file_types) - 1];
+                /*判别是不是.xls文件，判别是不是excel文件*/
+                if (strtolower($file_type) != "csv") {
+                    $url = array(
+                        array(
+                            'url' => 'index.php?act=good_manage&op=show_import_view',
+                            'msg' => "返回批量导入商品界面",
+                        )
+                    );
+                    showMessage("不是csv文件", $url);
+                } else {
+                    $fp = @fopen($_FILES['csv']['tmp_name'], 'rb');
+                    $goods_list = array();
+                    while (!feof($fp)) {
+                        $data = trim(fgets($fp, 4096));
+                        switch (strtoupper($_POST['charset'])) {
+                            case 'UTF-8':
+                                if (strtoupper(CHARSET) !== 'UTF-8') {
+                                    $data = iconv('UTF-8', strtoupper(CHARSET), $data);
+                                }
+                                break;
+                            case 'GBK':
+                                if (strtoupper(CHARSET) !== 'GBK') {
+                                    $data = iconv('GBK', strtoupper(CHARSET), $data);
+                                }
+                                break;
+                        }
+
+                        if (!empty($data)) {
+                            $data  = str_replace('"','',$data);
+                            $tmp_array = explode(',',$data);
+                            $goods_list[] = $tmp_array;
+                        }
+                    }
+                    $result = array_shift($goods_list);
+                    $result = array_shift($goods_list);
+                    $error = false;
+                    $new_goods_list = array();
+                    $goods_barcode_list = array();
+                    foreach($goods_list as $k => $v){
+                        $condition['goods_barcode']   = $v[2];
+                        $condition['clie_id'] = $this->user_info['supp_clie_id'];
+                        $goods = SCMModel('scm_client_stock')->getClientGoodInfo($condition);
+                        if($v[0] != $this->user_info['supp_clie_id']){
+                            $error = true;
+                            $errorMsg = "只能导入当前终端店的商品数据";
+                            break;
+                        }elseif(empty($v[0]) || trim($v[0]) == ''){
+                            $error = true;
+                            $errorMsg = "终端店id不能为空";
+                            break;
+                        }elseif(empty($v[1]) || trim($v[1]) == ''){
+                            $error = true;
+                            $errorMsg = "供应商id不能为空";
+                            break;
+                        }elseif(empty($v[2]) || trim($v[2]) == ''){
+                            $error = true;
+                            $errorMsg = "商品条码不能为空";
+                            break;
+                        }elseif(empty($v[3]) || trim($v[3]) == ''){
+                            $error = true;
+                            $errorMsg = "商品名称不能为空";
+                            break;
+                        }elseif(empty($v[4]) || trim($v[4]) == ''){
+                            $error = true;
+                            $errorMsg = "零售价不能为空";
+                            break;
+                        }elseif(empty($v[5]) || trim($v[5]) == ''){
+                            $error = true;
+                            $errorMsg = "单位不能为空";
+                            break;
+                        }elseif(empty($v[6]) || trim($v[6]) == ''){
+                            $error = true;
+                            $errorMsg = "规格不能为空";
+                            break;
+                        }elseif(!empty( $goods)){
+                            $error = true;
+                            $errorMsg = "商品条码重复";
+                            break;
+                        }
+                        $new_goods_list[] = array(
+                            $result[0] => $v[0],
+                            $result[1] => $v[1],
+                            $result[2] => $v[2],
+                            $result[3] => $v[3],
+                            $result[4] => $v[4],
+                            $result[5] => $v[5],
+                            $result[6] => $v[6],
+                            $result[7] => $v[7],
+                            $result[8] => $v[8],
+                            $result[9] => $v[9],
+                            $result[10] => $v[10],
+                            $result[11] => $v[11],
+                        );
+                        $goods_barcode_list[] = $v[2];
+                    }
+                    $temp_list = array_unique($goods_barcode_list);
+                    if(count($goods_barcode_list) != count($temp_list)){
+                        $error = true;
+                        $errorMsg = "商品条码重复";
+                    }
+                    if($error){
+                        print_r($errorMsg);die;
+                    }else{
+                        if (!SCMModel('scm_client_stock')->table('scm_client_stock')->insertAll($new_goods_list)) {
+                            showMessage("批量导入失败");
+                        }else{
+                            showMessage("批量导入成功");
+                        }
+                    }
+
+                }
+            }
+        }
+        Tpl::output('top_link', $this->sublink($this->links, 'show_import_view'));
+        Tpl::showpage('goods_import');
+    }
+
+
+
+
 }

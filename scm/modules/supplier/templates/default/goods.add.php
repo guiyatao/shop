@@ -152,7 +152,7 @@
                     <label for="shelf_life"><em>*</em>保质期</label>
                 </dt>
                 <dd class="opt">
-                    <input type="text" id="shelf_life" name="shelf_life" style="width: 100px;"><select name="shelf_life_unit"><option value="天">天</option><option value="月">月</option><option value="年">年</option></select>
+                    <input type="text" id="shelf_life" name="shelf_life" style="width: 100px;"><select name="shelf_life_unit"><option value="天">天</option><option value="个月">个月</option><option value="年">年</option></select>
                     <span class="err"></span>
                 </dd>
             </dl>

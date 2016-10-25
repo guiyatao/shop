@@ -152,7 +152,7 @@
                     <label for="shelf_life"><em>*</em>保质期</label>
                 </dt>
                 <dd class="opt">
-                    <input type="text" id="shelf_life" name="shelf_life" value="<?= $output['shelf_life']?>" style="width: 100px;"><select name="shelf_life_unit"><option value="天" <?php if($output['shelf_life_unit'] == '天') {?> selected <?php } ?> >天</option><option <?php if($output['shelf_life_unit'] == '月') {?> selected <?php } ?> value="月" >月</option><option <?php if($output['shelf_life_unit'] == '年') {?> selected <?php } ?> value="年">年</option></select>
+                    <input type="text" id="shelf_life" name="shelf_life" value="<?= $output['shelf_life']?>" style="width: 100px;"><select name="shelf_life_unit"><option value="天" <?php if($output['shelf_life_unit'] == '天') {?> selected <?php } ?> >天</option><option <?php if($output['shelf_life_unit'] == '个月') {?> selected <?php } ?> value="个月" >个月</option><option <?php if($output['shelf_life_unit'] == '年') {?> selected <?php } ?> value="年">年</option></select>
                     <span class="err"></span>
                 </dd>
             </dl>
