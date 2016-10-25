@@ -47,7 +47,8 @@
             buttons:[
                 {display: '<i class="fa fa-plus"></i>新增数据', name : 'add', bclass : 'add', title : '新增数据', onpress : fg_operation },
                 {display: '<i class="fa fa-trash"></i>批量删除', name : 'del', bclass : 'del', title : '将选定行数据批量删除', onpress : fg_operation },
-                {display: '<i class="fa fa-file-excel-o"></i>导出数据', name : 'csv', bclass : 'csv', title : '将选定行数据导出Excel文件', onpress : fg_operation }
+                {display: '<i class="fa fa-file-excel-o"></i>导出数据', name : 'csv', bclass : 'csv', title : '将选定行数据导出Excel文件', onpress : fg_operation },
+                {display: '<i class="fa fa-file-excel-o"></i>导入数据', name : 'import_csv', bclass : 'csv', title : '将选定行数据导出Excel文件', onpress : fg_operation }
             ],
             searchitems:[
                 {display: '商品编码', name : 'goods_barcode'},
@@ -62,6 +63,9 @@
     function fg_operation(name, bDiv) {
         if (name == 'add') {
             window.location.href = 'index.php?act=goods&op=goods_add';
+//            window.location.href = 'index.php?act=goods&op=goods_import';
+        }else if(name=='import_csv'){
+            window.location.href = 'index.php?act=goods&op=goods_import';
         }else if (name == 'csv') {
             if ($('.trSelected', bDiv).length == 0) {
                 if (!confirm('您确定要下载全部数据吗？')) {

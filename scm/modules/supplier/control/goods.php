@@ -13,6 +13,7 @@ class goodsControl extends SCMControl
     public function __construct()
     {
         parent::__construct();
+        Language::read('goods_class');
         $adminInfo = $this->getAdminInfo();
         $condition = array("admin.admin_id" => $adminInfo['id'],);
         $this->supp_info =  SCMModel('supplier_account')->getSupplier($condition);
@@ -431,6 +432,85 @@ class goodsControl extends SCMControl
         $excel_obj->addArray($excel_data);
         $excel_obj->addWorksheet($excel_obj->charset(L('exp_od_order'),CHARSET));
         $excel_obj->generateXML('goods-'.$_GET['curpage'].'-'.date('Y-m-d-H',time()));
+    }
+
+
+
+    /**
+     * 分类导入
+     */
+    public function goods_importOp(){
+        $lang   = Language::getLangContent();
+        $model_class = SCMModel('supplier_goods');
+        //导入
+        if (chksubmit()){
+            //得到导入文件后缀名
+            $csv_array = explode('.',$_FILES['csv']['name']);
+            $file_type = end($csv_array);
+            if (!empty($_FILES['csv']) && !empty($_FILES['csv']['name']) && $file_type == 'csv'){
+                $fp = @fopen($_FILES['csv']['tmp_name'],'rb');
+                // 父ID
+                $parent_id_1 = 0;
+
+                while (!feof($fp)) {
+                    $data = trim(fgets($fp, 4096));
+                    switch (strtoupper($_POST['charset'])){
+                        case 'UTF-8':
+                            if (strtoupper(CHARSET) !== 'UTF-8'){
+                                $data = iconv('UTF-8',strtoupper(CHARSET),$data);
+                            }
+                            break;
+                        case 'GBK':
+                            if (strtoupper(CHARSET) !== 'GBK'){
+                                $data = iconv('GBK',strtoupper(CHARSET),$data);
+                            }
+                            break;
+                    }
+
+                    if (!empty($data)){
+                        $data   = str_replace('"','',$data);
+                        //逗号去除
+                        $tmp_array = array();
+                        $tmp_array = explode(',',$data);
+//                        var_dump($tmp_array);
+//                        if($tmp_array[0] == 'sort_order')continue;
+                        //第一位是序号，后面的是内容，最后一位名称
+//                        $tmp_deep = 'parent_id_'.(count($tmp_array)-1);
+                        $insert_array = array();
+                        $insert_array['supp_id'] = $this->supp_info['supp_id'];
+                        $insert_array['goods_barcode'] = $tmp_array[0];
+                        $insert_array['goods_nm'] = $tmp_array[1];
+                        $insert_array['goods_price'] = $tmp_array[2];
+                        $insert_array['goods_discount'] = $tmp_array[3];
+                        $insert_array['goods_unit'] = $tmp_array[4];
+                        $insert_array['unit_num'] = $tmp_array[5];
+                        $insert_array['goods_rate'] = $tmp_array[6];
+                        $insert_array['goods_spec'] = $tmp_array[7];
+                        $insert_array['min_set_num'] = $tmp_array[8];
+                        $insert_array['storage_code'] = $tmp_array[9];
+                        $insert_array['produce_company'] = $tmp_array[10];
+                        $insert_array['produce_area'] = $tmp_array[11];
+                        $insert_array['goods_stock'] = $tmp_array[12];
+                        $insert_array['production_date'] = $tmp_array[13];
+                        $insert_array['valid_remind'] = $tmp_array[14];
+                        $insert_array['shelf_life'] = $tmp_array[15];
+                        $insert_array['status'] = $tmp_array[16];
+//                        $insert_array['goods_nm'] = $tmp_array[count($tmp_array)-1];
+                        $gc_id = $model_class->addGoods($insert_array);
+//                        //赋值这个深度父ID
+//                        $tmp = 'parent_id_'.count($tmp_array);
+//                        $$tmp = $gc_id;
+                    }
+                }
+                $this->log(L('goods_class_index_import,goods_class_index_class'),1);
+                showMessage($lang['nc_common_op_succ'],'index.php?act=goods&op=index');
+            }else {
+                $this->log(L('goods_class_index_import,goods_class_index_class'),0);
+                showMessage($lang['goods_class_import_csv_null']);
+            }
+        }
+//        Tpl::output('top_link',$this->sublink($this->links,'goods_class_import'));
+        Tpl::showpage('goods.import');
     }
 
     /**
