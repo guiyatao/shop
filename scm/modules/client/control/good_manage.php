@@ -230,6 +230,11 @@ class good_manageControl extends SCMControl{
                     echo 'false';exit;
                 }
                 break;
+            case 'get_client_baseinfo':
+                $condition['goods_barcode'] = $_POST['goods_barcode'];
+                $goods = SCMModel('scm_client_baseinfo')->get_client_baseinfo($condition);
+                echo json_encode($goods);
+                break;
             /**
              * 验证当前供应商商品的条形码是否重复,不同供应商的商品条码不能重复
              */

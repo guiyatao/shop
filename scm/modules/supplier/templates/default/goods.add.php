@@ -28,7 +28,7 @@
                     <label for="goods_name"><em>*</em>商品名称</label>
                 </dt>
                 <dd class="opt">
-                    <input type="text" value="" name="goods_name" id="goods_name" class="input-txt">
+                    <input type="text"   name="goods_nm" id="goods_name" class="input-txt">
                     <span class="err"></span>
                     <p class="notic">3-30位字符，可由中文、英文、数字及“_”、“-”组成。</p>
                 </dd>
@@ -38,7 +38,7 @@
                     <label for="goods_barcode"><em>*</em>商品条码</label>
                 </dt>
                 <dd class="opt">
-                    <input type="text" id="goods_barcode" name="goods_barcode" class="input-txt">
+                    <input type="text" id="goods_barcode" name="goods_barcode"   class="input-txt" onkeyup="getLength(this.value)" />
                     <span class="err"></span>
                 </dd>
             </dl>
@@ -67,7 +67,7 @@
                     <label for="goods_tax_rate">税率</label>
                 </dt>
                 <dd class="opt">
-                    <input type="text" id="goods_tax_rate" name="goods_tax_rate" style="width: 100px;"> %
+                    <input type="text" id="goods_tax_rate" name="goods_rate" style="width: 100px;"> %
                     <span class="err"></span>
                     <p class="notic"></p>
                 </dd>
@@ -78,7 +78,7 @@
                     <label for="stock_unit"><em>*</em>批发单位</label>
                 </dt>
                 <dd class="opt">
-                    <input type="text" id="stock_unit" name="stock_unit" style="width: 100px;">
+                    <input type="text" id="stock_unit" name="goods_unit" style="width: 100px;">
                     <span class="err"></span>
                 </dd>
             </dl>
@@ -87,7 +87,7 @@
                     <label for="min_supp_num"><em>*</em>最小配量</label>
                 </dt>
                 <dd class="opt">
-                    <input type="text" id="min_supp_num" name="min_supp_num" style="width: 100px;">
+                    <input type="text" id="min_supp_num" name="min_set_num" style="width: 100px;">
                     <span class="err"></span>
                 </dd>
             </dl>
@@ -106,7 +106,7 @@
                     <label for="specification">规格</label>
                 </dt>
                 <dd class="opt">
-                    <input type="text" id="specification" name="specification" class="input-txt">
+                    <input type="text" id="specification" name="goods_spec" class="input-txt">
                     <span class="err"></span>
                 </dd>
             </dl>
@@ -115,7 +115,7 @@
                     <label for="stock_unit">生产厂家</label>
                 </dt>
                 <dd class="opt">
-                    <input type="text" id="manufacturer" name="manufacturer" class="input-txt">
+                    <input type="text" id="manufacturer" name="produce_company" class="input-txt">
                     <span class="err"></span>
                 </dd>
             </dl>
@@ -124,7 +124,7 @@
                     <label for="stock_unit">产地</label>
                 </dt>
                 <dd class="opt">
-                    <input type="text" id="origin" name="origin" class="input-txt">
+                    <input type="text" id="origin" name="produce_area" class="input-txt">
                     <span class="err"></span>
                 </dd>
             </dl>
@@ -152,7 +152,7 @@
                     <label for="shelf_life"><em>*</em>保质期</label>
                 </dt>
                 <dd class="opt">
-                    <input type="text" id="shelf_life" name="shelf_life" style="width: 100px;"><select name="shelf_life_unit"><option value="天">天</option><option value="个月">个月</option><option value="年">年</option></select>
+                    <input type="text" id="shelf_life" name="shelf_life" style="width: 100px;"><select name="shelf_life_unit" id="shelf_life_unit"><option value="天">天</option><option value="个月">个月</option><option value="年">年</option></select>
                     <span class="err"></span>
                 </dd>
             </dl>
@@ -163,7 +163,39 @@
 </div>
 
 <script type="text/javascript">
+    function getLength(value){
+        if(value.length == 13){
+            $.post('index.php?act=goods&op=auto_goods',{ goods_barcode: value},function(data){
+                var goods_list = eval("("+data+")");
+                $("#goods_name").val(goods_list['goods_nm']);
+                $("#specification").val(goods_list['goods_spec']);
+                $("#goods_price").val(goods_list['goods_price']);
+                $("#stock_unit").val(goods_list['goods_unit']);
 
+
+                $("#min_supp_num").val(goods_list['min_set_num']);
+                $("#origin").val(goods_list['produce_area']);
+                $("#manufacturer").val(goods_list['produce_company']);
+                $("#unit_num").val(goods_list['unit_num']);
+                $("#valid_remind").val(goods_list['valid_remind']);
+
+
+                var shelf_life = goods_list['shelf_life'].replace(/[^0-9]/ig,"");
+                var shelf_life_unit = goods_list['shelf_life'].replace(shelf_life,"");
+                $("#shelf_life").val(shelf_life);
+
+                $("#shelf_life_unit").each(function(){
+                    $(this).find("option").each(function(){
+                        if($(this).val() == shelf_life_unit){
+                            $(this).attr("selected","selected");
+                        }
+                    });
+                });
+
+
+            });
+        }
+    }
     $(function(){
         $("#production_date").datepicker({dateFormat: 'yy-mm-dd'});
         //验证价格
@@ -344,5 +376,10 @@
                 },
             }
         });
+//        $('#goods_barcode').blur(
+//            $.get("demo_test.html",function(data,status){
+//                alert("Data: " + data + "nStatus: " + status);
+//            });
+//        )
     });
 </script>

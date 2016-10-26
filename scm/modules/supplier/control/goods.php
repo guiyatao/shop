@@ -109,7 +109,7 @@ class goodsControl extends SCMControl
                 showMessage($error);
             }else {
                 $goods = array();
-                $goods['goods_nm'] = trim($_POST['goods_name']);
+                $goods['goods_nm'] = trim($_POST['goods_nm']);
                 $goods['goods_barcode'] = trim($_POST['goods_barcode']);
                 $goods['goods_price'] = trim($_POST['goods_price']);
                 if(trim($_POST['goods_discount']) == '' ){
@@ -118,15 +118,15 @@ class goodsControl extends SCMControl
                     $goods['goods_discount'] = trim($_POST['goods_discount']);
                 }
 
-                $goods['goods_rate'] = trim($_POST['goods_tax_rate']);
+                $goods['goods_rate'] = trim($_POST['goods_rate']);
                 $supp_result = $this->supp_info;
                 $goods['supp_id'] = trim($supp_result['supp_id']);
-                $goods['goods_unit'] = $_POST['stock_unit'];
-                $goods['min_set_num'] = trim($_POST['min_supp_num']);
+                $goods['goods_unit'] = $_POST['goods_unit'];
+                $goods['min_set_num'] = trim($_POST['min_set_num']);
                 $goods['unit_num'] = trim($_POST['unit_num']);
-                $goods['goods_spec'] = trim($_POST['specification']);
-                $goods['produce_company'] = $_POST['manufacturer'];
-                $goods['produce_area'] = $_POST['origin'];
+                $goods['goods_spec'] = trim($_POST['goods_spec']);
+                $goods['produce_company'] = $_POST['produce_company'];
+                $goods['produce_area'] = $_POST['produce_area'];
                 $goods['production_date'] = $_POST['production_date'];
                 $goods['valid_remind'] = $_POST['valid_remind'];
                 $goods['shelf_life'] = trim($_POST['shelf_life']).$_POST['shelf_life_unit'] ;
@@ -273,6 +273,7 @@ class goodsControl extends SCMControl
                 $condition['id'] = array('neq',intval($_GET['goods_id']));
                 $condition['supp_id'] = trim($this->supp_info['supp_id']);
                 $goods = $model_goods->getGoodsInfo($condition);
+
                 if (empty($goods)){
                     echo 'true';exit;
                 }else {
@@ -288,6 +289,7 @@ class goodsControl extends SCMControl
                 echo $goods;exit;
                 break;
         }
+
     }
 
     /**
@@ -528,5 +530,12 @@ class goodsControl extends SCMControl
                 exit(json_encode(array('state'=>false,'msg'=>'删除失败')));
         }
     }
+    public function auto_goodsOp(){
+        $baseinfo = SCMModel('supplier_supp_baseinfo');
+        $base_goods=$baseinfo->getBaseGoodsInfo(array('goods_barcode'=>$_POST['goods_barcode']));
 
+        if($base_goods){
+            echo json_encode($base_goods);
+        }
+    }
 }
