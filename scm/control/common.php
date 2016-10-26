@@ -236,9 +236,18 @@ class commonControl extends SCMControl{
 
         }else {
             $model_activity = SCMModel('gzkj_activity');
-            $statistics['aclist'] = $model_activity->getActivityCount(array('activity_status' => 2));
+            $supplier = SCMModel('gzkj_supplier');
+            $ids=$supplier->where(array('is_close'=>1))->field('supp_id')->select();
+            $where['supp_id']=array('not in',$ids);
+            $where['activity_status']=2;
+//            $statistics['aclist'] = $model_activity->getActivityCount(array('activity_status' => 2));
+            $statistics['aclist'] = $model_activity->getActivityCount($where);
             $model_supp = SCMModel('gzkj_supp_stock');
-            $statistics['sulist'] = $model_supp->getSuppStockCount(array('status' => 2));
+            $where=array();
+            $where['supp_id']=array('not in',$ids);
+            $where['status']=2;
+//            $statistics['sulist'] = $model_supp->getSuppStockCount(array('status' => 2));
+            $statistics['sulist'] = $model_supp->getSuppStockCount($where);
 
             // 预存款提现
             $statistics['cashlist'] = Model('predeposit')->getPdCashCount(array('pdc_payment_state' => 0));
