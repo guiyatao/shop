@@ -68,7 +68,7 @@
           <i class="fa fa-arrow-circle-right"></i>
           <time><?php echo $output['order_info']['extend_order_common']['shipping_time'] ? date('Y-m-d H:i:s',$output['order_info']['extend_order_common']['shipping_time']) : null; ?></time>
         </li>
-        <li class="<?php if(intval($output['order_info']['finnshed_time'])) { ?>current<?php } ?>">
+        <li class="<?php if(intval($output['order_info']['order_state'])==40) { ?>current<?php } ?>">
           <h5><?php if($output['order_info']['pickup_mode'] == 0) { ?>买家到门店取货<?php }else{ ?>收货确认<?php } ?> </h5>
           <i class="fa fa-arrow-circle-right"></i>
           <time><?php echo $output['order_info']['finnshed_time'] ? date('Y-m-d H:i:s',$output['order_info']['finnshed_time']) : null;?></time>
@@ -97,7 +97,7 @@
           <i class="fa fa-arrow-circle-right"></i>
           <time><?php echo $output['order_info']['extend_order_common']['shipping_time'] ? date('Y-m-d H:i:s',$output['order_info']['extend_order_common']['shipping_time']) : null; ?></time>
         </li>
-        <li class="<?php if(intval($output['order_info']['finnshed_time'])) { ?>current<?php } ?>">
+        <li class="<?php if(intval($output['order_info']['order_state'])==40) { ?>current<?php } ?>">
           <h5><?php if($output['order_info']['pickup_mode'] == 0) { ?>买家到门店付款取货<?php }else{ ?>买家收货并付款<?php } ?> </h5>
           <i class="fa fa-arrow-circle-right"></i>
           <time><?php echo $output['order_info']['finnshed_time'] ? date('Y-m-d H:i:s',$output['order_info']['finnshed_time']) : null;?></time>
