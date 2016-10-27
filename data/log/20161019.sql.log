@@ -1,0 +1,24 @@
+[2016-10-19 14:22:10]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  
+[2016-10-19 14:43:50]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  
+[2016-10-19 14:43:52]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  
+[2016-10-19 14:43:54]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  
+[2016-10-19 14:43:57]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  
+[2016-10-19 14:44:03]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  
+[2016-10-19 14:44:09]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  
+[2016-10-19 14:44:11]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  

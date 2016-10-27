@@ -1,0 +1,24 @@
+[2016-10-26 10:50:42]/scm/index.php?act=common&op=ajax_pending_matters
+ERR : Db Error: Unknown column 'Array' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_activity` scm_activity WHERE ( supp_id NOT IN (Array,Array) ) AND ( activity_status = '2' ) LIMIT 1  
+[2016-10-26 10:50:42]/scm/index.php?act=common&op=pending_matters
+ERR : Db Error: Unknown column 'Array' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_activity` scm_activity WHERE ( supp_id NOT IN (Array,Array) ) AND ( activity_status = '2' ) LIMIT 1  
+[2016-10-26 10:54:07]/scm/index.php?act=common&op=ajax_pending_matters
+ERR : Db Error: Unknown column 'Array' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_activity` scm_activity WHERE ( supp_id NOT IN (Array,Array) ) AND ( activity_status = '2' ) LIMIT 1  
+[2016-10-26 10:54:07]/scm/index.php?act=common&op=pending_matters
+ERR : Db Error: Unknown column 'Array' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_activity` scm_activity WHERE ( supp_id NOT IN (Array,Array) ) AND ( activity_status = '2' ) LIMIT 1  
+[2016-10-26 10:54:29]/scm/index.php?act=common&op=ajax_pending_matters
+ERR : Db Error: Unknown column 'Array' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_activity` scm_activity WHERE ( supp_id NOT IN (Array,Array) ) AND ( activity_status = '2' ) LIMIT 1  
+[2016-10-26 10:54:29]/scm/index.php?act=common&op=pending_matters
+ERR : Db Error: Unknown column 'Array' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_activity` scm_activity WHERE ( supp_id NOT IN (Array,Array) ) AND ( activity_status = '2' ) LIMIT 1  
+[2016-10-26 10:59:11]/scm/index.php?act=common&op=ajax_pending_matters
+ERR : Db Error: Unknown column 'Array' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_activity` scm_activity WHERE ( supp_id NOT IN (Array,Array) ) AND ( activity_status = '2' ) LIMIT 1  
+[2016-10-26 10:59:11]/scm/index.php?act=common&op=ajax_pending_matters
+ERR : Db Error: Unknown column 'Array' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_supp_stock` scm_supp_stock WHERE ( supp_id NOT IN (Array,Array) ) AND ( status = '2' ) LIMIT 1  

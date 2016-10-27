@@ -1,0 +1,18 @@
+[2016-10-20 08:36:22]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  
+[2016-10-20 08:37:59]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  
+[2016-10-20 08:38:28]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  
+[2016-10-20 10:12:59]/scm/modules/client/index.php?act=supp_manage&op=get_xml
+ERR : Db Error: Column 'supp_id' in order clause is ambiguous
+SELECT 15 FROM `gzkj`.`gzkj_scm_supp_client` AS `scm_supp_client` INNER JOIN `gzkj`.`gzkj_scm_supplier` AS `scm_supplier` ON scm_supp_client.supp_id = scm_supplier.supp_id ORDER BY supp_id desc LIMIT 30  
+[2016-10-20 16:00:31]/scm/modules/supplier/index.php?act=client&op=get_xml&query=&qtype=scm_client.clie_id&sortname=number&sortorder=asc&op=export_csv&id=
+ERR : Db Error: Column 'clie_id' in group statement is ambiguous
+SELECT COUNT(*) AS nc_count FROM `gzkj`.`gzkj_scm_client_order` AS `scm_client_order` LEFT JOIN `gzkj`.`gzkj_scm_client` AS `scm_client` ON scm_client_order.clie_id = scm_client.clie_id  WHERE ( supp_id = 'CHLY0000101' ) GROUP BY clie_id LIMIT 1  
+[2016-10-20 16:02:33]/shop/api/payment/alipay/return_url.php?body=930530269168130002&buyer_email=13564965376&buyer_id=2088902528051893&exterface=create_direct_pay_by_user&extra_common_param=real_order&is_success=T&notify_id=RqPnCoPT3K9%252Fvwbh3InWeO1EI9RfQBOlxUV18pBjEAoR70TsoQ95ufvdPk1qTU9netBg&notify_time=2016-10-20+16%3A05%3A11&notify_type=trade_status_sync&out_trade_no=930530269168130002&payment_type=1&seller_email=dlgongzhuying%40163.com&seller_id=2088421609025645&subject=%E5%AE%9E%E7%89%A9%E8%AE%A2%E5%8D%95_930530269168130002&total_fee=0.01&trade_no=2016102021001004890268275349&trade_status=TRADE_SUCCESS&sign=a90986d917dd48fbbbedd49cca03a34f&sign_type=MD5
+ERR : Db Error: Column 'clie_id' cannot be null
+INSERT  INTO `gzkj`.`gzkj_scm_online_order` (order_id,clie_id,clie_address,order_sn,store_name,buyer_name,buyer_phone,buyer_address,pickup_mode,add_time,payment_code,payment_time,finnshed_time,order_amount,order_state,buyer_comment) VALUES ('400',NULL,NULL,'8000000000040001','共铸商城','qianqi','15998462178','辽宁 大连市 中山区 中南路110号','0','1476925168','alipay','1476950552','0','0.01','20','')

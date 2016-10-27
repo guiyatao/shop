@@ -1,0 +1,3 @@
+[2016-10-18 09:35:35]/scm/modules/client/index.php?act=client_storage&op=storage_confirm&inajax=1
+ERR : Db Error: Unknown column 'create_date' in 'field list'
+INSERT  INTO `gzkj`.`gzkj_scm_client_stock` (goods_barcode,goods_nm,goods_price,goods_discount,goods_unit,goods_spec,clie_id,supp_id,production_date,valid_remind,shelf_life,create_date,goods_low_stock,goods_stock) VALUES ('6953392554351','怡泉+C柠檬汽水 500ml','0.01','1.00','箱','500ml/瓶','GZTY0008889','SLSP0000102','2016-05-03 00:00:00','30','12个月',NULL,'10','1')

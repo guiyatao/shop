@@ -1,0 +1,12 @@
+[2016-10-17 15:22:27]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-10-17 15:22:27]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-10-17 15:22:28]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 
+[2016-10-17 15:22:31]http://192.168.3.250/scm/modules/system/index.php?act=online_order&op=get_xml&pay_end=1
+ERR : Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'pay_flag=1 GROUP BY clie_id' at line 1
+SELECT id,order_sn,clie_id,order_state,pay_flag,SUM(order_amount)as order_amount from gzkj_scm_online_order  WHERE order_state=40 pay_flag=1 GROUP BY clie_id 

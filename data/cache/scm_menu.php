@@ -329,7 +329,6 @@
         'child' => 
         array (
           'account' => '供应商基本信息',
-          'settlement' => '结算管理',
           'supp_clie' => '合作终端店',
         ),
       ),
@@ -377,6 +376,14 @@
           'statistics_sale' => '运营分析',
         ),
       ),
+      6 => 
+      array (
+        'name' => '结算管理',
+        'child' => 
+        array (
+          'order' => '结算管理',
+        ),
+      ),
     ),
     'role' => '3',
   ),
@@ -411,8 +418,8 @@
         'name' => '结算管理',
         'child' => 
         array (
-          'all_online_order' => '商城结算管理',
-          'client_order' => '批发结算管理',
+          'order_settlement' => '批发订单管理',
+          'online_order_settlement' => '商城订单管理',
         ),
       ),
       3 => 
