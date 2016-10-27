@@ -622,8 +622,9 @@
 			if (typeof user_info['s_name'] !== "undefined" && user_info['s_name'] !== "") {
 			    get_goods_list(user_info['s_id']);//异步调用店铺推荐的商品
 			    $("#chat_user_avatar").attr("src",user_info['s_avatar']);
-			    store_html = '<a target="_blank" href="'+SHOP_SITE_URL+'/index.php?act=show_store&op=index&store_id='+
-			                    user_info['s_id']+'">'+user_info['s_name']+'</a>';
+			    //store_html = '<a target="_blank" href="'+SHOP_SITE_URL+'/index.php?act=show_store&op=index&store_id='+
+			    //                user_info['s_id']+'">'+user_info['s_name']+'</a>';
+                store_html = '<a>'+user_info['s_name']+'</a>';
 			    u_name = '客服：'+u_name;
 			}
 			var online_html = '<i class="offline" title="离线"></i>';
@@ -929,7 +930,7 @@
 			text_append += '<div class="user-info">';
     		text_append += '<div class="user-avatar">';
     		text_append += '<img id="chat_user_avatar" src=""></div>';
-    		//text_append += '<div id="chat_user_store" class="store-name"></div>';
+    		text_append += '<div id="chat_user_store" class="store-name"></div>';
 			text_append += '<div id="chat_user_name" class="user-name"></div>';
     		text_append += '</div>';
     		if(layout != 'layout/seller_layout.php' && act_op != 'goods_index') {//商家中心页面和商品详细页面不显示推荐商品
