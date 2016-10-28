@@ -139,6 +139,7 @@ EOB;
             $list['supp_id'] = $info['supp_id'];
             $list['supp_ch_name'] = SCMModel('gzkj_supplier')->getfby_supp_id($info['supp_id'],'supp_ch_name');
             $list['order_pay'] = $info['order_pay'];
+            $list['pay_start_time'] = $info['pay_start_time'];
             $date=SCMModel('gzkj_settlement')->getfby_settlement_id($_GET['settlement_id'],'settlement_date');
             $list['time']=substr($date,5,5);
             $data['list'][$info['id']] = $list;
