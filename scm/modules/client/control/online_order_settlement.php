@@ -74,10 +74,10 @@ class online_order_settlementControl extends SCMControl
 
                     $list['time']=substr($info['settlement_date'],5,5);
                 $img = UPLOAD_SITE_URL."/scm/online_settlement/".$info['photo'];
-                $list['photo'] =  <<<EOB
-            <a href="{$img}" class="pic-thumb-tip  nyroModal" onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
-            <i class='fa fa-picture-o'></i></a>
-EOB;
+//                $list['photo'] =  <<<EOB
+//            <a href="{$img}" class="pic-thumb-tip  nyroModal" onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
+//            <i class='fa fa-picture-o'></i></a>
+//EOB;
                     $data['list'][$info['settlement_id']] = $list;
             }
         }
@@ -122,6 +122,7 @@ EOB;
                 $list['clie_ch_name'] = SCMModel('scm_client')->getfby_clie_id($info['clie_id'],'clie_ch_name');
                 $list['cash_flow'] = '共铸商城->终端店';
                 $list['order_amount'] = $info['order_amount'];
+                $list['finnshed_time'] =date("Y-m-d H:i:s", $info['finnshed_time']) ;
 //                if($info['pay_flag']==0){
 //                    $list['pay_flag'] = '未结算';
 //                }else{

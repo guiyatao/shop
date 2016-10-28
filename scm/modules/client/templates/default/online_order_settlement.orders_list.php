@@ -27,6 +27,7 @@
                     {display: '终端店名', name: 'clie_ch_name', width: 150, sortable: false, align: 'left'},
                     {display: '资金流向', name: 'cash_flow', width: 150, sortable: false, align: 'left'},
                     {display: '结算金额', name: 'order_pay', width: 120, sortable: false, align: 'left'},
+                    {display: '订单完成日期', name: 'finnshed_time', width: 120, sortable: false, align: 'left'},
                     {display: '结算日期', name: 'time', width: 120, sortable: false, align: 'left'},
 
                 ],
