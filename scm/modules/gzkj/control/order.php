@@ -104,6 +104,60 @@ EOB;
         exit();
 
     }
+
+    public function get_flow_xmlOp()
+    {
+        $order = SCMModel('gzkj_settlement');
+        if($_GET['type']==1){
+            $where=array();
+            $where['clie_id']= array('neq','');
+            $orders=$order->where($where)->page($_POST['rp'])->select();
+        }else{
+            $where=array();
+            $where['scm_settlement.supp_id']= array('neq','');
+            $orders= $order->where($where)->page($_POST['rp'])->select();
+        }
+        $data = array();
+        $data['now_page'] = $order->shownowpage();
+        $data['total_num'] = $order->gettotalnum();
+        if(!empty($orders)) {
+            foreach ($orders as $k => $info) {
+                $list = array();
+                $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"fg_sku1('" . $info['settlement_id'] . "')\">查看订单</a></li>";
+                if($info['flag']==20||$info['flag']==30){
+                    $list['operation'] .= "<a class=\"btn \" href='javascript:void(0)' ><i class=\"fa fa-ban\" ></i>结算</a></li>";
+                }else{
+                    $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"settlement('" . $info['settlement_id'] . "')\">结算</a></li>";
+                }
+                if($_GET['type']==1){
+                    $list['clie_id'] = $info['clie_id'];
+                    $list['clie_ch_name'] =  SCMModel('gzkj_client')->getfby_clie_id($info['clie_id'],'clie_ch_name');
+                    $list['cash_flow'] = '共铸商城->终端店';
+                }else{
+                    $list['supp_id'] = $info['supp_id'];
+                    $list['supp_ch_name'] = SCMModel('gzkj_supplier')->getfby_supp_id($info['supp_id'],'supp_ch_name');
+                    $list['cash_flow'] = '共铸商城->供应商';
+                }
+
+                $list['order_pay'] = $info['amount'];
+                if($info['flag']==0||$info['flag']==2||$info['flag']==3){
+                    $list['pay_flag'] = '未结算';
+                }elseif($info['flag']==20||$info['flag']==30){
+                    $list['pay_flag'] = '已结算';
+                }
+                $list['time']=substr($info['settlement_date'],5,5);
+                $img = UPLOAD_SITE_URL."/scm/settlement/".$info['photo'];
+                $list['photo'] =  <<<EOB
+            <a   href="{$img}" class="pic-thumb-tip" class="nyroModal"  onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
+            <i class='fa fa-picture-o'></i></a>
+EOB;
+                $data['list'][$info['settlement_id']] = $list;
+            }
+        }
+        echo Tpl::flexigridXML($data);
+        exit();
+
+    }
     public function show_goodsOp()
     {
 
@@ -121,6 +175,13 @@ EOB;
         Tpl::output('settlement_id', $_GET['settlement_id']);
         Tpl::showpage('order.orders_list');
     }
+
+    public function show_flow_ordersOp()
+    {
+
+        Tpl::output('settlement_id', $_GET['settlement_id']);
+        Tpl::showpage('order_flow.orders_list');
+    }
     public function get_order_xmlOp()
     {
         $order = SCMModel('gzkj_client_order');
@@ -137,7 +198,32 @@ EOB;
             $list['supp_id'] = $info['supp_id'];
             $list['supp_ch_name'] = SCMModel('gzkj_supplier')->getfby_supp_id($info['supp_id'],'supp_ch_name');
             $list['order_pay'] = $info['order_pay'];
+            $list['pay_start_time'] = $info['pay_start_time'];
+            $date=SCMModel('gzkj_settlement')->getfby_settlement_id($_GET['settlement_id'],'settlement_date');
+            $list['time']=substr($date,5,5);
+            $data['list'][$info['id']] = $list;
+        }
+        echo Tpl::flexigridXML($data);
+        exit();
+    }
 
+    public function get_order_flow_xmlOp()
+    {
+        $order = SCMModel('gzkj_client_order');
+        $orders=$order->where(array('settlement_id'=>$_GET['settlement_id']))->page($_POST['rp'])->select();
+        $data = array();
+        $data['now_page'] = $order->shownowpage();
+        $data['total_num'] = $order->gettotalnum();
+        foreach ($orders as $k => $info) {
+            $list = array();
+            $list['operation'] .= "<a class=\"btn blue\" href='javascript:void(0)' onclick=\"fg_sku('" . $info['id'] . "')\">查看商品</a></li>";
+            $list['clie_id'] = $info['clie_id'];
+            $list['order_no'] = $info['order_no'];
+            $list['clie_ch_name'] =  SCMModel('gzkj_client')->getfby_clie_id($info['clie_id'],'clie_ch_name');
+            $list['supp_id'] = $info['supp_id'];
+            $list['supp_ch_name'] = SCMModel('gzkj_supplier')->getfby_supp_id($info['supp_id'],'supp_ch_name');
+            $list['order_pay'] = $info['order_pay'];
+            $list['pay_start_time'] = $info['pay_start_time'];
             $date=SCMModel('gzkj_settlement')->getfby_settlement_id($_GET['settlement_id'],'settlement_date');
             $list['time']=substr($date,5,5);
             $data['list'][$info['id']] = $list;

@@ -77,10 +77,10 @@ class online_orderControl extends SCMControl
                     }
                     $list['time']=substr($info['settlement_date'],5,5);
                 $img = UPLOAD_SITE_URL."/scm/online_settlement/".$info['photo'];
-                $list['photo'] =  <<<EOB
-            <a href="{$img}" class="pic-thumb-tip nyroModal"  onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
-            <i class='fa fa-picture-o'></i></a>
-EOB;
+//                $list['photo'] =  <<<EOB
+//            <a href="{$img}" class="pic-thumb-tip nyroModal"  onMouseOut="toolTip()" onMouseOver="toolTip('<img src=\'{$img}\'>')">
+//            <i class='fa fa-picture-o'></i></a>
+//EOB;
                     $data['list'][$info['settlement_id']] = $list;
             }
         }
@@ -131,6 +131,7 @@ EOB;
                 }else{
                     $list['pay_flag'] = '已结算';
                 }
+                $list['finnshed_time'] = date("Y-m-d H:i:s", $info['finnshed_time']) ;
                 $list['time']=SCMModel('gzkj_online_settlement')->getfby_settlement_id($_GET['settlement_id'],'settlement_date');
                 $data['list'][$info['id']] = $list;
             }

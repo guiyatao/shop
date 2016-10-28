@@ -16,7 +16,7 @@
     <script>
         $(function () {
             $("#flexigrid").flexigrid({
-                url: 'index.php?act=order&op=get_xml&type=1',
+                url: 'index.php?act=order&op=get_flow_xml&type=1',
                 colModel: [
                     {display: '操作', name : 'operation', width : 150, sortable : false, align: 'center'},
                     {display: '终端店编码', name: 'clie_id', width: 120, sortable: false, align: 'left'},
@@ -56,6 +56,6 @@
             window.location.href = 'index.php?act=order&op=settlement&settlement_id='+settlement_id;
         }
         function fg_sku1(settlement_id) {
-            window.location.href = 'index.php?act=order&op=show_orders&settlement_id='+settlement_id;
+            window.location.href = 'index.php?act=order&op=show_flow_orders&settlement_id='+settlement_id;
         }
     </script>

@@ -27,6 +27,7 @@
                     {display: '供应商编码', name: 'supp_id', width: 120, sortable: false, align: 'left'},
                     {display: '供应商名', name: 'supp_ch_name', width: 150, sortable: false, align: 'left'},
                     {display: '结算金额', name: 'order_pay', width: 120, sortable: false, align: 'left'},
+                    {display: '入库日期', name: 'pay_start_time', width: 120, sortable: false, align: 'left'},
                     {display: '结算日期', name: 'time', width: 120, sortable: false, align: 'left'},
 
                 ],

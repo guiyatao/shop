@@ -26,7 +26,7 @@
                     {display: '资金流向', name: 'cash_flow', width: 120, sortable: false, align: 'left'},
                     {display: '结算状态', name: 'pay_flag', width: 120, sortable: false, align: 'left'},
                     {display: '结算日期', name: 'time', width: 120, sortable: false, align: 'left'},
-                    {display: '结算凭证', name: 'photo', width: 120, sortable: false, align: 'left'}
+//                    {display: '结算凭证', name: 'photo', width: 120, sortable: false, align: 'left'}
 
                 ],
 //                searchitems: [

@@ -65,21 +65,21 @@
                     <span class="err"></span>
                 </dd>
             </dl>
-            <dl class="row">
+            <!--<dl class="row">
                 <dt class="tit">
                     <label>结算凭证</label>
                 </dt>
                 <dd class="opt">
                     <div class="input-file-show">
                         <span class="show">
-                            <a class="nyroModal" rel="gal" href="<?php echo UPLOAD_SITE_URL."/"."scm/settlement"."/".$output['settlement']['photo'];?>"> <i class="fa fa-picture-o" onMouseOver="toolTip('<img src=<?php echo UPLOAD_SITE_URL."/"."scm/settlement"."/".$output['settlement']['photo'];?>>')" onMouseOut="toolTip()"></i></a>
+                            <a class="nyroModal" rel="gal" href="<?php /*echo UPLOAD_SITE_URL."/"."scm/settlement"."/".$output['settlement']['photo'];*/?>"> <i class="fa fa-picture-o" onMouseOver="toolTip('<img src=<?php /*echo UPLOAD_SITE_URL."/"."scm/settlement"."/".$output['settlement']['photo'];*/?>>')" onMouseOut="toolTip()"></i></a>
                         </span>
                         <span class="type-file-box">
                             <input type="file" class="type-file-file" id="act_banner" name="photo" size="30" hidefocus="true"   title="点击按钮选择文件并提交表单后上传生效" />
                         </span>
                     </div>
                 </dd>
-            </dl>
+            </dl>-->
 
 <!--            <dl class="row">-->
 <!--                <dt class="tit">-->
